@@ -9,7 +9,8 @@ import { createBreadcrumbJsonLd, createWebPageJsonLd } from "@/lib/seo";
 import { getStaticPageMeta, resolveMeta } from "@/lib/seo-pages";
 
 // import heroCertifiedBackground from "@/assets/hero-section-profesional-bersertifikat.jpg";
-const heroCertifiedBackground = "https://placehold.co/1920x600/10b981/ffffff?text=Certified+Professionals";
+const heroCertifiedBackground =
+  "https://placehold.co/1920x600/10b981/ffffff?text=Certified+Professionals";
 import {
   certificateImageDefinitions,
   type CertificateImageDefinition,
@@ -222,7 +223,7 @@ const CertificationGallery = memo(() => {
               </Badge>
               <h1 className="heading-md mt-4">
                 {t("aboutPages.certificationGallery.headingTemplate", {
-                  company: "PT. Karya Halim Sampoerna",
+                  company: "PT SAN & PT BBR",
                 })}
               </h1>
               <p

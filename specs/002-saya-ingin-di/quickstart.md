@@ -20,7 +20,7 @@ cat src/lib/email-config.ts
 
 # Expected output should show:
 # - export const PRIMARY_EMAIL = "ptkarya_halim@yahoo.co.id"
-# - export const SECONDARY_EMAIL = "hire.us@karyahalimsampoerna.id"
+# - export const SECONDARY_EMAIL = "hire.us@san-bbr.id"
 # - export const ALL_EMAILS = [PRIMARY_EMAIL, SECONDARY_EMAIL]
 ```
 
@@ -40,7 +40,7 @@ grep -r "import.*email-config" src/lib/
 ```bash
 # Check that no hardcoded email strings remain (except in email-config.ts)
 grep -r "ptkarya_halim@yahoo.co.id" src/ --exclude="src/lib/email-config.ts"
-grep -r "hire.us@karyahalimsampoerna.id" src/ --exclude="src/lib/email-config.ts"
+grep -r "hire.us@san-bbr.id" src/ --exclude="src/lib/email-config.ts"
 
 # Expected: No matches found (all references should now be imports)
 ```

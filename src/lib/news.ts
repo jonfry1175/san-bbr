@@ -53,16 +53,16 @@ export const newsArticles: NewsArticle[] = [
     id: 1,
     slug: "pt-khs-ajak-keluarga-pekerja-jadi-mitra-keselamatan-fokus-atasi-kelelahan-kerja",
     title:
-      "PT. KHS Ajak Keluarga Pekerja Jadi Mitra Keselamatan, Fokus Atasi Kelelahan Kerja",
+      "PT SAN & PT BBR Ajak Keluarga Pekerja Jadi Mitra Keselamatan, Fokus Atasi Kelelahan Kerja",
     excerpt:
-      'Angsana, 31 Juli 2025 - PT. Karya Halim Sampoerna (KHS) menggelar acara inovatif bertajuk "Off The Job Safety - Family Visit to KHS 2025" yang...',
+      'Angsana, 31 Juli 2025 - PT SAN & PT BBR (SAN & BBR) menggelar acara inovatif bertajuk "Off The Job Safety - Family Visit to SAN & BBR 2025" yang...',
     category: "Company News",
-    author: "Admin KHS",
+    author: "Admin SAN & BBR",
     date: "2025-09-09",
     readTime: "1 min read",
     image: fatigueManagementHero,
     content: [
-      'Angsana, 31 Juli 2025 - PT. Karya Halim Sampoerna (KHS) menggelar acara inovatif bertajuk "Off The Job Safety - Family Visit to KHS 2025" yang melibatkan keluarga para pekerjanya. Mengusung tema "Keluarga Peduli, Pekerja Aman: Bersama Atasi Kelelahan Kerja," kegiatan ini bertujuan untuk meningkatkan kesadaran keluarga mengenai peran penting mereka dalam mendukung keselamatan kerja, khususnya dalam pengelolaan kelelahan (fatigue management). Acara yang dihadiri oleh 30 peserta dari kalangan keluarga pekerja ini diselenggarakan di ruang pertemuan perusahaan dan berlangsung selama tiga jam.',
+      'Angsana, 31 Juli 2025 - PT SAN & PT BBR (SAN & BBR) menggelar acara inovatif bertajuk "Off The Job Safety - Family Visit to SAN & BBR 2025" yang melibatkan keluarga para pekerjanya. Mengusung tema "Keluarga Peduli, Pekerja Aman: Bersama Atasi Kelelahan Kerja," kegiatan ini bertujuan untuk meningkatkan kesadaran keluarga mengenai peran penting mereka dalam mendukung keselamatan kerja, khususnya dalam pengelolaan kelelahan (fatigue management). Acara yang dihadiri oleh 30 peserta dari kalangan keluarga pekerja ini diselenggarakan di ruang pertemuan perusahaan dan berlangsung selama tiga jam.',
       "Program ini dirancang untuk memberikan edukasi mendalam kepada keluarga mengenai dampak kelelahan kerja. Para peserta diberikan pemahaman tentang definisi fatigue, gejala, serta dampaknya yang dapat menurunkan kewaspadaan dan meningkatkan risiko kecelakaan di lingkungan kerja pertambangan. Materi utama menekankan bahwa dukungan keluarga melalui pola tidur yang teratur, asupan nutrisi sehat, dan dukungan psikologis merupakan faktor krusial untuk membantu pekerja pulih dan tetap bugar. Dengan demikian, perusahaan memposisikan keluarga sebagai mitra strategis dalam menciptakan budaya keselamatan yang komprehensif.",
       "Rangkaian acara dikemas secara interaktif dan menarik untuk seluruh anggota keluarga. Selain sesi edukasi utama mengenai fatigue management, kegiatan juga diisi dengan pengenalan area kerja untuk memberikan gambaran mengenai lingkungan dan potensi bahaya yang dihadapi para pekerja setiap hari. Untuk mencairkan suasana dan mempererat hubungan, acara ini juga dimeriahkan dengan sesi sharing, kuis interaktif, dan permainan keluarga yang disambut antusias oleh para peserta.",
       "Berdasarkan evaluasi akhir, kegiatan ini dinilai sangat berhasil mencapai tujuannya. Hasil kuesioner menunjukkan respon yang sangat positif dari peserta, di mana pemahaman mereka mengenai risiko kelelahan kerja dan cara mendukung pekerja di rumah meningkat secara signifikan. Banyak peserta yang mengapresiasi program ini dan mengusulkan agar kegiatan serupa dapat diadakan secara berkala di masa mendatang. Inisiatif ini membuktikan bahwa pelibatan keluarga secara aktif dapat memberikan dampak positif dalam memperkuat budaya keselamatan kerja dari rumah hingga ke lokasi kerja.",
@@ -70,11 +70,11 @@ export const newsArticles: NewsArticle[] = [
     translations: {
       EN: {
         title:
-          "KHS Engages Workers' Families as Safety Partners to Address Fatigue",
+          "SAN & BBR Engages Workers' Families as Safety Partners to Address Fatigue",
         excerpt:
-          'Angsana, July 31, 2025 – PT. Karya Halim Sampoerna (KHS) held an innovative program titled "Off The Job Safety - Family Visit to KHS 2025" that...',
+          'Angsana, July 31, 2025 – PT SAN & PT BBR (SAN & BBR) held an innovative program titled "Off The Job Safety - Family Visit to SAN & BBR 2025" that...',
         content: [
-          'Angsana, July 31, 2025 – PT. Karya Halim Sampoerna (KHS) organized an innovative program titled "Off The Job Safety - Family Visit to KHS 2025" involving employees\' families. Carrying the theme "Caring Families, Safe Workers: Together Managing Fatigue," the event aimed to increase family awareness of their important role in supporting workplace safety, particularly in fatigue management. The three-hour session was attended by 30 family participants at the company meeting room.',
+          'Angsana, July 31, 2025 – PT SAN & PT BBR (SAN & BBR) organized an innovative program titled "Off The Job Safety - Family Visit to SAN & BBR 2025" involving employees\' families. Carrying the theme "Caring Families, Safe Workers: Together Managing Fatigue," the event aimed to increase family awareness of their important role in supporting workplace safety, particularly in fatigue management. The three-hour session was attended by 30 family participants at the company meeting room.',
           "The program was designed to provide in-depth education to families about the impact of work-related fatigue. Participants gained understanding of the definition, symptoms, and consequences of fatigue that can reduce alertness and increase accident risk in mining operations. The core material emphasized that family support through consistent sleep patterns, proper nutrition, and psychological encouragement is crucial to help workers recover and stay fit. This positions families as strategic partners in building a comprehensive safety culture.",
           "The event was packaged interactively and attractively for all family members. In addition to the main educational session on fatigue management, activities included an introduction to the work area to give insight into the environment and potential hazards workers face daily. To create an engaging atmosphere and strengthen relationships, there were sharing sessions, interactive quizzes, and family games enthusiastically received by participants.",
           "Based on the final evaluation, the program successfully achieved its objectives. Survey results showed a significant increase in participants' understanding of fatigue risks and how to support workers at home. Many expressed appreciation and suggested similar programs be held regularly. This initiative demonstrates that active family involvement can positively reinforce a safety culture from home to the worksite.",
@@ -83,7 +83,7 @@ export const newsArticles: NewsArticle[] = [
       },
     },
     sourceUrl:
-      "https://karyahalimsampoerna.id/pt-khs-ajak-keluarga-pekerja-jadi-mitra-keselamatan-fokus-atasi-kelelahan-kerja/",
+      "https://san-bbr.id/pt-khs-ajak-keluarga-pekerja-jadi-mitra-keselamatan-fokus-atasi-kelelahan-kerja/",
   },
 
   {
@@ -93,13 +93,13 @@ export const newsArticles: NewsArticle[] = [
     excerpt:
       "Masyarakat Kalimantan Tengah wajar berbangga, karena sebentar lagi akan memiliki sirkuit bertaraf internasional di Jalan Tjilik Riwut Kilometer 29...",
     category: "Company News",
-    author: "Admin KHS",
+    author: "Admin SAN & BBR",
     date: "2025-09-05",
     readTime: "1 min read",
     image: kaltengCircuit,
     content: [
       "Masyarakat Kalimantan Tengah wajar berbangga, karena sebentar lagi akan memiliki sirkuit bertaraf internasional di Jalan Tjilik Riwut Kilometer 29 Palangka Raya, Kalimantan Tengah.",
-      "Pembangunan Sirkuit dengan panjang 1400 meter tersebut, tak lepas dari dukungan pimpinan PT. Karya Halim Sampoerna Michael Halim , Ketua DPD Komite Nasional Pemuda Indonesia (KNPI) Kalteng Fairid Naparin dan pengusaha muda John Garinda.",
+      "Pembangunan Sirkuit dengan panjang 1400 meter tersebut, tak lepas dari dukungan pimpinan PT SAN & PT BBR Michael Halim , Ketua DPD Komite Nasional Pemuda Indonesia (KNPI) Kalteng Fairid Naparin dan pengusaha muda John Garinda.",
       '"Saya sangat berterima kasih atas dukungan lahan dan peralatan berat dari ketiga tokoh itu, hingga sirkuit bertaraf nasional ini dapat terwujud di Kalteng,"kata Pelaksana Tugas (Plt) Kepala Dinas Pemuda dan Olahraga (Dispora) Kalimantan Tengah, Falery Tuwan, di Palangka Raya, Kalimantan Tengah, Rabu (28/3/2018).',
       "Selain itu juga ia mengucapkan terimakasih atas swadaya pembangunan sirkuit terhadap praktisi otomotif lain yakni Haidir, Ether Kaharap, Kaharap, Herry Wijono dan Ferry Lohing.",
       "Menurut Falery, biaya pembangunan sirkuit itu, menelan biaya sekitar Rp 350 juta, meliputi biaya alat berat, mobilisasi/angkutan, material dan upah.",
@@ -116,7 +116,7 @@ export const newsArticles: NewsArticle[] = [
           "Residents of Central Kalimantan have reason to be proud—the region will soon have an international-standard circuit on Jalan Tjilik Riwut Kilometer 29...",
         content: [
           "Residents of Central Kalimantan have good reason to be proud, as an international-standard circuit will soon stand on Jalan Tjilik Riwut Kilometer 29, Palangka Raya, Kalimantan Tengah.",
-          "The 1,400-meter circuit construction is made possible through the support of PT. Karya Halim Sampoerna leadership Michael Halim, KNPI Kalteng Chairman Fairid Naparin, and young entrepreneur John Garinda.",
+          "The 1,400-meter circuit construction is made possible through the support of PT SAN & PT BBR leadership Michael Halim, KNPI Kalteng Chairman Fairid Naparin, and young entrepreneur John Garinda.",
           "“I am very grateful for the land support and heavy equipment from these three figures, enabling this national-standard circuit to materialize in Central Kalimantan,” said Acting Head of the Youth and Sports Office (Dispora) of Central Kalimantan, Falery Tuwan, in Palangka Raya, Kalimantan Tengah, Wednesday (3/28/2018).",
           "He also expressed appreciation for the voluntary contributions from other motorsport practitioners including Haidir, Ether Kaharap, Kaharap, Herry Wijono, and Ferry Lohing.",
           "According to Falery, construction costs amount to approximately Rp 350 million, covering heavy equipment, mobilization/transportation, materials, and labor.",
@@ -129,7 +129,7 @@ export const newsArticles: NewsArticle[] = [
       },
     },
     sourceUrl:
-      "https://karyahalimsampoerna.id/keren-kalteng-miliki-sirkuit-bertaraf-internasional/",
+      "https://san-bbr.id/keren-kalteng-miliki-sirkuit-bertaraf-internasional/",
   },
   {
     id: 4,
@@ -139,7 +139,7 @@ export const newsArticles: NewsArticle[] = [
     excerpt:
       "Dinas PUPRPKPP Kabupaten Kapuas, Kalimantan Tengah, mendorong para pengusaha dan pekerja pada sektor jasa konstruksi di daerah setempat, untuk...",
     category: "Company News",
-    author: "Admin KHS",
+    author: "Admin SAN & BBR",
     date: "2025-09-05",
     readTime: "2 min read",
     image: constructionSecurityProgram,
@@ -155,7 +155,7 @@ export const newsArticles: NewsArticle[] = [
       '"Jadi disini saya mengimbau untuk penyedia jasa konstruksi apabila memang sudah diketahui nominal proyeknya segera saja didaftarkan dalam sistem aplikasi kami online E-JAKON," kata Ariane Chaterina Natalia. T.',
       "Tujuannya, agar proyek yang didaftarkan ini terlindungi seluruh pekerjaannya, memberikan perlindungan kepada tenaga kerja dan resiko - resiko yang terjadi pada saat proyek berlangsung sampai habis masa pemeliharaan sudah dapat di antisipasi. Asalkan data-data yang diberikan di awal sesuai dan valid.",
       '"Adapun penambahan dan pengurangan tenaga kerja silahkan saja dilakukan pengupdatean di Aplikasi E-JAKON, dan apabila ada penambahan kami pastikan tidak ada penambahan untuk iuran selama berdirinya proyek sampai masa pemeliharaan, kecuali adanya adendum dan mengubah nominal nilai proyek maka harus dilaporkan ulang," jelasnya.',
-      "Salah satu perwakilan peserta sosialisasi Direktur PT. Karya Halim Sampoerna, Robert mengucapkan terimakasih kepada BPJS Ketenagakerjaan Palangka Raya, Kalimantan Tengah dan Kuala Kapuas juga Dinas PUPRPKPP yang sudah memfasilitasi kegiatan ini.",
+      "Salah satu perwakilan peserta sosialisasi Direktur PT SAN & PT BBR, Robert mengucapkan terimakasih kepada BPJS Ketenagakerjaan Palangka Raya, Kalimantan Tengah dan Kuala Kapuas juga Dinas PUPRPKPP yang sudah memfasilitasi kegiatan ini.",
       '"Kegiatan sosialisasi ini sangat bermanfaat bagi kami selaku pelaku usaha jasa konstruksi di Kalteng yang mana kami sedikit banyaknya mengetahui hak, kewajiban juga manfaat jaminan sosial di sektor jasa konstruksi," demikian Robert.',
       "Sementara Bidang Bina Konstruksi yang ditunjuk langsung oleh Kepala Dinas PUPRPKPP untuk membantu kelancaran acara ini telah mengundang 60 penyedia jasa konstruksi yang berkontrak dengan Dinas PUPRPKPP setempat.",
     ],
@@ -178,7 +178,7 @@ export const newsArticles: NewsArticle[] = [
           "“So I urge providers—if the project value is already known—please immediately register it in our online E-JAKON application,” said Ariane Chaterina Natalia T.",
           "The goal is for registered projects to be fully covered, protecting workers from risks during project execution through the maintenance period—provided initial data is accurate and valid.",
           "“Any addition or reduction of workers should be updated in the E-JAKON Application. If there are additions we ensure no increase in contributions during the project term unless an addendum changes the project value, which must then be re-reported,” she added.",
-          "A representative of participating companies—Director of PT. Karya Halim Sampoerna, Robert—thanked BPJS Employment Palangka Raya, Kalimantan Tengah and Kuala Kapuas and the PUPRPKPP Office for facilitating the event.",
+          "A representative of participating companies—Director of PT SAN & PT BBR, Robert—thanked BPJS Employment Palangka Raya, Kalimantan Tengah and Kuala Kapuas and the PUPRPKPP Office for facilitating the event.",
           "“This socialization is very beneficial for us as construction service business actors in Central Kalimantan. We now better understand our rights, obligations, and the benefits of employment social security,” Robert said.",
           "The Construction Development Division, appointed directly by the Head of the PUPRPKPP Office to support the event's success, invited 60 construction service providers with active contracts with the office.",
         ],
@@ -186,24 +186,24 @@ export const newsArticles: NewsArticle[] = [
       },
     },
     sourceUrl:
-      "https://karyahalimsampoerna.id/pekerja-jasa-konstruksi-di-kapuas-didorong-aktif-dalam-program-jaminan-sosial/",
+      "https://san-bbr.id/pekerja-jasa-konstruksi-di-kapuas-didorong-aktif-dalam-program-jaminan-sosial/",
   },
   {
     id: 5,
     slug: "gathering-pt-khs-direktur-untuk-keakraban",
-    title: "Gathering PT. KHS, Direktur: Untuk Keakraban",
+    title: "Gathering PT SAN & PT BBR, Direktur: Untuk Keakraban",
     excerpt:
-      "PT. Karya Halim Sampoerna (KHS) mengadakan Gathering, bertempat di Kantor PT. KHS, Jl. Mahir Mahar, Km. 4.6, No. 88, Sabtu (18/01/2020) jam 10.00...",
+      "PT SAN & PT BBR (SAN & BBR) mengadakan Gathering, bertempat di Kantor PT SAN & PT BBR, Jl. Mahir Mahar, Km. 4.6, No. 88, Sabtu (18/01/2020) jam 10.00...",
     category: "Company News",
-    author: "Admin KHS",
+    author: "Admin SAN & BBR",
     date: "2025-09-05",
     readTime: "1 min read",
     image: gatheringImage,
     content: [
-      "PT. Karya Halim Sampoerna (KHS) mengadakan Gathering, bertempat di Kantor PT. KHS, Jl. Mahir Mahar, Km. 4.6, No. 88, Sabtu (18/01/2020) jam 10.00 WIB. Tujuan dari dilaksanakan kegiatan tersebut adalah untuk meningkatkan rasa nyaman dan kebersamaan antara pimpinan dan karyawan yang bekerja di lingkungan PT. KHS.",
-      '"Kalau antara karyawan dan pimpinan terjalin kebersamaan yang erat, suatu pekerjaan pasti akan terselesaikan dengan baik," kata Direktur Utama PT. KHS, Ciang, kepada Lintasberita1.com yang hadir dalam acara Gathering tersebut.',
-      "Lanjutnya, sebenarnya kegiatan hari ini adalah dadakan, hanya melanjutkan rencana Gathering sebelum pergantian Tahun Baru 2020 yang sempat dibatalkan. Karena sebagian karyawan PT. KHS berasal dari luar Daerah Kalimantan Tengah.",
-      '"Saya tetap bersyukur, semoga kegiatan ini dapat mempererat hubungan antara Karyawan dan pimpinan PT. KHS semakin solid," harap Ciang.',
+      "PT SAN & PT BBR (SAN & BBR) mengadakan Gathering, bertempat di Kantor PT SAN & PT BBR, Jl. Mahir Mahar, Km. 4.6, No. 88, Sabtu (18/01/2020) jam 10.00 WIB. Tujuan dari dilaksanakan kegiatan tersebut adalah untuk meningkatkan rasa nyaman dan kebersamaan antara pimpinan dan karyawan yang bekerja di lingkungan PT SAN & PT BBR.",
+      '"Kalau antara karyawan dan pimpinan terjalin kebersamaan yang erat, suatu pekerjaan pasti akan terselesaikan dengan baik," kata Direktur Utama PT SAN & PT BBR, Ciang, kepada Lintasberita1.com yang hadir dalam acara Gathering tersebut.',
+      "Lanjutnya, sebenarnya kegiatan hari ini adalah dadakan, hanya melanjutkan rencana Gathering sebelum pergantian Tahun Baru 2020 yang sempat dibatalkan. Karena sebagian karyawan PT SAN & PT BBR berasal dari luar Daerah Kalimantan Tengah.",
+      '"Saya tetap bersyukur, semoga kegiatan ini dapat mempererat hubungan antara Karyawan dan pimpinan PT SAN & PT BBR semakin solid," harap Ciang.',
       '"Kepada para karyawan agar selalu meningkatkan kualitas kerjanya untuk semakin bagus dari yang sebelumnya," tambah Ciang.',
     ],
     contentImages: [
@@ -214,21 +214,21 @@ export const newsArticles: NewsArticle[] = [
     ],
     translations: {
       EN: {
-        title: "KHS Company Gathering: Strengthening Team Bonding",
+        title: "SAN & BBR Company Gathering: Strengthening Team Bonding",
         excerpt:
-          "PT. Karya Halim Sampoerna (KHS) held a company gathering at its office to strengthen comfort and togetherness between leadership and employees...",
+          "PT SAN & PT BBR (SAN & BBR) held a company gathering at its office to strengthen comfort and togetherness between leadership and employees...",
         content: [
-          "PT. Karya Halim Sampoerna (KHS) held a company gathering at its office on Saturday (01/18/2020) at 10:00 AM. The purpose was to improve comfort and strengthen togetherness between management and employees.",
-          "“When strong togetherness exists between employees and leadership, work can be completed well,” said KHS President Director Ciang to Lintasberita1.com during the event.",
-          "He continued that the activity was actually spontaneous—essentially continuing a previously canceled New Year gathering plan, as many KHS employees come from outside Central Kalimantan.",
-          "“I remain grateful. Hopefully this activity further solidifies the relationship between KHS employees and management,” Ciang said.",
+          "PT SAN & PT BBR (SAN & BBR) held a company gathering at its office on Saturday (01/18/2020) at 10:00 AM. The purpose was to improve comfort and strengthen togetherness between management and employees.",
+          "“When strong togetherness exists between employees and leadership, work can be completed well,” said SAN & BBR President Director Ciang to Lintasberita1.com during the event.",
+          "He continued that the activity was actually spontaneous—essentially continuing a previously canceled New Year gathering plan, as many SAN & BBR employees come from outside Central Kalimantan.",
+          "“I remain grateful. Hopefully this activity further solidifies the relationship between SAN & BBR employees and management,” Ciang said.",
           "He also reminded employees to continue improving their work quality going forward.",
         ],
         category: "Company News",
       },
     },
     sourceUrl:
-      "https://karyahalimsampoerna.id/gathering-pt-khs-direktur-untuk-keakraban/",
+      "https://san-bbr.id/gathering-pt-khs-direktur-untuk-keakraban/",
   },
 ];
 

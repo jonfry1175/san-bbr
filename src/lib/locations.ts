@@ -25,7 +25,7 @@ export const LOCATION_CATEGORY_META: Record<
 export const branchLocations: LocationData[] = [
   {
     id: "khs-palangka-raya",
-    title: "PT. Karya Halim Sampoerna (Head Office)",
+    title: "PT SAN & PT BBR (Head Office)",
     subtitle: "Palangka Raya, Kalimantan Tengah, Kalimantan Tengah",
     address:
       "Jl. Mahir Mahar No. 88, Kel. Menteng, Kec. Jekan Raya, Kota Palangka Raya, Kalimantan Tengah, Kalimantan Tengah 73111",
@@ -36,7 +36,7 @@ export const branchLocations: LocationData[] = [
   },
   {
     id: "khs-borneo",
-    title: "PT. Karya Halim Sampoerna (site Angsana, Tanah Bumbu)",
+    title: "PT SAN & PT BBR (site Angsana, Tanah Bumbu)",
     subtitle: "Tanah Bumbu, Kalimantan Selatan",
     address:
       "Site BIB, Kec. Simpang Empat, Kab. Tanah Bumbu, Kalimantan Selatan 72275",
@@ -47,7 +47,7 @@ export const branchLocations: LocationData[] = [
   },
   {
     id: "khs-tanjung",
-    title: "PT. Karya Halim Sampoerna (site Tanjung, Tabalong)",
+    title: "PT SAN & PT BBR (site Tanjung, Tabalong)",
     subtitle: "Tabalong, Kalimantan Selatan",
     address: "Site Tanjung, Kec. Tanjung, Kab. Tabalong, Kalimantan Selatan",
     coordinates: [115.4220665, -2.1684764],

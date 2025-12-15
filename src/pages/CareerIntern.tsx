@@ -37,7 +37,7 @@ const CareerIntern = memo(() => {
     [t]
   );
   const mail = PRIMARY_EMAIL;
-  const mailSecondary = "recruitment@karyahalimsampoerna.id";
+  const mailSecondary = "recruitment@san-bbr.id";
 
   useEffect(() => {
     setHero({

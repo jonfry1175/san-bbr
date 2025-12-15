@@ -37,8 +37,8 @@ const Career = memo(() => {
   );
   const mail = PRIMARY_EMAIL;
   // Override secondary email for the Career UI only (requested)
-  const mailSecondary = "recruitment@karyahalimsampoerna.id";
-  const mailSecondaryRecruitment = "recruitment@karyahalimsampoerna.id";
+  const mailSecondary = "recruitment@san-bbr.id";
+  const mailSecondaryRecruitment = "recruitment@san-bbr.id";
 
   useEffect(() => {
     setHero({

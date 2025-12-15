@@ -13,4 +13,4 @@ Allow: /
 User-agent: *
 Allow: /
 
-Sitemap: https://karyahalimsampoerna.id/sitemap.xml
+Sitemap: https://san-bbr.id/sitemap.xml

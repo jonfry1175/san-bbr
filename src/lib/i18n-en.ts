@@ -113,7 +113,7 @@ export const enTranslations: TranslationResources = {
       label: "Products",
       title: "Heavy Equipment & Project Support",
       description:
-        "Find heavy machinery, power solutions, and project support vehicles meeting PT. Karya Halim Sampoerna quality standards.",
+        "Find heavy machinery, power solutions, and project support vehicles meeting PT SAN quality standards.",
     },
     intro: {
       badge: "Our Products",
@@ -1485,7 +1485,7 @@ export const enTranslations: TranslationResources = {
     label: "Supported By Industry Partners",
     title: "Join a Part of Our Success",
     description:
-      "This program has been initiated by PT. Karya Halim Sampoerna in collaboration with educational institutions to provide opportunities for members of these institutions to develop skills and start professional careers in their fields.",
+      "This program has been initiated by PT SAN & PT BBR in collaboration with educational institutions to provide opportunities for members of these institutions to develop skills and start professional careers in their fields.",
   },
   newsSection: {
     categories: {
@@ -1499,7 +1499,7 @@ export const enTranslations: TranslationResources = {
     viewAll: "View All News",
     pageTitle: "News & Insights",
     pageDescription:
-      "Project updates, best practices, and construction industry information from PT. Karya Halim Sampoerna.",
+      "Project updates, best practices, and construction industry information from PT SAN & PT BBR.",
     detail: {
       backToNews: "Back to News",
       shareLabel: "Share:",
@@ -1608,7 +1608,7 @@ export const enTranslations: TranslationResources = {
     },
     logoMeaning: {
       title: "Company Meaning",
-      companyName: "PT. Karya Halim Sampoerna",
+      companyName: "PT SAN & PT BBR",
       items: {
         redColor: {
           title: "Red Color",
@@ -1779,9 +1779,9 @@ export const enTranslations: TranslationResources = {
         paragraph1:
           "We are a team of road construction, <em>earthwork</em>, and <em>hotmix</em> experts with over three decades of experience. Our work culture emphasizes safety, cross-division collaboration, and continuous innovation to ensure every project meets the highest standards.",
         paragraph2:
-          "Supported by a complete fleet of <em>heavy-duty</em> equipment and safety certifications, the PT. Karya Halim Sampoerna team is ready to deliver quality infrastructure for both government and private clients.",
+          "Supported by a complete fleet of <em>heavy-duty</em> equipment and safety certifications, the PT SAN & PT BBR team is ready to deliver quality infrastructure for both government and private clients.",
         imageAlt:
-          "PT. Karya Halim Sampoerna field team wearing safety gear at a project site",
+          "PT SAN & PT BBR field team wearing safety gear at a project site",
         slogan: "Commitment to safety • Focus on quality • Strong teamwork",
       },
     },
@@ -1829,7 +1829,7 @@ export const enTranslations: TranslationResources = {
         trainingHours: { label: "Annual Training Hours", value: "1,200" },
       },
       organization: {
-        badgeCompany: "PT. Karya Halim Sampoerna",
+        badgeCompany: "PT SAN & PT BBR",
         title: "Organizational Structure",
         paragraph1:
           "The main coordination path from shareholders to operational divisions is visualized as a tree diagram, making it easy for stakeholders to read the flow of mandates and responsibilities.",
@@ -1901,7 +1901,7 @@ export const enTranslations: TranslationResources = {
         description:
           "Key milestones that highlight growth, leadership, and impact.",
         descriptionTemplate:
-          "Career milestones that shape {name}'s leadership at PT. Karya Halim Sampoerna.",
+          "Career milestones that shape {name}'s leadership at PT SAN & PT BBR.",
       },
     },
     certificationGallery: {
@@ -2064,7 +2064,7 @@ export const enTranslations: TranslationResources = {
       qualityAssured: "Quality Assured",
       completedProjects: "Completed Projects",
     },
-    modal: { companyName: "PT. Karya Halim Sampoerna" },
+    modal: { companyName: "PT SAN & PT BBR" },
     ariaGalleryNavigation: "{title} gallery - use arrow keys to navigate",
   },
   location: {
@@ -2116,7 +2116,7 @@ export const enTranslations: TranslationResources = {
   },
   footer: {
     company: {
-      title: "PT. Karya Halim Sampoerna",
+      title: "PT SAN & PT BBR",
       description:
         "Your trusted partner in construction and infrastructure development with over 35 years of experience.",
       followUs: "Follow Us",
@@ -2157,6 +2157,6 @@ export const enTranslations: TranslationResources = {
     },
     ctaLookingForPartner: "Looking for a reliable partner?",
     ctaLetsBuild: "Let's build something great together.",
-    copyright: "© 2024 PT. Karya Halim Sampoerna. All rights reserved.",
+    copyright: "© 2024 PT SAN & PT BBR. All rights reserved.",
   },
 };

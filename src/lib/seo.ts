@@ -5,22 +5,22 @@ import type { TeamMember } from "@/lib/team";
 import { PRIMARY_EMAIL, SECONDARY_EMAIL, ALL_EMAILS } from "@/lib/email-config";
 
 export const siteMetadata = {
-  name: "PT. Karya Halim Sampoerna",
-  legalName: "PT. Karya Halim Sampoerna",
-  siteUrl: "https://karyahalimsampoerna.id",
+  name: "PT SAN & PT BBR",
+  legalName: "PT SAN & PT BBR",
+  siteUrl: "https://san-bbr.id",
   locale: "id_ID",
   defaultTitle:
-    "PT. Karya Halim Sampoerna | Infrastruktur & Roadworks Kalimantan",
+    "PT SAN & PT BBR | Infrastruktur & Roadworks Kalimantan",
   defaultDescription:
-    "PT. Karya Halim Sampoerna (KHS) adalah mitra konstruksi dan infrastruktur yang berfokus pada pembangunan jalan, earthwork, dan layanan aspal di Kalimantan Tengah.",
+    "PT SAN & PT BBR adalah mitra konstruksi dan infrastruktur yang berfokus pada pembangunan jalan, earthwork, dan layanan aspal di Kalimantan Tengah.",
   defaultKeywords: [
     "konstruksi kalimantan tengah",
     "aspal hotmix",
     "earthwork",
     "kontraktor jalan",
-    "PT. Karya Halim Sampoerna",
+    "PT SAN & PT BBR",
   ],
-  defaultImage: "https://karyahalimsampoerna.id/logo.png",
+  defaultImage: "https://san-bbr.id/logo.png",
   contactEmail: PRIMARY_EMAIL,
   contactEmailSecondary: SECONDARY_EMAIL,
   contactEmails: [...ALL_EMAILS],
@@ -34,7 +34,7 @@ export const siteMetadata = {
     longitude: 113.8804974210874,
   },
   serviceArea: "Kalimantan Tengah",
-  organizationId: "https://karyahalimsampoerna.id/#organization",
+  organizationId: "https://san-bbr.id/#organization",
 };
 
 /**
@@ -231,7 +231,7 @@ export const createContactPageJsonLd = () => ({
   name: `${siteMetadata.name} Contact`,
   url: buildCanonicalUrl("/contact"),
   description:
-    "Hubungi PT. Karya Halim Sampoerna untuk konsultasi layanan konstruksi, infrastruktur, dan proyek jalan di Kalimantan Tengah.",
+    "Hubungi PT SAN & PT BBR untuk konsultasi layanan konstruksi, infrastruktur, dan proyek jalan di Kalimantan Tengah.",
   inLanguage: siteMetadata.locale,
   publisher: {
     "@id": siteMetadata.organizationId,

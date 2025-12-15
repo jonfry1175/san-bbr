@@ -231,7 +231,7 @@ const AboutSectionComponent = () => {
               >
                 <Link
                   to="/about-us/our-company"
-                  aria-label="Learn more about PT. Karya Halim Sampoerna"
+                  aria-label="Learn more about PT SAN & PT BBR"
                 >
                   {t("aboutSection.learnMore")}
                   <ArrowRight className="md:ml-2 h-5 w-5" />

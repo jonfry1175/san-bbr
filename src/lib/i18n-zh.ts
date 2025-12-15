@@ -47,10 +47,10 @@ export const zhTranslations: TranslationResources = {
   },
   aboutSection: {
     label: "公司简史",
-    title: "PT. Karya Halim Sampoerna",
+    title: "PT SAN & PT BBR",
     description: {
       paragraph1:
-        "PT. Karya Halim Sampoerna成立于2003年1月15日，是1990年成立的CV. Halim Sampoerna的延续。我们是一家从事建筑服务的公司，专门从事道路和高速公路基础设施。",
+        "PT SAN & PT BBR成立于2003年1月15日，是1990年成立的CV. Halim Sampoerna的延续。我们是一家从事建筑服务的公司，专门从事道路和高速公路基础设施。",
       paragraph2:
         "凭借超过35年的建筑经验，我们已完成中加里曼丹和南加里曼丹的数百个项目。我们对质量和创新的承诺使我们成为各种政府和私人机构的值得信赖的合作伙伴。",
       paragraph3:
@@ -115,7 +115,7 @@ export const zhTranslations: TranslationResources = {
   },
   footer: {
     company: {
-      title: "PT. Karya Halim Sampoerna",
+      title: "PT SAN & PT BBR",
       description:
         "您值得信赖的建筑和基础设施开发合作伙伴，拥有超过35年的经验。",
       followUs: "关注我们",
@@ -156,12 +156,12 @@ export const zhTranslations: TranslationResources = {
     },
     ctaLookingForPartner: "寻找可靠的合作伙伴？",
     ctaLetsBuild: "让我们一起建造一些伟大的东西。",
-    copyright: "© 2024 PT. Karya Halim Sampoerna. 保留所有权利。",
+    copyright: "© 2024 PT SAN & PT BBR. 保留所有权利。",
   },
   // Placeholder for other sections - will be filled in subsequent updates
   visionMission: {
     label: "愿景与使命",
-    title: "PT. Karya Halim Sampoerna",
+    title: "PT SAN & PT BBR",
     subtitle: "以诚信工作，提供卓越",
     vision: {
       title: "我们的愿景",
@@ -618,7 +618,7 @@ export const zhTranslations: TranslationResources = {
     label: "行业合作伙伴支持",
     title: "加入我们的成功",
     description:
-      "该计划由PT. Karya Halim Sampoerna与教育机构合作发起，为这些机构的成员提供机会，以发展其领域内的技能并开始专业职业生涯。",
+      "该计划由PT SAN & PT BBR与教育机构合作发起，为这些机构的成员提供机会，以发展其领域内的技能并开始专业职业生涯。",
   },
   newsSection: {
     categories: {
@@ -631,7 +631,7 @@ export const zhTranslations: TranslationResources = {
     viewAll: "查看所有新闻",
     pageTitle: "新闻与见解",
     pageDescription:
-      "PT. Karya Halim Sampoerna的项目更新、最佳实践和建筑行业信息。",
+      "PT SAN & PT BBR的项目更新、最佳实践和建筑行业信息。",
     detail: {
       backToNews: "返回新闻",
       shareLabel: "分享：",
@@ -701,7 +701,7 @@ export const zhTranslations: TranslationResources = {
     label: "公司战略",
     title: "SIPADU",
     description:
-      "协同、诚信、保护、信任、奉献和卓越的缩写——PT. Karya Halim Sampoerna的工作指导原则，以安全、质量和效率支持国家发展。",
+      "协同、诚信、保护、信任、奉献和卓越的缩写——PT SAN & PT BBR的工作指导原则，以安全、质量和效率支持国家发展。",
     sipadu: {
       sinergi: {
         title: "协同",
@@ -730,7 +730,7 @@ export const zhTranslations: TranslationResources = {
     },
     logoMeaning: {
       title: "公司含义",
-      companyName: "PT. Karya Halim Sampoerna",
+      companyName: "PT SAN & PT BBR",
       items: {
         redColor: {
           title: "红色",
@@ -976,7 +976,7 @@ export const zhTranslations: TranslationResources = {
       qualityAssured: "质量保证",
       completedProjects: "已完成项目",
     },
-    modal: { companyName: "PT. Karya Halim Sampoerna" },
+    modal: { companyName: "PT SAN & PT BBR" },
     ariaGalleryNavigation: "{title}画廊 - 使用箭头键导航",
   },
   location: {
@@ -1290,8 +1290,8 @@ export const zhTranslations: TranslationResources = {
         paragraph1:
           "我们是由道路建设、土方工程和热拌沥青专家组成的团队，拥有超过三十年的经验。我们的工作文化强调安全、跨部门协作和持续创新，确保每个项目都达到最高标准。",
         paragraph2:
-          "在完整重型设备车队和安全认证的支持下，PT. Karya Halim Sampoerna团队准备为政府和私人客户提供优质基础设施。",
-        imageAlt: "PT. Karya Halim Sampoerna现场团队在项目现场穿着安全装备",
+          "在完整重型设备车队和安全认证的支持下，PT SAN & PT BBR团队准备为政府和私人客户提供优质基础设施。",
+        imageAlt: "PT SAN & PT BBR现场团队在项目现场穿着安全装备",
         slogan: "对安全的承诺 • 对质量的关注 • 强大的团队合作",
       },
     },
@@ -1336,7 +1336,7 @@ export const zhTranslations: TranslationResources = {
         trainingHours: { label: "年度培训时间", value: "1,200" },
       },
       organization: {
-        badgeCompany: "PT. Karya Halim Sampoerna",
+        badgeCompany: "PT SAN & PT BBR",
         title: "组织结构",
         paragraph1:
           "从股东到运营部门的主要协调路径可视化为树状图，使每个利益相关者都能轻松阅读授权和责任流程。",
@@ -1399,7 +1399,7 @@ export const zhTranslations: TranslationResources = {
         title: "贡献时间线",
         description: "突出增长、领导力和影响的关键里程碑。",
         descriptionTemplate:
-          "塑造{name}在PT. Karya Halim Sampoerna领导力的职业里程碑。",
+          "塑造{name}在PT SAN & PT BBR领导力的职业里程碑。",
       },
     },
     certificationGallery: {
@@ -1455,7 +1455,7 @@ export const zhTranslations: TranslationResources = {
       label: "产品",
       title: "重型设备和项目支持",
       description:
-        "找到符合PT. Karya Halim Sampoerna质量标准的重型机械、电力解决方案和项目支持车辆。",
+        "找到符合PT SAN质量标准的重型机械、电力解决方案和项目支持车辆。",
     },
     intro: {
       badge: "我们的产品",

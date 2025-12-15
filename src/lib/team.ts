@@ -30,7 +30,7 @@ export const teamMembers: TeamMember[] = [
     tenure: "12 years in heavy civil and industrial projects",
     photo: "https://randomuser.me/api/portraits/women/44.jpg",
     location: "Palangka Raya, Kalimantan Tengah, Indonesia",
-    email: "alika.maheswari@karyahalim.co.id",
+    email: "alika.maheswari@san-bbr.id",
     linkedin: "https://www.linkedin.com/in/alika-maheswari",
     quote:
       "Dominating a schedule is about respecting the people executing it. We invest in their safety, clarity, and confidence.",
@@ -78,7 +78,7 @@ export const teamMembers: TeamMember[] = [
     tenure: "15 tahun pengalaman engineering",
     photo: "https://randomuser.me/api/portraits/men/32.jpg",
     location: "Banjarmasin, Indonesia",
-    email: "rafi.wiryawan@karyahalim.co.id",
+    email: "rafi.wiryawan@san-bbr.id",
     linkedin: "https://www.linkedin.com/in/rafi-wiryawan",
     quote:
       "Struktur terbaik adalah yang membaca kondisi tanah dan cuaca seperti kru membacanya setiap hari.",
@@ -126,7 +126,7 @@ export const teamMembers: TeamMember[] = [
     tenure: "11 tahun governance & compliance",
     photo: "https://randomuser.me/api/portraits/women/29.jpg",
     location: "Jakarta, Indonesia",
-    email: "nadira.prasetyo@karyahalim.co.id",
+    email: "nadira.prasetyo@san-bbr.id",
     linkedin: "https://www.linkedin.com/in/nadira-prasetyo",
     quote:
       "Regulasi bukan penghalang—ia adalah bahasa yang harus kita kuasai untuk bergerak lebih cepat.",
@@ -177,7 +177,7 @@ export const teamMembers: TeamMember[] = [
     tenure: "14 tahun project leadership",
     photo: "https://randomuser.me/api/portraits/men/51.jpg",
     location: "Balikpapan, Indonesia",
-    email: "gilang.mahendra@karyahalim.co.id",
+    email: "gilang.mahendra@san-bbr.id",
     linkedin: "https://www.linkedin.com/in/gilang-mahendra",
     quote: "Dashboard bukan sekadar angka—ia harus bicara dengan tim lapangan.",
     background:

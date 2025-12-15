@@ -123,7 +123,7 @@ const Header = () => {
               <Link to="/">
                 <img
                   src={companyLogo}
-                  alt="PT. Karya Halim Sampoerna"
+                  alt="PT SAN & PT BBR"
                   className={`transition-all duration-300 w-auto bg-white p-2 rounded-lg ${
                     // Larger logo when scrolled
                     isScrolled ? "h-10 md:h-14" : "h-12 md:h-14"

@@ -136,8 +136,8 @@ Task: "Update copilot instructions with email config pattern"
 **File**: `src/lib/email-config.ts`
 **Requirements**:
 
-- Export `PRIMARY_EMAIL` = "ptkarya_halim@yahoo.co.id"
-- Export `SECONDARY_EMAIL` = "hire.us@karyahalimsampoerna.id"
+- Export `PRIMARY_EMAIL` = "info@san-bbr.id"
+- Export `SECONDARY_EMAIL` = "hire.us@san-bbr.id"
 - Export `ALL_EMAILS` = [PRIMARY_EMAIL, SECONDARY_EMAIL]
 - Include TypeScript interface `EmailConfiguration`
 - Follow existing code style and patterns
@@ -153,7 +153,7 @@ Task: "Update copilot instructions with email config pattern"
 
 ### T012: Hardcoded String Verification
 
-**Command**: `grep -r "ptkarya_halim@yahoo.co.id\|hire.us@karyahalimsampoerna.id" src/ --exclude="src/lib/email-config.ts"`
+**Command**: `grep -r "info@san-bbr.id\|hire.us@san-bbr.id" src/ --exclude="src/lib/email-config.ts"`
 **Expected**: No matches found (all hardcoded emails removed)
 
 ### T015-T017: UI Validation

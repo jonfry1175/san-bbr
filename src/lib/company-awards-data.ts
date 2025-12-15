@@ -59,10 +59,10 @@ export const certificateImageDefinitions: CertificateImageDefinition[] = [
   {
     id: "plaque-astra",
     src: astraPlaqueImg,
-    alt: "Plakat apresiasi Astra untuk PT. Karya Halim Sampoerna",
+    alt: "Plakat apresiasi Astra untuk PT SAN & PT BBR",
     captionKey: "aboutPages.companyAwardsGallery.captions.astraPlaque",
     fallbackCaption:
-      "Plakat penghargaan Astra yang diberikan kepada PT. Karya Halim Sampoerna.",
+      "Plakat penghargaan Astra yang diberikan kepada PT SAN & PT BBR.",
   },
   {
     id: "plaque-pertamina-best-end-user-2023",
@@ -71,7 +71,7 @@ export const certificateImageDefinitions: CertificateImageDefinition[] = [
     captionKey:
       "aboutPages.companyAwardsGallery.captions.pertaminaBestEndUserPlaque2023",
     fallbackCaption:
-      "Plakat Best End User Pertamina 2023 yang diraih PT. Karya Halim Sampoerna.",
+      "Plakat Best End User Pertamina 2023 yang diraih PT SAN & PT BBR.",
   },
   {
     id: "plaque-ohs-gold-sponsor",
@@ -79,7 +79,7 @@ export const certificateImageDefinitions: CertificateImageDefinition[] = [
     alt: "Plakat Sponsor Gold Bulan K3",
     captionKey: "aboutPages.companyAwardsGallery.captions.ohsGoldSponsorPlaque",
     fallbackCaption:
-      "Penghargaan Sponsor Gold Bulan K3 Nasional untuk PT. Karya Halim Sampoerna.",
+      "Penghargaan Sponsor Gold Bulan K3 Nasional untuk PT SAN & PT BBR.",
   },
   {
     id: "program-mining-safety",
@@ -120,24 +120,24 @@ export const certificateImageDefinitions: CertificateImageDefinition[] = [
   {
     id: "cert-k3",
     src: certK3Img,
-    alt: "Sertifikat Sistem Manajemen K3 PT. Karya Halim Sampoerna",
+    alt: "Sertifikat Sistem Manajemen K3 PT SAN & PT BBR",
     captionKey: "aboutPages.companyAwardsGallery.captions.certK3",
     fallbackCaption:
-      "Sertifikat Sistem Manajemen Keselamatan dan Kesehatan Kerja PT. Karya Halim Sampoerna.",
+      "Sertifikat Sistem Manajemen Keselamatan dan Kesehatan Kerja PT SAN & PT BBR.",
   },
   {
     id: "cert-zero-lti-2023",
     src: certZeroLostTimeInjury2023Img,
-    alt: "Piagam Zero Lost Time Injury 2023 PT. Karya Halim Sampoerna",
+    alt: "Piagam Zero Lost Time Injury 2023 PT SAN & PT BBR",
     captionKey:
       "aboutPages.companyAwardsGallery.captions.zeroLostTimeInjury2023Certificate",
     fallbackCaption:
-      "Piagam Zero Lost Time Injury 2023 yang menegaskan kinerja keselamatan kerja PT. Karya Halim Sampoerna.",
+      "Piagam Zero Lost Time Injury 2023 yang menegaskan kinerja keselamatan kerja PT SAN & PT BBR.",
   },
   {
     id: "cert-zero-lti-2023-plaque",
     src: certZeroLostTimeInjury20233Img,
-    alt: "Plakat Zero Lost Time Injury 2023 PT. Karya Halim Sampoerna",
+    alt: "Plakat Zero Lost Time Injury 2023 PT SAN & PT BBR",
     captionKey:
       "aboutPages.companyAwardsGallery.captions.zeroLostTimeInjury2023Plaque",
     fallbackCaption:
@@ -155,7 +155,7 @@ export const certificateImageDefinitions: CertificateImageDefinition[] = [
   {
     id: "cert-csr-recognition",
     src: corporateSocialResponsibilityImg,
-    alt: "Penghargaan Corporate Social Responsibility PT. Karya Halim Sampoerna",
+    alt: "Penghargaan Corporate Social Responsibility PT SAN & PT BBR",
     captionKey: "aboutPages.companyAwardsGallery.captions.csrRecognition",
     fallbackCaption:
       "Pengakuan atas kontribusi perusahaan dalam program tanggung jawab sosial yang konsisten dan berdampak.",

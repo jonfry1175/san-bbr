@@ -22,7 +22,7 @@ interface EmailConfiguration {
 - **secondary**:
   - Type: `string`
   - Format: Valid email address
-  - Value: `"hire.us@karyahalimsampoerna.id"`
+  - Value: `"hire.us@san-bbr.id"`
   - Usage: Hiring inquiries, alternative contact method
 - **all**:
   - Type: `string[]`

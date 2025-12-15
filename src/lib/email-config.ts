@@ -1,5 +1,5 @@
 /**
- * Centralized email configuration for Karya Halim Sampoerna
+ * Centralized email configuration for PT SAN & PT BBR
  *
  * This module provides consistent email addresses across the application,
  * eliminating the need for hardcoded email values in components.
@@ -8,17 +8,17 @@
 /**
  * Primary company email address for main business inquiries
  */
-export const PRIMARY_EMAIL = "ptkarya_halim@yahoo.co.id";
+export const PRIMARY_EMAIL = "info@san-bbr.id";
 
 /**
  * Secondary email address for hiring and recruitment inquiries
  */
-export const SECONDARY_EMAIL = "hire.us@karyahalimsampoerna.id";
+export const SECONDARY_EMAIL = "hire.us@san-bbr.id";
 
 /**
  * Additional hiring email alias to ensure all recruitment messages are received
  */
-export const HIRING_ALIAS_EMAIL = "hire_us@karyahalimsampoerna.id";
+export const HIRING_ALIAS_EMAIL = "hire_us@san-bbr.id";
 
 /**
  * Array containing core company email addresses for bulk operations

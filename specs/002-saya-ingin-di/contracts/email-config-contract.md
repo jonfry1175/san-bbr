@@ -24,9 +24,9 @@ export interface EmailConfiguration {
 ```typescript
 // What components can expect when importing
 import {
-  PRIMARY_EMAIL, // "ptkarya_halim@yahoo.co.id"
-  SECONDARY_EMAIL, // "hire.us@karyahalimsampoerna.id"
-  ALL_EMAILS, // ["ptkarya_halim@yahoo.co.id", "hire.us@karyahalimsampoerna.id"]
+  PRIMARY_EMAIL, // "info@san-bbr.id"
+  SECONDARY_EMAIL, // "hire.us@san-bbr.id"
+  ALL_EMAILS, // ["info@san-bbr.id", "hire.us@san-bbr.id"]
 } from "@/lib/email-config";
 
 // Type guarantees
@@ -61,7 +61,7 @@ export const translations = {
 ```typescript
 // Components must import rather than hardcode
 // ❌ OLD WAY:
-const email = "ptkarya_halim@yahoo.co.id";
+const email = "info@san-bbr.id";
 
 // ✅ NEW WAY:
 import { PRIMARY_EMAIL } from "@/lib/email-config";
@@ -129,7 +129,7 @@ test("components use email config imports", () => {
   componentFiles.forEach((file) => {
     const content = readFileSync(file, "utf8");
     expect(content).not.toMatch(/ptkarya_halim@yahoo\.co\.id/);
-    expect(content).not.toMatch(/hire\.us@karyahalimsampoerna\.id/);
+    expect(content).not.toMatch(/hire\.us@san-bbr\.id/);
   });
 });
 ```

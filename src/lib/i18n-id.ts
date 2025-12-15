@@ -55,7 +55,7 @@ export const idTranslations: TranslationResources = {
         paragraph2:
           "Dengan dukungan armada peralatan <em>heavy-duty</em> yang lengkap serta sertifikasi keselamatan kerja, tim PT SAN & PT BBR siap mewujudkan infrastruktur berkualitas bagi klien pemerintah maupun swasta.",
         imageAlt:
-          "Tim lapangan PT. Karya Halim Sampoerna mengenakan seragam keselamatan di area proyek",
+          "Tim lapangan PT SAN & PT BBR mengenakan seragam keselamatan di area proyek",
         slogan:
           "Komitmen pada keselamatan • Fokus pada kualitas • Kerja tim solid",
       },
@@ -319,7 +319,7 @@ export const idTranslations: TranslationResources = {
       label: "Produk",
       title: "Alat Berat & Dukungan Proyek",
       description:
-        "Temukan alat berat, solusi kelistrikan, dan kendaraan pendukung proyek yang memenuhi standar kualitas PT. Karya Halim Sampoerna.",
+        "Temukan alat berat, solusi kelistrikan, dan kendaraan pendukung proyek yang memenuhi standar kualitas PT SAN.",
     },
     intro: {
       badge: "Produk Kami",
@@ -1239,7 +1239,7 @@ export const idTranslations: TranslationResources = {
     label: "Didukung Oleh Mitra Industri",
     title: "Bergabung Menjadi Bagian Sukses Bersama Kami",
     description:
-      "Program ini telah dimulai PT. Karya Halim Sampoerna dan bekerja sama dengan institusi-institusi pendidikan untuk menyediakan wadah bagi anggota institusi agar bisa mengembangkan kemampuan dan memulai karir dibidangnya secara profesional.",
+      "Program ini telah dimulai PT SAN & PT BBR dan bekerja sama dengan institusi-institusi pendidikan untuk menyediakan wadah bagi anggota institusi agar bisa mengembangkan kemampuan dan memulai karir dibidangnya secara profesional.",
   },
   // Per-service translations (ID)
   services: {

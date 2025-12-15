@@ -232,7 +232,7 @@ const CompanyStrategySectionComponent = () => {
               <div className="w-full max-w-md md:max-w-lg lg:max-w-[38rem] xl:max-w-[44rem] aspect-square bg-white">
                 <img
                   src={logo}
-                  alt="Logo Perusahaan PT. Karya Halim Sampoerna"
+                  alt="Logo Perusahaan PT SAN & PT BBR"
                   className="h-full w-full object-cover"
                 />
               </div>

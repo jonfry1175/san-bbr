@@ -81,7 +81,7 @@ import { PRIMARY_EMAIL, SECONDARY_EMAIL, ALL_EMAILS } from "@/lib/email-config";
 
 ```typescript
 export const PRIMARY_EMAIL = "ptkarya_halim@yahoo.co.id";
-export const SECONDARY_EMAIL = "hire.us@karyahalimsampoerna.id";
+export const SECONDARY_EMAIL = "hire.us@san-bbr.id";
 export const ALL_EMAILS = [PRIMARY_EMAIL, SECONDARY_EMAIL];
 
 export interface EmailConfiguration {

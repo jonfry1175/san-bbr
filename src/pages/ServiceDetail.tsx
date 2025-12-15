@@ -564,10 +564,10 @@ const ServiceDetail = () => {
                   <PhoneCall className="h-4 w-4" /> +62 800-0000
                 </a>
                 <a
-                  href="mailto:info@karyahalim.co.id"
+                  href="mailto:info@san-bbr.id"
                   className="flex items-center gap-2 text-primary hover:text-accent"
                 >
-                  <Mail className="h-4 w-4" /> info@karyahalim.co.id
+                  <Mail className="h-4 w-4" /> info@san-bbr.id
                 </a>
               </div>
               <Button asChild className="w-full bg-gradient-accent">

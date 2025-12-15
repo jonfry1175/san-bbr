@@ -8,7 +8,8 @@ import SEO from "@/components/SEO";
 import { createBreadcrumbJsonLd, createWebPageJsonLd } from "@/lib/seo";
 import { getStaticPageMeta, resolveMeta } from "@/lib/seo-pages";
 // import heroAwardsBackground from "@/assets/hero-section-penghargaan-kami.jpg";
-const heroAwardsBackground = "https://placehold.co/1920x600/10b981/ffffff?text=Company+Awards";
+const heroAwardsBackground =
+  "https://placehold.co/1920x600/10b981/ffffff?text=Company+Awards";
 import {
   certificateImageDefinitions,
   type CertificateImage,
@@ -126,7 +127,7 @@ const CompanyAwardsGallery = memo(() => {
               </Badge>
               <h1 className="heading-md mt-4">
                 {t("aboutPages.companyAwardsGallery.headingTemplate", {
-                  company: "PT. Karya Halim Sampoerna",
+                  company: "PT SAN & PT BBR",
                 })}
               </h1>
               <p className="mt-4 text-lg text-slate-600 md:whitespace-nowrap">

@@ -24,7 +24,8 @@ import {
   Loader2,
 } from "lucide-react";
 // import companyLogo from "@/assets/company-logo.png";
-const companyLogo = "https://placehold.co/200x80/white/000000?text=Company+Logo";
+const companyLogo =
+  "https://placehold.co/200x80/white/000000?text=Company+Logo";
 import { services as serviceList } from "@/lib/services";
 import { Link } from "react-router-dom";
 
@@ -148,7 +149,7 @@ const Footer = () => {
             <div>
               <img
                 src={companyLogo}
-                alt="PT. Karya Halim Sampoerna"
+                alt="PT SAN & PT BBR"
                 className="h-12 w-auto mb-4 brightness-0 invert"
               />
               <p className="text-primary-foreground/80 leading-relaxed">
@@ -232,7 +233,7 @@ const Footer = () => {
                     <span className="text-sm leading-tight">
                       {t(`services.${svc.slug}.title`).replace(
                         /\s*\((CTRB|CTRSB)\)$/i,
-                        "",
+                        ""
                       )}
                     </span>
                   </Link>
@@ -347,7 +348,7 @@ const Footer = () => {
               <a
                 href={getGoogleMapsDirectionsUrl(
                   activeLocation.coordinates,
-                  activeLocation.title,
+                  activeLocation.title
                 )}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -412,7 +413,7 @@ const Footer = () => {
                             <a
                               href={getGoogleMapsDirectionsUrl(
                                 location.coordinates,
-                                location.title,
+                                location.title
                               )}
                               target="_blank"
                               rel="noopener noreferrer"

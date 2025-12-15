@@ -13,10 +13,10 @@
 2. Extract key concepts from description
    → Actors: Website visitors, potential clients, job applicants
    → Actions: View contact information, submit contact forms
-   → Data: Two email addresses (ptkarya_halim@yahoo.co.id, hire.us@karyahalimsampoerna.id)
+   → Data: Two email addresses (info@san-bbr.id, hire.us@san-bbr.id)
    → Constraints: All email display elements must show both addresses
 3. Current state analysis:
-   → Only displays: ptkarya_halim@yahoo.co.id
+   → Only displays: info@san-bbr.id
    → Expected: Display both emails and submit contact forms to both
 4. Implementation areas identified:
    → Footer component email display
@@ -39,7 +39,7 @@ As a potential client or job applicant, I want to see both company email address
 
 ### Acceptance Scenarios
 
-1. **Given** a user visits any page with email display, **When** they look at the contact information, **Then** they should see both ptkarya_halim@yahoo.co.id and hire.us@karyahalimsampoerna.id listed
+1. **Given** a user visits any page with email display, **When** they look at the contact information, **Then** they should see both info@san-bbr.id and hire.us@san-bbr.id listed
 2. **Given** a user submits the contact form, **When** the form is processed, **Then** the message should be sent to both email addresses
 3. **Given** a user clicks on an email link, **When** the email client opens, **Then** both email addresses should be accessible for communication
 4. **Given** a user views the footer, **When** they look at the contact section, **Then** both email addresses should be visible and clickable
@@ -54,7 +54,7 @@ As a potential client or job applicant, I want to see both company email address
 
 ### Functional Requirements
 
-- **FR-001**: System MUST display both email addresses (ptkarya_halim@yahoo.co.id and hire.us@karyahalimsampoerna.id) in all components that currently show email contact information
+- **FR-001**: System MUST display both email addresses (info@san-bbr.id and hire.us@san-bbr.id) in all components that currently show email contact information
 - **FR-002**: Footer component MUST show both email addresses as clickable mailto links
 - **FR-003**: CTA Section MUST display both email addresses with proper styling and accessibility
 - **FR-004**: Contact page form submission MUST send emails to both addresses simultaneously
@@ -67,7 +67,7 @@ As a potential client or job applicant, I want to see both company email address
 
 ### Key Entities _(include if feature involves data)_
 
-- **Email Configuration**: Represents the dual email setup with primary (ptkarya_halim@yahoo.co.id) and secondary (hire.us@karyahalimsampoerna.id) addresses
+- **Email Configuration**: Represents the dual email setup with primary (info@san-bbr.id) and secondary (hire.us@san-bbr.id) addresses
 - **Contact Form Submission**: Represents form data that needs to be sent to multiple email addresses
 - **Internationalization Content**: Represents localized content that includes email addresses for different languages
 
