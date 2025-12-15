@@ -23,7 +23,8 @@ import {
   ArrowUp,
   Loader2,
 } from "lucide-react";
-import companyLogo from "@/assets/company-logo.png";
+// import companyLogo from "@/assets/company-logo.png";
+const companyLogo = "https://placehold.co/200x80/white/000000?text=Company+Logo";
 import { services as serviceList } from "@/lib/services";
 import { Link } from "react-router-dom";
 

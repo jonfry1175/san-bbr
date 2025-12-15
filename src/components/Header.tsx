@@ -8,7 +8,8 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import companyLogo from "@/assets/company-logo.png";
+// import companyLogo from "@/assets/company-logo.png";
+const companyLogo = "https://placehold.co/200x80/white/000000?text=Company+Logo";
 import { Link, useLocation } from "react-router-dom";
 import { useI18n } from "@/lib/i18n";
 import { cn } from "@/lib/utils";

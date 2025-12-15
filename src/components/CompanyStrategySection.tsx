@@ -8,7 +8,8 @@ import {
   HeartHandshake,
   Cog,
 } from "lucide-react";
-import logo from "@/assets/logo.jpg";
+// import logo from "@/assets/logo.jpg";
+const logo = "https://placehold.co/500x500/e2e8f0/1e293b?text=Company+Logo";
 import { cn } from "@/lib/utils";
 import { useI18n } from "@/lib/i18n";
 import React, { memo } from "react";
@@ -40,7 +41,7 @@ const CompanyStrategySectionComponent = () => {
     if (!text) return text;
     const pattern = new RegExp(
       `\\b(${highlightTargets.map(escapeRegExp).join("|")})\\b`,
-      "g",
+      "g"
     );
     const parts: React.ReactNode[] = [];
     let lastIndex = 0;
@@ -52,7 +53,7 @@ const CompanyStrategySectionComponent = () => {
       parts.push(
         <strong key={`${idx}-${match[0]}`} className="font-semibold">
           {match[0]}
-        </strong>,
+        </strong>
       );
       lastIndex = idx + match[0].length;
     }
@@ -207,7 +208,7 @@ const CompanyStrategySectionComponent = () => {
                       aria-hidden
                       className={cn(
                         "mt-2 h-2 w-2 shrink-0 rounded-full ring-2",
-                        item.swatch,
+                        item.swatch
                       )}
                     />
                     <p className="text-base md:text-lg leading-relaxed text-gray-700">

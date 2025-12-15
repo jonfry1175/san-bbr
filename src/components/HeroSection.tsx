@@ -1,30 +1,54 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Award, Users, CheckCircle } from "lucide-react";
 // Background hero videos
-import heroVid1 from "@/assets/hero/1.mp4";
-import heroVid2 from "@/assets/hero/2.mp4";
-import heroVid3 from "@/assets/hero/3.mp4";
-import heroVid4 from "@/assets/hero/4.mp4";
+// import heroVid1 from "@/assets/hero/1.mp4";
+// import heroVid2 from "@/assets/hero/2.mp4";
+// import heroVid3 from "@/assets/hero/3.mp4";
+// import heroVid4 from "@/assets/hero/4.mp4";
 // Mobile hero videos
-import mobileHeroVid1 from "@/assets/hero/mobile-video/1.mp4";
-import mobileHeroVid2 from "@/assets/hero/mobile-video/2.mp4";
-import mobileHeroVid3 from "@/assets/hero/mobile-video/3.mp4";
-import mobileHeroVid4 from "@/assets/hero/mobile-video/4.mp4";
+// import mobileHeroVid1 from "@/assets/hero/mobile-video/1.mp4";
+// import mobileHeroVid2 from "@/assets/hero/mobile-video/2.mp4";
+// import mobileHeroVid3 from "@/assets/hero/mobile-video/3.mp4";
+// import mobileHeroVid4 from "@/assets/hero/mobile-video/4.mp4";
+
+const heroVid1 = "https://placehold.co/1920x1080/10b981/ffffff.mp4?text=Hero+Video+1";
+const heroVid2 = "https://placehold.co/1920x1080/10b981/ffffff.mp4?text=Hero+Video+2";
+const heroVid3 = "https://placehold.co/1920x1080/10b981/ffffff.mp4?text=Hero+Video+3";
+const heroVid4 = "https://placehold.co/1920x1080/10b981/ffffff.mp4?text=Hero+Video+4";
+
+const mobileHeroVid1 = "https://placehold.co/720x1280/10b981/ffffff.mp4?text=Mobile+Hero+1";
+const mobileHeroVid2 = "https://placehold.co/720x1280/10b981/ffffff.mp4?text=Mobile+Hero+2";
+const mobileHeroVid3 = "https://placehold.co/720x1280/10b981/ffffff.mp4?text=Mobile+Hero+3";
+const mobileHeroVid4 = "https://placehold.co/720x1280/10b981/ffffff.mp4?text=Mobile+Hero+4";
 
 import { useHero } from "@/hooks/use-hero";
 // Import hero images for non-home pages
-import imgCareer from "@/assets/hero/images/career_11zon_16_11zon.jpeg";
-import imgContact from "@/assets/hero/images/contact us_11zon_15_11zon.jpg";
-import imgGallery from "@/assets/hero/images/hero-bg-gallery.jpg";
-import imgNews from "@/assets/hero/images/hero-bg-news.jpg";
-import imgOurCompany from "@/assets/hero/images/our_company.jpeg";
-import imgOurTeam from "@/assets/hero/images/our team_11zon_12_11zon.jpg";
-import imgOurWorks from "@/assets/hero/images/our_work.jpeg";
-import imgProduct from "@/assets/hero/images/product_11zon_13_11zon.jpg";
-import ImgServices from "@/assets/hero/images/services.jpg";
-import imgCertifiedProfessionals from "@/assets/hero-section-profesional-bersertifikat.jpg";
-import imgCompanyAwards from "@/assets/hero-section-penghargaan-kami.jpg";
-import imgInternship from "@/assets/hero/images/hero-bg-internship.jpg";
+// import imgCareer from "@/assets/hero/images/career_11zon_16_11zon.jpeg";
+// import imgContact from "@/assets/hero/images/contact us_11zon_15_11zon.jpg";
+// import imgGallery from "@/assets/hero/images/hero-bg-gallery.jpg";
+// import imgNews from "@/assets/hero/images/hero-bg-news.jpg";
+// import imgOurCompany from "@/assets/hero/images/our_company.jpeg";
+// import imgOurTeam from "@/assets/hero/images/our team_11zon_12_11zon.jpg";
+// import imgOurWorks from "@/assets/hero/images/our_work.jpeg";
+// import imgProduct from "@/assets/hero/images/product_11zon_13_11zon.jpg";
+// import ImgServices from "@/assets/hero/images/services.jpg";
+// import imgCertifiedProfessionals from "@/assets/hero-section-profesional-bersertifikat.jpg";
+// import imgCompanyAwards from "@/assets/hero-section-penghargaan-kami.jpg";
+// import imgInternship from "@/assets/hero/images/hero-bg-internship.jpg";
+
+const imgCareer = "https://placehold.co/1920x600/10b981/ffffff?text=Career+Hero";
+const imgContact = "https://placehold.co/1920x600/10b981/ffffff?text=Contact+Hero";
+const imgGallery = "https://placehold.co/1920x600/10b981/ffffff?text=Gallery+Hero";
+const imgNews = "https://placehold.co/1920x600/10b981/ffffff?text=News+Hero";
+const imgOurCompany = "https://placehold.co/1920x600/10b981/ffffff?text=Our+Company+Hero";
+const imgOurTeam = "https://placehold.co/1920x600/10b981/ffffff?text=Our+Team+Hero";
+const imgOurWorks = "https://placehold.co/1920x600/10b981/ffffff?text=Our+Works+Hero";
+const imgProduct = "https://placehold.co/1920x600/10b981/ffffff?text=Product+Hero";
+const ImgServices = "https://placehold.co/1920x600/10b981/ffffff?text=Services+Hero";
+const imgCertifiedProfessionals = "https://placehold.co/1920x600/10b981/ffffff?text=Certified+Hero";
+const imgCompanyAwards = "https://placehold.co/1920x600/10b981/ffffff?text=Awards+Hero";
+const imgInternship = "https://placehold.co/1920x600/10b981/ffffff?text=Internship+Hero";
+
 import { Link, useLocation } from "react-router-dom";
 import { useI18n } from "@/lib/i18n";
 import { useCallback, useMemo, useRef, useState, useEffect } from "react";
@@ -165,9 +189,10 @@ const HeroSection = () => {
       normalizedLabel === "location";
 
     if (needsLocationImage && !locationImage) {
-      import("@/assets/hero/images/location.jpg").then((module) => {
-        setLocationImage(module.default);
-      });
+      // import("@/assets/hero/images/location.jpg").then((module) => {
+      //   setLocationImage(module.default);
+      // });
+      setLocationImage("https://placehold.co/1920x600/10b981/ffffff?text=Location+Hero");
     } else if (!needsLocationImage && locationImage) {
       setLocationImage(undefined);
     }
@@ -215,7 +240,7 @@ const HeroSection = () => {
 
   const defaultHeroImage =
     heroImageMap.get(normalizeHeroKey("Tentang Kami")) ||
-    "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80";
+    "https://placehold.co/1920x600/10b981/ffffff?text=Default+Hero";
 
   // Pick image by label, fallback to company/about, then Unsplash
   // Handle location image separately since it's lazy loaded

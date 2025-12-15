@@ -28,10 +28,15 @@ import { createBreadcrumbJsonLd, createWebPageJsonLd } from "@/lib/seo";
 import { getStaticPageMeta, resolveMeta } from "@/lib/seo-pages";
 import { adaro, borneo, kalimantan, type ImgItem } from "@/lib/gallery-data";
 import { useKeyboardShortcuts } from "@/hooks/use-keyboard-shortcuts";
-import featuredAd from "@/assets/our-works/gallery/ad-1.jpg";
-import featuredBorneo from "@/assets/our-works/gallery/bor-1.jpg";
-import featuredKalimantan from "@/assets/our-works/gallery/kal-1.jpg";
-import featuredCement from "@/assets/our-works/gallery/bor-5.jpg";
+// import featuredAd from "@/assets/our-works/gallery/ad-1.jpg";
+// import featuredBorneo from "@/assets/our-works/gallery/bor-1.jpg";
+// import featuredKalimantan from "@/assets/our-works/gallery/kal-1.jpg";
+// import featuredCement from "@/assets/our-works/gallery/bor-5.jpg";
+
+const featuredAd = "https://placehold.co/800x600/10b981/ffffff?text=Adaro+Project";
+const featuredBorneo = "https://placehold.co/800x600/10b981/ffffff?text=Borneo+Project";
+const featuredKalimantan = "https://placehold.co/800x600/10b981/ffffff?text=Kalimantan+Project";
+const featuredCement = "https://placehold.co/800x600/10b981/ffffff?text=Cement+Project";
 
 const meta = resolveMeta(getStaticPageMeta("gallery"));
 
