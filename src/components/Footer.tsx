@@ -240,7 +240,7 @@ const Footer = () => {
               <li className="mt-2">
                 <Link
                   to="/services"
-                  className="inline-flex items-center gap-2 text-red-600 font-medium hover:text-red-700 transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-red-500 focus-visible:rounded-md"
+                  className="inline-flex items-center gap-2 text-accent font-medium hover:text-accent-light transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:rounded-md"
                   aria-label={t("servicesSection.viewAll")}
                 >
                   {t("servicesSection.viewAll")}

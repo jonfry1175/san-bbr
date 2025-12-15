@@ -10,10 +10,10 @@
     /* Primary is injected by Tailwind config (see tailwind.config.ts → brand.primary) */
     --primary-foreground: 0 0% 100%;
 
-    /* Accent Red */
-    --accent: 0 78% 50%; /* Corporate Red #E31E24 */
-    --accent-foreground: 0 0% 100%; /* White text on red */
-    --accent-light: 0 85% 65%; /* Lighter red for subtle effects */
+    /* Accent Green (Matching Primary) */
+    --accent: 142 76% 36%; /* Green to match Primary */
+    --accent-foreground: 0 0% 100%;
+    --accent-light: 142 76% 46%;
 
     /* Background & Surface */
     --background: 0 0% 100%; /* Pure White */

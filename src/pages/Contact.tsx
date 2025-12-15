@@ -469,7 +469,7 @@ const Contact = () => {
                 href={directionsUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center font-medium text-red-600 transition-colors hover:text-red-700 focus-visible:outline-none focus-visible:rounded-md focus-visible:ring-2 focus-visible:ring-red-600/30 group"
+                className="inline-flex items-center font-medium text-accent transition-colors hover:text-accent-light focus-visible:outline-none focus-visible:rounded-md focus-visible:ring-2 focus-visible:ring-accent/30 group"
               >
                 {translations.contact.details.getDirections}
                 <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />

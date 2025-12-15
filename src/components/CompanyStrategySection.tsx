@@ -190,7 +190,7 @@ const CompanyStrategySectionComponent = () => {
 
             {/* Meaning copy with styled list */}
             <div className="flex-1 text-left flex flex-col justify-center py-4 md:py-6 lg:py-8 animate-fade-up">
-              <span className="text-red-500 font-medium tracking-wide uppercase text-sm">
+              <span className="text-accent font-medium tracking-wide uppercase text-sm">
                 {t("companyStrategy.logoMeaning.title")}
               </span>
               <h2 className="heading-lg md:leading-tight mt-2 mb-6">

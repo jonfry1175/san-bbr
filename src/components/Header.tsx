@@ -146,7 +146,7 @@ const Header = () => {
                     className={cn(
                       "flex items-center gap-1 font-medium transition-colors relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-accent after:transition-all after:duration-300 hover:after:w-full focus:outline-none focus-visible:ring-2 focus-visible:ring-accent/60 rounded whitespace-nowrap",
                       aboutActive
-                        ? "text-red-600 after:bg-red-600"
+                        ? "text-accent after:bg-accent"
                         : "text-white hover:text-accent"
                     )}
                     aria-haspopup="menu"
@@ -156,7 +156,7 @@ const Header = () => {
                     <ChevronDown
                       className={cn(
                         "h-4 w-4",
-                        aboutActive ? "text-red-600" : "text-white/70"
+                        aboutActive ? "text-accent" : "text-white/70"
                       )}
                     />
                   </button>
@@ -171,7 +171,7 @@ const Header = () => {
                       asChild
                       className={cn(
                         "hover:bg-white/10",
-                        link.isActive ? "text-red-600 bg-white/5" : "text-white"
+                        link.isActive ? "text-accent bg-white/5" : "text-white"
                       )}
                     >
                       <Link to={link.href} className="w-full block">
@@ -188,7 +188,7 @@ const Header = () => {
                     className={cn(
                       "flex items-center gap-1 font-medium transition-colors relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-accent after:transition-all after:duration-300 hover:after:w-full focus:outline-none focus-visible:ring-2 focus-visible:ring-accent/60 rounded whitespace-nowrap",
                       productsActive
-                        ? "text-red-600 after:bg-red-600"
+                        ? "text-accent after:bg-accent"
                         : "text-white hover:text-accent"
                     )}
                     aria-haspopup="menu"
@@ -198,7 +198,7 @@ const Header = () => {
                     <ChevronDown
                       className={cn(
                         "h-4 w-4",
-                        productsActive ? "text-red-600" : "text-white/70"
+                        productsActive ? "text-accent" : "text-white/70"
                       )}
                     />
                   </button>
@@ -236,7 +236,7 @@ const Header = () => {
                   className={cn(
                     "font-medium transition-colors relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-accent after:transition-all after:duration-300 hover:after:w-full focus:outline-none focus-visible:ring-2 focus-visible:ring-accent/60 rounded whitespace-nowrap",
                     item.isActive
-                      ? "text-red-600 after:bg-red-600"
+                      ? "text-accent after:bg-accent"
                       : "text-white hover:text-accent"
                   )}
                 >
@@ -250,7 +250,7 @@ const Header = () => {
                     className={cn(
                       "flex items-center gap-1 font-medium transition-colors relative after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-0 after:bg-accent after:transition-all after:duration-300 hover:after:w-full focus:outline-none focus-visible:ring-2 focus-visible:ring-accent/60 rounded whitespace-nowrap",
                       careerActive
-                        ? "text-red-600 after:bg-red-600"
+                        ? "text-accent after:bg-accent"
                         : "text-white hover:text-accent"
                     )}
                     aria-haspopup="menu"
@@ -260,7 +260,7 @@ const Header = () => {
                     <ChevronDown
                       className={cn(
                         "h-4 w-4",
-                        careerActive ? "text-red-600" : "text-white/70"
+                        careerActive ? "text-accent" : "text-white/70"
                       )}
                     />
                   </button>
@@ -275,7 +275,7 @@ const Header = () => {
                       asChild
                       className={cn(
                         "hover:bg-white/10",
-                        link.isActive ? "text-red-600 bg-white/5" : "text-white"
+                        link.isActive ? "text-accent bg-white/5" : "text-white"
                       )}
                     >
                       <Link to={link.href} className="w-full block">
@@ -288,7 +288,7 @@ const Header = () => {
 
               <Link
                 to="/contact"
-                className="bg-red-600 hover:bg-red-500 text-white px-4 py-2 rounded-md font-medium transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-accent/60 whitespace-nowrap"
+                className="bg-accent hover:bg-accent-light text-white px-4 py-2 rounded-md font-medium transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-accent/60 whitespace-nowrap"
               >
                 {headerCopy.navigationItems.contact}
               </Link>
@@ -390,7 +390,7 @@ const Header = () => {
                         <p
                           className={cn(
                             "text-xs uppercase tracking-wide",
-                            aboutActive ? "text-red-600" : "text-white/60"
+                            aboutActive ? "text-accent" : "text-white/60"
                           )}
                         >
                           {headerCopy.aboutUs}
@@ -403,7 +403,7 @@ const Header = () => {
                               className={cn(
                                 "text-lg font-medium transition-colors",
                                 link.isActive
-                                  ? "text-red-600 bg-white/5 px-3 py-2 rounded-md"
+                                  ? "text-accent bg-white/5 px-3 py-2 rounded-md"
                                   : "text-white hover:text-accent"
                               )}
                               onClick={() => setMobileMenuOpen(false)}
@@ -418,7 +418,7 @@ const Header = () => {
                         <p
                           className={cn(
                             "text-xs uppercase tracking-wide",
-                            productsActive ? "text-red-600" : "text-white/60"
+                            productsActive ? "text-accent" : "text-white/60"
                           )}
                         >
                           {headerCopy.navigationItems.products}
@@ -431,14 +431,14 @@ const Header = () => {
                               className={cn(
                                 "text-lg font-medium transition-colors flex items-center justify-between",
                                 link.isActive
-                                  ? "text-red-600 bg-white/5 px-3 py-2 rounded-md"
+                                  ? "text-accent bg-white/5 px-3 py-2 rounded-md"
                                   : "text-white hover:text-accent"
                               )}
                               onClick={() => setMobileMenuOpen(false)}
                             >
                               <span>{link.label}</span>
                               {link.isActive && (
-                                <Check className="h-4 w-4 text-red-600" />
+                                <Check className="h-4 w-4 text-accent" />
                               )}
                             </Link>
                           ))}
@@ -452,7 +452,7 @@ const Header = () => {
                           className={cn(
                             "text-lg font-medium transition-colors",
                             item.isActive
-                              ? "text-red-600"
+                              ? "text-accent"
                               : "text-white hover:text-accent"
                           )}
                           onClick={() => setMobileMenuOpen(false)}
@@ -465,7 +465,7 @@ const Header = () => {
                         <p
                           className={cn(
                             "text-xs uppercase tracking-wide",
-                            careerActive ? "text-red-600" : "text-white/60"
+                            careerActive ? "text-accent" : "text-white/60"
                           )}
                         >
                           {headerCopy.navigationItems.career}
@@ -478,7 +478,7 @@ const Header = () => {
                               className={cn(
                                 "text-lg font-medium transition-colors",
                                 link.isActive
-                                  ? "text-red-600 bg-white/5 px-3 py-2 rounded-md"
+                                  ? "text-accent bg-white/5 px-3 py-2 rounded-md"
                                   : "text-white hover:text-accent"
                               )}
                               onClick={() => setMobileMenuOpen(false)}
@@ -491,7 +491,7 @@ const Header = () => {
 
                       <Link
                         to="/contact"
-                        className="bg-red-600 hover:bg-red-500 text-white px-4 py-2 rounded-md text-lg font-medium transition-colors"
+                        className="bg-accent hover:bg-accent-light text-white px-4 py-2 rounded-md text-lg font-medium transition-colors"
                         onClick={() => setMobileMenuOpen(false)}
                       >
                         {headerCopy.navigationItems.contact}

@@ -106,7 +106,7 @@ const CertificateCard = memo(
           </div>
         </button>
         <figcaption
-          className="mt-3 text-sm leading-relaxed text-red-600"
+          className="mt-3 text-sm leading-relaxed text-accent"
           dangerouslySetInnerHTML={{
             __html: String(image.caption),
           }}

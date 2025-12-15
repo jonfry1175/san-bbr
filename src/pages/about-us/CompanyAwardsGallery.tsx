@@ -220,7 +220,7 @@ const CompanyAwardsGallery = memo(() => {
                       </motion.div>
                     </DialogContent>
                   </Dialog>
-                  <figcaption className="mt-3 text-sm leading-relaxed text-red-600">
+                  <figcaption className="mt-3 text-sm leading-relaxed text-accent">
                     {image.caption}
                   </figcaption>
                 </motion.figure>
