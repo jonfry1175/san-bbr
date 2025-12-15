@@ -28,7 +28,8 @@ const productLinkConfig = [
 ] as const;
 
 const careerLinkConfig = [
-  { key: "employee", href: "/career/employee" },
+  { key: "san", href: "/career/employee?company=san" },
+  { key: "bbr", href: "/career/employee?company=bbr" },
   { key: "intern", href: "/career/intern" },
 ] as const;
 
@@ -348,20 +349,6 @@ const Header = () => {
                         <Check className="h-4 w-4 text-accent" />
                       )}
                     </DropdownMenuItem>
-                    <DropdownMenuItem
-                      onClick={handleLanguageClick}
-                      className="justify-between text-white hover:bg-white/10"
-                    >
-                      <span className="flex items-center gap-2">
-                        <span className="text-base" aria-hidden>
-                          {languageMeta.ZH.flag}
-                        </span>
-                        {languageMeta.ZH.label}
-                      </span>
-                      {language === "ZH" && (
-                        <Check className="h-4 w-4 text-accent" />
-                      )}
-                    </DropdownMenuItem>
                   </DropdownMenuContent>
                 </DropdownMenu>
               </div>
@@ -506,7 +493,7 @@ const Header = () => {
                       <div className="text-xs uppercase tracking-wide text-white/80 mb-2">
                         {headerCopy.languageLabel}
                       </div>
-                      <div className="grid grid-cols-3 gap-2">
+                      <div className="grid grid-cols-2 gap-2">
                         <Button
                           variant={language === "EN" ? "default" : "outline"}
                           className={`w-full h-10 ${language === "EN" ? "" : "text-black"}`}
@@ -534,20 +521,6 @@ const Header = () => {
                             {languageMeta.ID.flag}
                           </span>
                           ID
-                        </Button>
-                        <Button
-                          variant={language === "ZH" ? "default" : "outline"}
-                          className={`w-full h-10 ${language === "ZH" ? "" : "text-black"}`}
-                          onClick={() => {
-                            handleLanguageClick();
-                            setMobileMenuOpen(false);
-                          }}
-                          aria-label={headerCopy.switchLanguageAria.ZH}
-                        >
-                          <span className="mr-2" aria-hidden>
-                            {languageMeta.ZH.flag}
-                          </span>
-                          ZH
                         </Button>
                       </div>
                     </div>
