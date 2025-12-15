@@ -207,7 +207,7 @@ const CertificationGallery = memo(() => {
         ].filter(Boolean)}
       />
       <main className="bg-white text-slate-900">
-        <section className="section-padding">
+        <section className="section-padding pb-0">
           <div className="container mx-auto container-padding">
             <motion.div
               variants={containerVariants}
@@ -233,9 +233,13 @@ const CertificationGallery = memo(() => {
                 }}
               />
             </motion.div>
+          </div>
+        </section>
 
+        <section className="section-padding pt-12">
+          <div className="container mx-auto container-padding">
             <motion.div
-              className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3"
+              className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3"
               variants={gridVariants}
               initial="hidden"
               whileInView="show"
