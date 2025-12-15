@@ -38,6 +38,8 @@ export const idTranslations: TranslationResources = {
     careerLinks: {
       employee: "Peluang Karir",
       intern: "Program Magang",
+      san: "Karir PT SAN",
+      bbr: "Karir PT BBR",
     },
   },
   aboutPages: {
@@ -62,8 +64,8 @@ export const idTranslations: TranslationResources = {
     },
     ourTeam: {
       hero: {
-        label: "Tim Kami",
-        title: "Kepemimpinan & Orang di Balik Setiap Proyek",
+        label: "Tim PT SAN & PT BBR",
+        title: "Tim Profesional PT SAN & PT BBR",
         description:
           "Para pemimpin kami menggerakkan budaya keselamatan, efisiensi, dan kualitas pada setiap proyek konstruksi di Kalimantan Tengah dan Kalimantan Selatan.",
       },
@@ -181,8 +183,8 @@ export const idTranslations: TranslationResources = {
     },
     certificationGallery: {
       hero: {
-        label: "Profesional Bersertifikat",
-        title: "Kredensial & Sertifikasi Tim Kami",
+        label: "Sertifikasi Profesional",
+        title: "Sertifikasi PT SAN & PT BBR",
         description:
           "Kumpulan sertifikat resmi yang memastikan tim kami memenuhi standar keselamatan, mutu, dan kepemimpinan proyek.",
       },
@@ -205,8 +207,8 @@ export const idTranslations: TranslationResources = {
     },
     companyAwardsGallery: {
       hero: {
-        label: "Penghargaan Kami",
-        title: "Apresiasi atas Keunggulan dan Kepercayaan",
+        label: "Penghargaan Perusahaan",
+        title: "Penghargaan PT SAN & PT BBR",
         description:
           "Kumpulan penghargaan yang menegaskan dedikasi kami pada keselamatan, kualitas layanan, dan kemitraan jangka panjang.",
       },
@@ -325,6 +327,24 @@ export const idTranslations: TranslationResources = {
       badge: "Produk Kami",
       description:
         "Kami menyediakan solusi komprehensif mulai dari alat berat, penyedia daya, hingga transportasi material. Setiap unit melewati inspeksi menyeluruh dan siap mendukung operasional 24/7.",
+      rent: {
+        badge: "Rental Alat Berat (PT SAN)",
+        title: "Solusi Alat Berat Terpercaya",
+        description:
+          "Kami menyediakan armada alat berat berkualitas tinggi untuk kebutuhan proyek konstruksi dan pertambangan dengan dukungan teknis 24/7.",
+      },
+      sale: {
+        badge: "Jasa & Material Konstruksi (PT BBR)",
+        title: "Konstruksi & Material Berkualitas",
+        description:
+          "Layanan konstruksi tambang profesional dan penyediaan material berkualitas untuk mendukung operasional Anda.",
+      },
+      all: {
+        badge: "Produk & Layanan",
+        title: "Solusi Lengkap PT SAN & PT BBR",
+        description:
+          "Jelajahi berbagai pilihan alat berat dan layanan konstruksi kami yang dirancang untuk efisiensi dan keandalan proyek Anda.",
+      },
     },
     filters: {
       title: "Filter Produk",
@@ -769,10 +789,10 @@ export const idTranslations: TranslationResources = {
     ctaRequestQuote: "Minta Penawaran",
   },
   projectsSection: {
-    label: "Portofolio Kami",
-    title: "Proyek Luar Biasa yang Telah Kami Selesaikan",
+    label: "Portofolio PT SAN & PT BBR",
+    title: "Proyek Unggulan PT SAN & PT BBR",
     description:
-      "Jelajahi portofolio proyek konstruksi sukses kami di Kalimantan Tengah dan Kalimantan Selatan, menunjukkan keahlian dan komitmen kami terhadap keunggulan.",
+      "Jelajahi portofolio proyek konstruksi sukses kami di Kalimantan Tengah dan Kalimantan Selatan, menunjukkan keahlian dan komitmen PT SAN & PT BBR terhadap keunggulan.",
     viewAll: "Lihat Semua Proyek",
     client: "Klien",
     location: "Lokasi",
@@ -1501,7 +1521,7 @@ export const idTranslations: TranslationResources = {
       "Baca tentang proyek terbaru kami, pencapaian, dan wawasan industri.",
     readMore: "Baca Selengkapnya",
     viewAll: "Lihat Semua Berita",
-    pageTitle: "Berita & Insight",
+    pageTitle: "Berita & Wawasan PT SAN & PT BBR",
     pageDescription:
       "Pembaruan proyek, praktik terbaik, dan informasi industri konstruksi dari PT SAN & PT BBR.",
     detail: {

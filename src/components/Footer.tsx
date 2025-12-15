@@ -112,125 +112,102 @@ const Footer = () => {
   };
 
   return (
-    <footer className="relative overflow-hidden bg-neutral-900 text-white">
+    <footer className="relative overflow-hidden bg-neutral-900 text-white pt-16">
       {/* Decorative gradient glow */}
-      <div className="pointer-events-none absolute inset-0 opacity-10">
-        <div className="absolute -top-32 left-1/2 h-72 w-[42rem] -translate-x-1/2 rounded-full bg-accent blur-3xl" />
+      <div className="pointer-events-none absolute inset-0 overflow-hidden">
+        <div className="absolute -top-[20%] left-1/2 h-[500px] w-[800px] -translate-x-1/2 rounded-full bg-accent/5 blur-[100px]" />
       </div>
+
       {/* Main Footer Content */}
-      <div className="container mx-auto container-padding section-padding">
+      <div className="container mx-auto container-padding pb-16 relative z-10">
         {/* CTA band */}
-        <div className="mb-10 rounded-2xl bg-gradient-accent p-6 text-accent-foreground shadow-soft md:p-8">
-          <div className="flex flex-col items-start justify-between gap-4 md:flex-row md:items-center">
-            <div>
-              <p className="text-small uppercase tracking-wide/loose opacity-80">
+        <div className="mb-16 rounded-3xl bg-gradient-to-r from-neutral-800 to-neutral-900 border border-white/5 p-8 md:p-12 shadow-2xl relative overflow-hidden group">
+          <div className="absolute inset-0 bg-accent/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+          <div className="absolute -right-20 -top-20 h-64 w-64 bg-accent/10 rounded-full blur-3xl group-hover:bg-accent/20 transition-all duration-500" />
+
+          <div className="flex flex-col items-start justify-between gap-6 md:flex-row md:items-center relative z-10">
+            <div className="max-w-2xl">
+              <p className="text-accent font-medium uppercase tracking-wider text-sm mb-2">
                 {t("footer.ctaLookingForPartner")}
               </p>
-              <h3 className="heading-sm">{t("footer.ctaLetsBuild")}</h3>
+              <h3 className="text-3xl md:text-4xl font-heading font-bold text-white leading-tight">
+                {t("footer.ctaLetsBuild")}
+              </h3>
             </div>
-            <div className="flex w-full flex-col gap-3 md:w-auto md:flex-row">
+            <div className="flex-shrink-0">
               <Button
-                variant="outline"
                 size="lg"
-                className="w-full border-white/30 bg-white/10 text-white hover:bg-white/20 md:w-auto"
+                className="bg-accent hover:bg-accent-light text-white font-semibold px-8 h-14 rounded-xl text-base shadow-lg shadow-accent/20 transition-all hover:scale-105 hover:shadow-accent/40"
                 asChild
               >
                 <a href="/services" aria-label={t("servicesSection.viewAll")}>
                   {t("servicesSection.viewAll")}
+                  <ArrowRight className="ml-2 h-5 w-5" />
                 </a>
               </Button>
             </div>
           </div>
         </div>
 
-        <div className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-4 lg:gap-12">
-          {/* Company Info */}
-          <div className="space-y-6">
-            <div>
+        <div className="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-12 lg:gap-8">
+          {/* Company Info - Spans 4 columns */}
+          <div className="lg:col-span-4 space-y-6">
+            <Link to="/" className="block">
               <img
                 src={companyLogo}
                 alt="PT SAN & PT BBR"
-                className="h-12 w-auto mb-4 brightness-0 invert"
+                className="h-16 w-auto mb-6 brightness-0 invert opacity-90 hover:opacity-100 transition-opacity"
               />
-              <p className="text-primary-foreground/80 leading-relaxed">
-                {t("footer.company.description")}
-              </p>
-            </div>
+            </Link>
+            <p className="text-neutral-400 leading-relaxed max-w-sm text-base">
+              {t("footer.company.description")}
+            </p>
 
-            {/* Social Media */}
-            {/* <div>
-              <h4 className="font-heading font-semibold mb-4">
-                {t("footer.company.followUs")}
-              </h4>
-              <ul className="flex gap-3">
-                {[
-                  { icon: Facebook, href: "#", label: "Facebook" },
-                  { icon: Instagram, href: "#", label: "Instagram" },
-                  { icon: Linkedin, href: "#", label: "LinkedIn" },
-                  { icon: Twitter, href: "#", label: "Twitter / X" },
-                ].map(({ icon: Icon, href, label }, index) => (
-                  <li key={index}>
-                    <Button
-                      variant="ghost"
-                      size="icon"
-                      className="rounded-xl bg-white/5 hover:bg-accent hover:text-accent-foreground transition-colors focus-visible:ring-2 focus-visible:ring-accent"
-                      asChild
-                    >
-                      <a
-                        href={href}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        aria-label={label}
-                        title={label}
-                      >
-                        <Icon className="h-5 w-5" />
-                        <span className="sr-only">{label}</span>
-                      </a>
-                    </Button>
-                  </li>
-                ))}
-              </ul>
+            {/* Social Media Placeholders - Ready to be enabled */}
+            {/* <div className="pt-4 flex gap-4">
+              {[Facebook, Instagram, Linkedin].map((Icon, i) => (
+                <a key={i} href="#" className="h-10 w-10 rounded-full bg-white/5 flex items-center justify-center text-white/70 hover:bg-accent hover:text-white transition-all hover:-translate-y-1">
+                  <Icon className="h-5 w-5" />
+                </a>
+              ))}
             </div> */}
           </div>
 
-          {/* Quick Links */}
-          <nav
-            aria-label="Footer Quick Links"
-            className="md:border-l md:border-white/10 md:pl-8 lg:w-40 flex flex-col h-full"
-          >
-            <h4 className="font-heading font-semibold mb-6">
+          {/* Quick Links - Spans 2 columns */}
+          <nav className="lg:col-span-2" aria-label="Footer Quick Links">
+            <h4 className="font-heading font-bold text-lg mb-6 text-white inline-block relative after:absolute after:bottom-[-8px] after:left-0 after:w-12 after:h-1 after:bg-accent after:rounded-full">
               {t("footer.quickLinks.title")}
             </h4>
-            <ul className="grid grid-cols-1 gap-y-3 flex-1 h-full">
+            <ul className="space-y-3">
               {quickLinks.map((link) => (
-                <li key={link.name} className="flex">
+                <li key={link.name}>
                   <a
                     href={link.href}
-                    className={`group flex items-center whitespace-nowrap text-primary-foreground/80 transition-colors hover:text-accent focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:rounded-md`}
-                    style={{ width: "100%" }}
+                    className="group flex items-center text-neutral-400 hover:text-accent transition-colors py-1"
                   >
-                    <ArrowRight className="mr-2 h-4 w-4 -translate-x-1 opacity-0 transition-all group-hover:translate-x-0 group-hover:opacity-100" />
-                    <span className="truncate w-full">{link.name}</span>
+                    <span className="w-1.5 h-1.5 rounded-full bg-accent/50 mr-3 opacity-0 -ml-4 group-hover:opacity-100 group-hover:ml-0 transition-all duration-300" />
+                    <span className="group-hover:translate-x-1 transition-transform duration-300">
+                      {link.name}
+                    </span>
                   </a>
                 </li>
               ))}
             </ul>
           </nav>
 
-          {/* Services */}
-          <div className="md:border-l md:border-white/10 md:pl-8 lg:flex-1 flex flex-col h-full">
-            <h4 className="font-heading font-semibold mb-6">
+          {/* Services - Spans 3 columns */}
+          <div className="lg:col-span-3">
+            <h4 className="font-heading font-bold text-lg mb-6 text-white inline-block relative after:absolute after:bottom-[-8px] after:left-0 after:w-12 after:h-1 after:bg-accent after:rounded-full">
               {t("footer.services.title")}
             </h4>
-            <ul className="grid grid-cols-1 gap-y-3 flex-1 h-full">
+            <ul className="space-y-3">
               {featuredServices.map((svc) => (
                 <li key={svc.id}>
                   <Link
                     to={`/services/${svc.slug}`}
-                    className="group flex items-start gap-3 text-primary-foreground/80 hover:text-accent transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:rounded-md"
+                    className="group block text-neutral-400 hover:text-white transition-colors py-1"
                   >
-                    <div className="h-2 w-2 rounded-full bg-accent/80 mt-1.5 flex-shrink-0" />
-                    <span className="text-sm leading-tight">
+                    <span className="group-hover:text-accent transition-colors duration-300">
                       {t(`services.${svc.slug}.title`).replace(
                         /\s*\((CTRB|CTRSB)\)$/i,
                         ""
@@ -239,29 +216,30 @@ const Footer = () => {
                   </Link>
                 </li>
               ))}
-              <li className="mt-2">
+              <li className="pt-2">
                 <Link
                   to="/services"
-                  className="inline-flex items-center gap-2 text-accent font-medium hover:text-accent-light transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:rounded-md"
-                  aria-label={t("servicesSection.viewAll")}
+                  className="inline-flex items-center text-accent hover:text-accent-light font-medium group text-sm"
                 >
                   {t("servicesSection.viewAll")}
-                  <ArrowRight className="h-4 w-4" />
+                  <ArrowRight className="ml-1 h-4 w-4 transition-transform group-hover:translate-x-1" />
                 </Link>
               </li>
             </ul>
           </div>
 
-          {/* Contact Info */}
-          <div className="md:border-l md:border-white/10 md:pl-8">
-            <h4 className="font-heading font-semibold mb-6">
+          {/* Contact Info - Spans 3 columns */}
+          <div className="lg:col-span-3">
+            <h4 className="font-heading font-bold text-lg mb-6 text-white inline-block relative after:absolute after:bottom-[-8px] after:left-0 after:w-12 after:h-1 after:bg-accent after:rounded-full">
               {t("footer.contact.title")}
             </h4>
-            <div className="space-y-4">
-              <div className="flex items-start space-x-3">
-                <MapPin className="h-5 w-5 mt-1 text-accent flex-shrink-0" />
+            <div className="space-y-6">
+              <div className="flex items-start gap-4 group">
+                <div className="h-10 w-10 rounded-lg bg-white/5 flex items-center justify-center flex-shrink-0 group-hover:bg-accent/20 transition-colors">
+                  <MapPin className="h-5 w-5 text-accent" />
+                </div>
                 <div>
-                  <p className="text-primary-foreground/80">
+                  <p className="text-neutral-400 leading-relaxed text-sm">
                     Kota Palangka Raya,
                     <br />
                     Kalimantan Tengah - 73111
@@ -271,18 +249,15 @@ const Footer = () => {
                 </div>
               </div>
 
-              <div className="space-y-2">
-                {contactEmails.map((contactEmail) => (
-                  <div
-                    key={contactEmail}
-                    className="flex items-center space-x-3"
-                  >
-                    <span className="flex-shrink-0 flex items-center justify-center">
+              <div className="space-y-4">
+                {contactEmails.map((contactEmail, idx) => (
+                  <div key={idx} className="flex items-center gap-4 group">
+                    <div className="h-10 w-10 rounded-lg bg-white/5 flex items-center justify-center flex-shrink-0 group-hover:bg-accent/20 transition-colors">
                       <Mail className="h-5 w-5 text-accent" />
-                    </span>
+                    </div>
                     <a
-                      href={mailtoAll}
-                      className="text-primary-foreground/80 hover:text-accent transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:rounded-md"
+                      href={`mailto:${contactEmail}`}
+                      className="text-neutral-400 hover:text-white transition-colors text-sm break-all"
                     >
                       {contactEmail}
                     </a>
@@ -290,58 +265,15 @@ const Footer = () => {
                 ))}
               </div>
             </div>
-
-            {/* Newsletter */}
-            {/* <div className="mt-8">
-              <h5 className="font-medium mb-3">
-                {t("footer.newsletter.title")}
-              </h5>
-              <form className="relative" onSubmit={handleSubscribe} noValidate>
-                <Input
-                  type="email"
-                  name="email"
-                  autoComplete="email"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  aria-label={t("contact.form.emailLabel")}
-                  aria-describedby={error ? "newsletter-error" : undefined}
-                  aria-invalid={error ? true : false}
-                  placeholder={t("contact.form.emailPlaceholder")}
-                  className="h-12 rounded-xl border-white/20 bg-white/10 pr-12 text-primary-foreground placeholder:text-primary-foreground/70"
-                  required
-                />
-                <Button
-                  type="submit"
-                  size="icon"
-                  disabled={isSubmitting}
-                  className="absolute right-1 top-1 h-10 w-10 rounded-lg bg-accent text-accent-foreground hover:bg-accent-light"
-                  aria-label={t("contact.form.sendButton")}
-                >
-                  {isSubmitting ? (
-                    <Loader2 className="h-4 w-4 animate-spin" />
-                  ) : (
-                    <Send className="h-4 w-4" />
-                  )}
-                </Button>
-                <p
-                  id="newsletter-error"
-                  role="status"
-                  aria-live="polite"
-                  className="mt-2 text-sm text-accent-foreground/90"
-                >
-                  {error ?? ""}
-                </p>
-              </form>
-            </div> */}
           </div>
         </div>
       </div>
 
       {/* Google Maps */}
-      <div className="bg-neutral-800">
-        <div className="container mx-auto container-padding py-10">
-          <div className="mb-4 flex items-center justify-between">
-            <h4 className="font-heading font-semibold">
+      <div className="bg-neutral-900 border-t border-white/5">
+        <div className="container mx-auto container-padding py-16">
+          <div className="mb-8 flex items-center justify-between">
+            <h4 className="font-heading font-bold text-lg text-white inline-block relative after:absolute after:bottom-[-8px] after:left-0 after:w-12 after:h-1 after:bg-accent after:rounded-full">
               {t("footer.location.title")}
             </h4>
             {activeLocation && (
@@ -352,7 +284,7 @@ const Footer = () => {
                 )}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-small text-white underline-offset-4 underline"
+                className="text-sm text-accent hover:text-white transition-colors underline-offset-4 hover:underline font-medium"
                 aria-label={`${t("footer.location.openInGoogleMaps")} - ${activeLocation.title}`}
               >
                 {t("footer.location.openInGoogleMaps")}
@@ -455,31 +387,31 @@ const Footer = () => {
       </div>
 
       {/* Bottom Bar */}
-      <div className="bg-neutral-800 border-t border-white/10">
-        <div className="container mx-auto container-padding py-6">
-          <div className="flex flex-col items-center justify-between gap-4 md:flex-row">
-            <p className="text-white/60 text-small">{t("footer.copyright")}</p>
-            <div className="flex items-center gap-6">
-              <span className="text-white/60 text-small">
+      <div className="bg-neutral-950 border-t border-white/5">
+        <div className="container mx-auto container-padding py-8">
+          <div className="flex flex-col items-center justify-between gap-6 md:flex-row">
+            <p className="text-neutral-500 text-sm">{t("footer.copyright")}</p>
+            <div className="flex flex-wrap justify-center items-center gap-6 md:gap-8">
+              <span className="text-neutral-500 text-sm">
                 Made by{" "}
                 <a
                   href="https://metasolusidigital.com"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-white/60 hover:text-accent text-small transition-colors underline-offset-4"
+                  className="text-neutral-400 hover:text-accent transition-colors underline-offset-4 hover:underline"
                 >
                   Meta Solusi Digital
                 </a>
               </span>
               <a
                 href="/privacy"
-                className="text-white/60 hover:text-accent text-small transition-colors"
+                className="text-neutral-500 hover:text-white text-sm transition-colors"
               >
                 Privacy Policy
               </a>
               <a
                 href="/terms"
-                className="text-white/60 hover:text-accent text-small transition-colors"
+                className="text-neutral-500 hover:text-white text-sm transition-colors"
               >
                 Terms of Service
               </a>
@@ -487,10 +419,10 @@ const Footer = () => {
                 onClick={() =>
                   window.scrollTo({ top: 0, left: 0, behavior: "smooth" })
                 }
-                className="inline-flex items-center gap-2 rounded-lg border border-white/10 px-3 py-1.5 text-small text-white/70 hover:text-accent focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent"
+                className="inline-flex items-center gap-2 rounded-full border border-white/5 bg-white/5 px-4 py-2 text-xs font-medium text-white/70 hover:bg-accent hover:text-white transition-all hover:-translate-y-1"
                 aria-label={t("common.backToTop")}
               >
-                <ArrowUp className="h-4 w-4" />
+                <ArrowUp className="h-3 w-3" />
                 {t("common.backToTop")}
               </button>
             </div>

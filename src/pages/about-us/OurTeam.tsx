@@ -9,7 +9,8 @@ import { CERTIFICATE_COUNT } from "@/lib/certifications";
 import { ArrowRight } from "lucide-react";
 import { useI18n } from "@/lib/i18n";
 // import companyTeamImage from "@/assets/our-company.jpg";
-const companyTeamImage = "https://placehold.co/1200x800/10b981/ffffff?text=Our+Team";
+const companyTeamImage =
+  "https://placehold.co/1200x800/10b981/ffffff?text=Our+Team";
 import SEO from "@/components/SEO";
 import { createBreadcrumbJsonLd, createWebPageJsonLd } from "@/lib/seo";
 import { getStaticPageMeta, resolveMeta } from "@/lib/seo-pages";

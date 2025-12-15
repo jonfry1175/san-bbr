@@ -120,6 +120,12 @@ const Products = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const [isMobileFilterOpen, setIsMobileFilterOpen] = useState(false);
 
+  const currentContext = useMemo(() => {
+    if (salesCategoryFilter === "rent") return "rent";
+    if (salesCategoryFilter === "sale") return "sale";
+    return "all";
+  }, [salesCategoryFilter]);
+
   // Initialize from URL query parameters
   useEffect(() => {
     const categoryParam = searchParams.get("category");
@@ -538,15 +544,34 @@ const Products = () => {
       />
       <section className="section-padding pb-5 ">
         <div className="container mx-auto container-padding">
-          <div className="mx-auto flex max-w-3xl flex-col items-center gap-4 text-center">
-            <div className="inline-flex items-center gap-2 rounded-full bg-accent/15 px-4 py-2 text-sm font-medium text-accent">
+          <div className="mx-auto flex max-w-3xl flex-col items-center gap-6 text-center">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5 }}
+              className="inline-flex items-center gap-2 rounded-full bg-accent/15 px-4 py-2 text-sm font-medium text-accent"
+            >
               <Sparkles className="h-4 w-4" />
-              {t("products.intro.badge")}
-            </div>
+              {t(`products.intro.${currentContext}.badge`)}
+            </motion.div>
 
-            <p className="text-body text-muted-foreground">
-              {t("products.intro.description")}
-            </p>
+            <motion.h1
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.1 }}
+              className="heading-lg text-foreground"
+            >
+              {t(`products.intro.${currentContext}.title`)}
+            </motion.h1>
+
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+              className="text-body text-muted-foreground"
+            >
+              {t(`products.intro.${currentContext}.description`)}
+            </motion.p>
           </div>
         </div>
       </section>

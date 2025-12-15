@@ -33,10 +33,14 @@ import { useKeyboardShortcuts } from "@/hooks/use-keyboard-shortcuts";
 // import featuredKalimantan from "@/assets/our-works/gallery/kal-1.jpg";
 // import featuredCement from "@/assets/our-works/gallery/bor-5.jpg";
 
-const featuredAd = "https://placehold.co/800x600/10b981/ffffff?text=Adaro+Project";
-const featuredBorneo = "https://placehold.co/800x600/10b981/ffffff?text=Borneo+Project";
-const featuredKalimantan = "https://placehold.co/800x600/10b981/ffffff?text=Kalimantan+Project";
-const featuredCement = "https://placehold.co/800x600/10b981/ffffff?text=Cement+Project";
+const featuredAd =
+  "https://placehold.co/800x600/10b981/ffffff?text=Adaro+Project";
+const featuredBorneo =
+  "https://placehold.co/800x600/10b981/ffffff?text=Borneo+Project";
+const featuredKalimantan =
+  "https://placehold.co/800x600/10b981/ffffff?text=Kalimantan+Project";
+const featuredCement =
+  "https://placehold.co/800x600/10b981/ffffff?text=Cement+Project";
 
 const meta = resolveMeta(getStaticPageMeta("gallery"));
 
@@ -65,7 +69,7 @@ const GallerySection = React.memo(
           transition: { staggerChildren: 0.1, delayChildren: 0.1 },
         },
       }),
-      [],
+      []
     );
     const item = useMemo<Variants>(
       () => ({
@@ -76,7 +80,7 @@ const GallerySection = React.memo(
           transition: { type: "spring", stiffness: 180, damping: 20 },
         },
       }),
-      [],
+      []
     );
 
     const cardWidth = 320; // Card width + gap
@@ -93,7 +97,7 @@ const GallerySection = React.memo(
           setCurrentIndex(index);
         }
       },
-      [cardWidth],
+      [cardWidth]
     );
 
     const nextSlide = useCallback(() => {
@@ -210,7 +214,7 @@ const GallerySection = React.memo(
             tabIndex={0}
             aria-label={translations.gallery.ariaGalleryNavigation.replace(
               "{title}",
-              title,
+              title
             )}
             onKeyDown={(e) => {
               const container = e.currentTarget;
@@ -291,7 +295,7 @@ const GallerySection = React.memo(
         </motion.div>
       </section>
     );
-  },
+  }
 );
 
 // Filtered grid view component
@@ -307,7 +311,7 @@ const FilteredGalleryGrid = React.memo(
           transition: { staggerChildren: 0.1, delayChildren: 0.1 },
         },
       }),
-      [],
+      []
     );
     const item = useMemo<Variants>(
       () => ({
@@ -318,7 +322,7 @@ const FilteredGalleryGrid = React.memo(
           transition: { type: "spring", stiffness: 180, damping: 20 },
         },
       }),
-      [],
+      []
     );
 
     const getCategoryTitle = (filter: string) => {
@@ -502,7 +506,7 @@ const FilteredGalleryGrid = React.memo(
         )}
       </section>
     );
-  },
+  }
 );
 
 const Gallery = () => {
@@ -514,7 +518,7 @@ const Gallery = () => {
         { name: t("common.home"), url: "/" },
         { name: t("common.gallery"), url: meta.path },
       ]),
-    [t],
+    [t]
   );
   const [activeFilter, setActiveFilter] = useState<
     "all" | "adaro" | "kalimantan" | "borneo"

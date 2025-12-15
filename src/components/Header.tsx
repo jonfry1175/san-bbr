@@ -1,7 +1,13 @@
 import { useEffect, useState, useMemo } from "react";
 import { Button } from "@/components/ui/button";
-import { Menu, Check, ChevronDown } from "lucide-react";
+import { Menu, Check, ChevronDown, Home, Info, Package, Wrench, Briefcase, MapPin, Image as ImageIcon, Newspaper, Users, Phone, Globe } from "lucide-react";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -30,7 +36,6 @@ const productLinkConfig = [
 const careerLinkConfig = [
   { key: "san", href: "/career/employee?company=san" },
   { key: "bbr", href: "/career/employee?company=bbr" },
-  { key: "intern", href: "/career/intern" },
 ] as const;
 
 const navigationLinkConfig = [
@@ -362,170 +367,188 @@ const Header = () => {
                 </SheetTrigger>
                 <SheetContent
                   side="right"
-                  className="w-80 bg-neutral-900 text-white border-l border-white/10 overflow-hidden flex flex-col"
+                  className="w-full sm:w-[400px] bg-neutral-900 text-white border-l border-white/10 p-0 flex flex-col"
                 >
-                  <div className="flex-1 overflow-y-auto pr-4">
-                    <div className="flex flex-col space-y-6 mt-8">
-                      <Link
-                        to="/"
-                        className="text-lg font-medium text-white hover:text-accent transition-colors"
-                        onClick={() => setMobileMenuOpen(false)}
-                      >
-                        {headerCopy.home}
-                      </Link>
-
-                      <div>
-                        <p
-                          className={cn(
-                            "text-xs uppercase tracking-wide",
-                            aboutActive ? "text-accent" : "text-white/60"
-                          )}
-                        >
-                          {headerCopy.aboutUs}
-                        </p>
-                        <div className="mt-3 flex flex-col space-y-3">
-                          {aboutLinks.map((link) => (
-                            <Link
-                              key={link.key}
-                              to={link.href}
-                              className={cn(
-                                "text-lg font-medium transition-colors",
-                                link.isActive
-                                  ? "text-accent bg-white/5 px-3 py-2 rounded-md"
-                                  : "text-white hover:text-accent"
-                              )}
-                              onClick={() => setMobileMenuOpen(false)}
-                            >
-                              {link.label}
-                            </Link>
-                          ))}
-                        </div>
-                      </div>
-
-                      <div>
-                        <p
-                          className={cn(
-                            "text-xs uppercase tracking-wide",
-                            productsActive ? "text-accent" : "text-white/60"
-                          )}
-                        >
-                          {headerCopy.navigationItems.products}
-                        </p>
-                        <div className="mt-3 flex flex-col space-y-3">
-                          {productLinks.map((link) => (
-                            <Link
-                              key={link.key}
-                              to={link.href}
-                              className={cn(
-                                "text-lg font-medium transition-colors flex items-center justify-between",
-                                link.isActive
-                                  ? "text-accent bg-white/5 px-3 py-2 rounded-md"
-                                  : "text-white hover:text-accent"
-                              )}
-                              onClick={() => setMobileMenuOpen(false)}
-                            >
-                              <span>{link.label}</span>
-                              {link.isActive && (
-                                <Check className="h-4 w-4 text-accent" />
-                              )}
-                            </Link>
-                          ))}
-                        </div>
-                      </div>
-
-                      {navigationItems.map((item) => (
-                        <Link
-                          key={item.key}
-                          to={item.href}
-                          className={cn(
-                            "text-lg font-medium transition-colors",
-                            item.isActive
-                              ? "text-accent"
-                              : "text-white hover:text-accent"
-                          )}
-                          onClick={() => setMobileMenuOpen(false)}
-                        >
-                          {item.label}
-                        </Link>
-                      ))}
-
-                      <div>
-                        <p
-                          className={cn(
-                            "text-xs uppercase tracking-wide",
-                            careerActive ? "text-accent" : "text-white/60"
-                          )}
-                        >
-                          {headerCopy.navigationItems.career}
-                        </p>
-                        <div className="mt-3 flex flex-col space-y-3">
-                          {careerLinks.map((link) => (
-                            <Link
-                              key={link.key}
-                              to={link.href}
-                              className={cn(
-                                "text-lg font-medium transition-colors",
-                                link.isActive
-                                  ? "text-accent bg-white/5 px-3 py-2 rounded-md"
-                                  : "text-white hover:text-accent"
-                              )}
-                              onClick={() => setMobileMenuOpen(false)}
-                            >
-                              {link.label}
-                            </Link>
-                          ))}
-                        </div>
-                      </div>
-
-                      <Link
-                        to="/contact"
-                        className="bg-accent hover:bg-accent-light text-white px-4 py-2 rounded-md text-lg font-medium transition-colors"
-                        onClick={() => setMobileMenuOpen(false)}
-                      >
-                        {headerCopy.navigationItems.contact}
-                      </Link>
+                  <div className="p-6 border-b border-white/10 flex items-center justify-between">
+                    <div className="flex items-center gap-3">
+                      <img
+                        src={companyLogo}
+                        alt="Logo"
+                        className="h-10 w-auto bg-white p-1 rounded"
+                      />
+                      <span className="font-bold text-lg tracking-wider">MENU</span>
                     </div>
                   </div>
 
-                  <div className="border-t border-white/10 space-y-4 p-4 mt-4">
-                    {/* Language options */}
-                    <div>
-                      <div className="text-xs uppercase tracking-wide text-white/80 mb-2">
-                        {headerCopy.languageLabel}
-                      </div>
-                      <div className="grid grid-cols-2 gap-2">
+                  <div className="flex-1 overflow-y-auto px-6 py-4">
+                    <nav className="flex flex-col space-y-1">
+                      <Link
+                        to="/"
+                        className="flex items-center gap-3 px-2 py-4 text-lg font-medium text-white hover:text-accent border-b border-white/5 transition-colors"
+                        onClick={() => setMobileMenuOpen(false)}
+                      >
+                        <Home className="h-5 w-5 text-accent" />
+                        {headerCopy.home}
+                      </Link>
+
+                      <Accordion type="single" collapsible className="w-full">
+                        <AccordionItem value="about" className="border-b border-white/5">
+                          <AccordionTrigger className="px-2 py-4 text-lg font-medium text-white hover:text-accent hover:no-underline">
+                            <div className="flex items-center gap-3">
+                              <Info className="h-5 w-5 text-accent" />
+                              {headerCopy.aboutUs}
+                            </div>
+                          </AccordionTrigger>
+                          <AccordionContent className="pb-4 pt-1 px-2">
+                            <div className="flex flex-col space-y-2 border-l-2 border-white/10 ml-2 pl-4">
+                              {aboutLinks.map((link) => (
+                                <Link
+                                  key={link.key}
+                                  to={link.href}
+                                  className={cn(
+                                    "text-base py-1 transition-colors block",
+                                    link.isActive
+                                      ? "text-accent font-medium"
+                                      : "text-white/70 hover:text-white"
+                                  )}
+                                  onClick={() => setMobileMenuOpen(false)}
+                                >
+                                  {link.label}
+                                </Link>
+                              ))}
+                            </div>
+                          </AccordionContent>
+                        </AccordionItem>
+
+                        <AccordionItem value="products" className="border-b border-white/5">
+                          <AccordionTrigger className="px-2 py-4 text-lg font-medium text-white hover:text-accent hover:no-underline">
+                            <div className="flex items-center gap-3">
+                              <Package className="h-5 w-5 text-accent" />
+                              {headerCopy.navigationItems.products}
+                            </div>
+                          </AccordionTrigger>
+                          <AccordionContent className="pb-4 pt-1 px-2">
+                            <div className="flex flex-col space-y-2 border-l-2 border-white/10 ml-2 pl-4">
+                              {productLinks.map((link) => (
+                                <Link
+                                  key={link.key}
+                                  to={link.href}
+                                  className={cn(
+                                    "text-base py-1 transition-colors block",
+                                    link.isActive
+                                      ? "text-accent font-medium"
+                                      : "text-white/70 hover:text-white"
+                                  )}
+                                  onClick={() => setMobileMenuOpen(false)}
+                                >
+                                  {link.label}
+                                </Link>
+                              ))}
+                            </div>
+                          </AccordionContent>
+                        </AccordionItem>
+                      </Accordion>
+
+                      {navigationItems.map((item) => {
+                        let Icon = Home;
+                        if (item.key === "services") Icon = Wrench;
+                        else if (item.key === "ourWorks") Icon = Briefcase;
+                        else if (item.key === "location") Icon = MapPin;
+                        else if (item.key === "gallery") Icon = ImageIcon;
+                        else if (item.key === "news") Icon = Newspaper;
+
+                        return (
+                          <Link
+                            key={item.key}
+                            to={item.href}
+                            className={cn(
+                              "flex items-center gap-3 px-2 py-4 text-lg font-medium transition-colors border-b border-white/5",
+                              item.isActive
+                                ? "text-accent"
+                                : "text-white hover:text-accent"
+                            )}
+                            onClick={() => setMobileMenuOpen(false)}
+                          >
+                            <Icon className={cn("h-5 w-5", item.isActive ? "text-accent" : "text-accent")} />
+                            {item.label}
+                          </Link>
+                        );
+                      })}
+
+                      <Accordion type="single" collapsible className="w-full">
+                        <AccordionItem value="career" className="border-b border-white/5">
+                          <AccordionTrigger className="px-2 py-4 text-lg font-medium text-white hover:text-accent hover:no-underline">
+                            <div className="flex items-center gap-3">
+                              <Users className="h-5 w-5 text-accent" />
+                              {headerCopy.navigationItems.career}
+                            </div>
+                          </AccordionTrigger>
+                          <AccordionContent className="pb-4 pt-1 px-2">
+                            <div className="flex flex-col space-y-2 border-l-2 border-white/10 ml-2 pl-4">
+                              {careerLinks.map((link) => (
+                                <Link
+                                  key={link.key}
+                                  to={link.href}
+                                  className={cn(
+                                    "text-base py-1 transition-colors block",
+                                    link.isActive
+                                      ? "text-accent font-medium"
+                                      : "text-white/70 hover:text-white"
+                                  )}
+                                  onClick={() => setMobileMenuOpen(false)}
+                                >
+                                  {link.label}
+                                </Link>
+                              ))}
+                            </div>
+                          </AccordionContent>
+                        </AccordionItem>
+                      </Accordion>
+
+                      <Link
+                        to="/contact"
+                        className="flex items-center gap-3 px-2 py-4 text-lg font-medium text-white hover:text-accent border-b border-white/5 transition-colors"
+                        onClick={() => setMobileMenuOpen(false)}
+                      >
+                        <Phone className="h-5 w-5 text-accent" />
+                        {headerCopy.navigationItems.contact}
+                      </Link>
+                    </nav>
+                  </div>
+
+                  <div className="p-6 bg-neutral-900/50 border-t border-white/10">
+                     <div className="flex items-center justify-between mb-4">
+                        <span className="text-sm text-white/60 uppercase tracking-wider flex items-center gap-2">
+                          <Globe className="h-4 w-4" />
+                          {headerCopy.languageLabel}
+                        </span>
+                     </div>
+                     <div className="grid grid-cols-2 gap-3">
                         <Button
                           variant={language === "EN" ? "default" : "outline"}
-                          className={`w-full h-10 ${language === "EN" ? "" : "text-black"}`}
+                          className={cn("w-full", language !== "EN" && "bg-transparent text-white border-white/20 hover:bg-white/10")}
                           onClick={() => {
                             handleLanguageClick();
                             setMobileMenuOpen(false);
                           }}
-                          aria-label={headerCopy.switchLanguageAria.EN}
                         >
-                          <span className="mr-2" aria-hidden>
-                            {languageMeta.EN.flag}
-                          </span>
+                          <span className="mr-2 text-lg">{languageMeta.EN.flag}</span>
                           EN
                         </Button>
                         <Button
                           variant={language === "ID" ? "default" : "outline"}
-                          className={`w-full h-10 ${language === "ID" ? "" : "text-black"}`}
+                          className={cn("w-full", language !== "ID" && "bg-transparent text-white border-white/20 hover:bg-white/10")}
                           onClick={() => {
                             handleLanguageClick();
                             setMobileMenuOpen(false);
                           }}
-                          aria-label={headerCopy.switchLanguageAria.ID}
                         >
-                          <span className="mr-2" aria-hidden>
-                            {languageMeta.ID.flag}
-                          </span>
+                          <span className="mr-2 text-lg">{languageMeta.ID.flag}</span>
                           ID
                         </Button>
-                      </div>
-                    </div>
+                     </div>
                   </div>
-                </SheetContent>
+                </SheetContent>>
               </Sheet>
             </div>
           </div>

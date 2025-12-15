@@ -38,6 +38,8 @@ export const zhTranslations: TranslationResources = {
     careerLinks: {
       employee: "员工职位",
       intern: "实习计划",
+      san: "PT SAN 职业",
+      bbr: "PT BBR 职业",
     },
   },
   hero: {
@@ -48,6 +50,14 @@ export const zhTranslations: TranslationResources = {
   aboutSection: {
     label: "公司简史",
     title: "PT SAN & PT BBR",
+    ptSan: {
+      title: "PT SAN (重型设备租赁)",
+      description: "建筑和采矿项目高质量重型设备的值得信赖的合作伙伴。我们确保卓越的设备可用性和可靠的技术支持。",
+    },
+    ptBbr: {
+      title: "PT BBR (采矿建筑服务)",
+      description: "采矿建筑和土方工程服务专家。我们优先考虑符合采矿行业标准的高效、安全的工作方法。",
+    },
     description: {
       paragraph1:
         "PT SAN & PT BBR成立于2003年1月15日，是1990年成立的CV. Halim Sampoerna的延续。我们是一家从事建筑服务的公司，专门从事道路和高速公路基础设施。",
@@ -163,6 +173,34 @@ export const zhTranslations: TranslationResources = {
     label: "愿景与使命",
     title: "PT SAN & PT BBR",
     subtitle: "以诚信工作，提供卓越",
+    ptSan: {
+      vision: {
+        title: "PT SAN 愿景",
+        content: "成为印度尼西亚领先、可靠和高效的重型设备解决方案提供商。",
+      },
+      mission: {
+        title: "PT SAN 使命",
+        points: [
+          "提供高质量和维护良好的重型设备车队。",
+          "提供响应迅速的售后服务和技术支持。",
+          "与客户建立长期合作伙伴关系。",
+        ],
+      },
+    },
+    ptBbr: {
+      vision: {
+        title: "PT BBR 愿景",
+        content: "成为在安全和生产力方面卓越的采矿和建筑承包商。",
+      },
+      mission: {
+        title: "PT BBR 使命",
+        points: [
+          "以最高安全标准执行采矿建筑工作。",
+          "通过工作方法创新提高运营效率。",
+          "为利益相关者提供增值。",
+        ],
+      },
+    },
     vision: {
       title: "我们的愿景",
       content:
@@ -185,6 +223,16 @@ export const zhTranslations: TranslationResources = {
     title: "提供各种解决方案",
     description:
       "我们提供最完整的建筑解决方案，具有最佳质量和现代技术，以满足您的项目需求。",
+    ptSan: {
+      title: "重型设备租赁 (PT SAN)",
+      description: "针对各种项目需求的完整重型设备租赁服务。",
+      action: "查看设备目录",
+    },
+    ptBbr: {
+      title: "采矿建筑服务 (PT BBR)",
+      description: "专业的采矿承包商和土木工程服务。",
+      action: "查看建筑服务",
+    },
     viewAll: "查看所有服务",
     learnMore: "了解更多",
     ctaTitle: "需要定制解决方案？",
@@ -702,6 +750,14 @@ export const zhTranslations: TranslationResources = {
     title: "SIPADU",
     description:
       "协同、诚信、保护、信任、奉献和卓越的缩写——PT SAN & PT BBR的工作指导原则，以安全、质量和效率支持国家发展。",
+    ptSan: {
+      title: "PT SAN 战略",
+      description: "专注于预防性维护和高设备可用性以支持客户运营。",
+    },
+    ptBbr: {
+      title: "PT BBR 战略",
+      description: "在每个采矿项目执行中优先考虑运营效率和工作安全。",
+    },
     sipadu: {
       sinergi: {
         title: "协同",
@@ -1461,6 +1517,23 @@ export const zhTranslations: TranslationResources = {
       badge: "我们的产品",
       description:
         "我们提供全面的解决方案，包括重型设备、电力供应和材料运输。每个单元都经过严格检查，准备支持24/7运营。",
+      rent: {
+        badge: "重型设备租赁 (PT SAN)",
+        title: "可靠的重型设备解决方案",
+        description:
+          "我们为您的建筑和采矿项目需求提供高质量的重型设备车队，并提供24/7技术支持。",
+      },
+      sale: {
+        badge: "建筑服务与材料 (PT BBR)",
+        title: "优质建筑与材料",
+        description: "专业的采矿建筑服务和优质材料供应，以支持您的运营。",
+      },
+      all: {
+        badge: "产品与服务",
+        title: "PT SAN & PT BBR 的完整解决方案",
+        description:
+          "探索我们专为您的项目效率和可靠性而设计的各种重型设备和建筑服务。",
+      },
     },
     filters: {
       title: "产品筛选器",

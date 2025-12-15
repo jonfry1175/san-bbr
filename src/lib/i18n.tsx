@@ -47,6 +47,8 @@ type HeaderTranslations = {
   careerLinks: {
     employee: string;
     intern: string;
+    san: string;
+    bbr: string;
   };
 };
 
@@ -688,6 +690,21 @@ export type TranslationResources = {
     intro: {
       badge: string;
       description: string;
+      rent: {
+        badge: string;
+        title: string;
+        description: string;
+      };
+      sale: {
+        badge: string;
+        title: string;
+        description: string;
+      };
+      all: {
+        badge: string;
+        title: string;
+        description: string;
+      };
     };
     filters: {
       title: string;
@@ -881,7 +898,7 @@ type I18nContextValue = {
 const I18nContext = createContext<I18nContextValue | null>(null);
 
 const STORAGE_KEY = "khp_language";
-const defaultLanguage: Language = "EN";
+const defaultLanguage: Language = "ID";
 
 const resolvePath = (obj: unknown, path: string): unknown =>
   path.split(".").reduce<unknown>((acc, segment) => {

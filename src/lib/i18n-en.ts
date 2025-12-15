@@ -38,6 +38,8 @@ export const enTranslations: TranslationResources = {
     careerLinks: {
       employee: "Employee Positions",
       intern: "Internship Programs",
+      san: "PT SAN Careers",
+      bbr: "PT BBR Careers",
     },
   },
   serviceDetail: {
@@ -119,6 +121,24 @@ export const enTranslations: TranslationResources = {
       badge: "Our Products",
       description:
         "We provide comprehensive solutions including heavy equipment, power supply, and material transport. Each unit undergoes strict inspection and is ready to support 24/7 operations.",
+      rent: {
+        badge: "Heavy Equipment Rental (PT SAN)",
+        title: "Reliable Heavy Equipment Solutions",
+        description:
+          "We provide high-quality heavy equipment fleet for your construction and mining project needs with 24/7 technical support.",
+      },
+      sale: {
+        badge: "Construction Services & Materials (PT BBR)",
+        title: "Quality Construction & Materials",
+        description:
+          "Professional mining construction services and quality material supply to support your operations.",
+      },
+      all: {
+        badge: "Products & Services",
+        title: "Complete Solutions by PT SAN & PT BBR",
+        description:
+          "Explore our wide range of heavy equipment and construction services designed for your project efficiency and reliability.",
+      },
     },
     filters: {
       title: "Product Filters",
@@ -706,10 +726,10 @@ export const enTranslations: TranslationResources = {
     ctaRequestQuote: "Request Quote",
   },
   projectsSection: {
-    label: "Our Portfolio",
-    title: "Exceptional Projects We've Delivered",
+    label: "PT SAN & PT BBR Portfolio",
+    title: "Featured Projects of PT SAN & PT BBR",
     description:
-      "Explore our portfolio of successful construction projects across Central Kalimantan and South Kalimantan, showcasing our expertise and commitment to excellence.",
+      "Explore our portfolio of successful construction projects across Central Kalimantan and South Kalimantan, showcasing the expertise and commitment of PT SAN & PT BBR to excellence.",
     viewAll: "View All Projects",
     client: "Client",
     location: "Location",
@@ -1497,7 +1517,7 @@ export const enTranslations: TranslationResources = {
       "Read about our latest projects, achievements, and industry insights.",
     readMore: "Read More",
     viewAll: "View All News",
-    pageTitle: "News & Insights",
+    pageTitle: "News & Insights of PT SAN & PT BBR",
     pageDescription:
       "Project updates, best practices, and construction industry information from PT SAN & PT BBR.",
     detail: {
@@ -1787,8 +1807,8 @@ export const enTranslations: TranslationResources = {
     },
     ourTeam: {
       hero: {
-        label: "Our Team",
-        title: "Leadership & People Behind Every Project",
+        label: "PT SAN & PT BBR Team",
+        title: "Professional Team of PT SAN & PT BBR",
         description:
           "Our leaders drive a culture of safety, efficiency, and quality in every construction project across Central Kalimantan and South Kalimantan.",
       },
@@ -1906,8 +1926,8 @@ export const enTranslations: TranslationResources = {
     },
     certificationGallery: {
       hero: {
-        label: "Certified Professionals",
-        title: "Our Team Credentials & Certifications",
+        label: "Professional Certifications",
+        title: "Certifications of PT SAN & PT BBR",
         description:
           "A collection of official certificates ensuring our team meets safety, quality, and project leadership standards.",
       },
@@ -1930,8 +1950,8 @@ export const enTranslations: TranslationResources = {
     },
     companyAwardsGallery: {
       hero: {
-        label: "Our Awards",
-        title: "Recognition for Excellence and Trust",
+        label: "Company Awards",
+        title: "Awards of PT SAN & PT BBR",
         description:
           "A showcase of accolades affirming our dedication to safety, service quality, and long-term partnerships.",
       },

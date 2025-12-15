@@ -4,25 +4,25 @@ overview: Apply the split branding (PT SAN & PT BBR) to inner pages (Works, News
 todos:
   - id: set_default_lang
     content: Set default language to ID in src/lib/i18n.tsx
-    status: pending
+    status: completed
   - id: update_works
     content: Update Works.tsx hero and branding
-    status: pending
+    status: completed
   - id: update_news
     content: Update News.tsx hero and branding
-    status: pending
+    status: completed
   - id: update_team
     content: Update OurTeam.tsx hero and branding
-    status: pending
+    status: completed
   - id: update_certifications
     content: Update CertificationGallery.tsx hero and branding
-    status: pending
+    status: completed
   - id: update_awards
     content: Update CompanyAwardsGallery.tsx hero and branding
-    status: pending
+    status: completed
   - id: refactor_header_career
     content: Refactor Career navigation in Header.tsx
-    status: pending
+    status: completed
 ---
 
 # Expand Branding Plan
