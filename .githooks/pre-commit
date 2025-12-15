@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# Pre-commit hook: set local user.email before commit
+set -e
+
+# Desired commit email before commit
+TARGET_EMAIL="jonfrymarbun@gmail.com"
+
+echo "[githook] Setting git user.email to ${TARGET_EMAIL} (local)"
+git config user.email "${TARGET_EMAIL}"
+
+exit 0

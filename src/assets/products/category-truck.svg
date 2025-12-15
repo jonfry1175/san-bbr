@@ -1,0 +1,29 @@
+<svg width="160" height="120" viewBox="0 0 160 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-truck" x1="0" y1="0" x2="160" y2="120" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0B233E" />
+      <stop offset="1" stop-color="#1B4579" />
+    </linearGradient>
+    <linearGradient id="accent-truck" x1="18" y1="24" x2="120" y2="96" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#E31E24" />
+      <stop offset="1" stop-color="#FF7A7D" />
+    </linearGradient>
+  </defs>
+  <rect width="160" height="120" rx="18" fill="url(#grad-truck)" />
+  <g opacity="0.12">
+    <rect x="20" y="24" width="48" height="32" rx="10" stroke="white" stroke-width="2" />
+    <rect x="104" y="18" width="36" height="30" rx="10" stroke="white" stroke-width="2" />
+    <path d="M24 94C42 78 74 74 104 82C134 90 146 80 152 68" stroke="white" stroke-width="2" stroke-linecap="round" />
+  </g>
+  <g transform="translate(24 36)">
+    <rect x="8" y="22" width="72" height="32" rx="10" fill="url(#accent-truck)" />
+    <rect x="74" y="16" width="38" height="24" rx="8" fill="#F9FAFB" fill-opacity="0.92" />
+    <rect x="94" y="40" width="20" height="14" rx="4" fill="#F9FAFB" fill-opacity="0.75" />
+    <rect x="20" y="10" width="40" height="22" rx="6" fill="#F9FAFB" fill-opacity="0.9" />
+    <path d="M78 16L110 8L114 28H86L78 16Z" fill="#0D2A4C" fill-opacity="0.85" />
+    <circle cx="24" cy="64" r="12" fill="#0D2A4C" />
+    <circle cx="76" cy="64" r="12" fill="#0D2A4C" />
+    <circle cx="24" cy="64" r="6" fill="#DCE7F5" />
+    <circle cx="76" cy="64" r="6" fill="#DCE7F5" />
+  </g>
+</svg>

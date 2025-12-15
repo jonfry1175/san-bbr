@@ -1,0 +1,26 @@
+# i18n Translation Audit
+
+## Pages
+
+- [ ] src/pages/Career.tsx — Job listings, hero copy, and CTA text remain hard-coded (`src/pages/Career.tsx:24`, `src/pages/Career.tsx:75`, `src/pages/Career.tsx:97`, `src/pages/Career.tsx:123`, `src/pages/Career.tsx:155`).
+- [ ] src/pages/Contact.tsx — Validation messages, hero content, and contact form labels/toasts use literals (`src/pages/Contact.tsx:16`, `src/pages/Contact.tsx:34`, `src/pages/Contact.tsx:47`, `src/pages/Contact.tsx:61`, `src/pages/Contact.tsx:138`, `src/pages/Contact.tsx:182`).
+- [ ] src/pages/Gallery.tsx — Gallery data, filter labels, and CTA messaging are static strings (`src/pages/Gallery.tsx:19`, `src/pages/Gallery.tsx:285`, `src/pages/Gallery.tsx:316`, `src/pages/Gallery.tsx:597`, `src/pages/Gallery.tsx:652`).
+- [ ] src/pages/Location.tsx — Hero label/title and description are not localized (`src/pages/Location.tsx:11`, `src/pages/Location.tsx:12`, `src/pages/Location.tsx:14`).
+- [ ] src/pages/News.tsx — Hero label/title/description remain literal (`src/pages/News.tsx:12`, `src/pages/News.tsx:13`, `src/pages/News.tsx:15`).
+- [ ] src/pages/NewsDetail.tsx — Breadcrumbs, sharing buttons, and section headings use fixed text (`src/pages/NewsDetail.tsx:83`, `src/pages/NewsDetail.tsx:156`, `src/pages/NewsDetail.tsx:214`, `src/pages/NewsDetail.tsx:250`, `src/pages/NewsDetail.tsx:269`).
+- [ ] src/pages/Products.tsx — Hero copy, filters, empty state, and dialog content are hard-coded (`src/pages/Products.tsx:72`, `src/pages/Products.tsx:292`, `src/pages/Products.tsx:313`, `src/pages/Products.tsx:695`, `src/pages/Products.tsx:784`, `src/pages/Products.tsx:990`).
+- [ ] src/pages/ServiceDetail.tsx — Section headings, FAQ prompts, and CTAs use literal text (`src/pages/ServiceDetail.tsx:37`, `src/pages/ServiceDetail.tsx:181`, `src/pages/ServiceDetail.tsx:196`, `src/pages/ServiceDetail.tsx:279`, `src/pages/ServiceDetail.tsx:312`, `src/pages/ServiceDetail.tsx:451`).
+- [ ] src/pages/Works.tsx — Hero copy, tab labels, and CTA text remain static (`src/pages/Works.tsx:25`, `src/pages/Works.tsx:36`, `src/pages/Works.tsx:39`, `src/pages/Works.tsx:92`, `src/pages/Works.tsx:103`, `src/pages/Works.tsx:110`).
+- [ ] src/pages/about-us/OurCompany.tsx — Hero content and company narrative are embedded strings (`src/pages/about-us/OurCompany.tsx:14`, `src/pages/about-us/OurCompany.tsx:31`, `src/pages/about-us/OurCompany.tsx:35`, `src/pages/about-us/OurCompany.tsx:39`, `src/pages/about-us/OurCompany.tsx:59`).
+- [ ] src/pages/about-us/OurTeam.tsx — Hero copy, principles, stats, and organization narrative are literal (`src/pages/about-us/OurTeam.tsx:11`, `src/pages/about-us/OurTeam.tsx:113`, `src/pages/about-us/OurTeam.tsx:114`, `src/pages/about-us/OurTeam.tsx:158`, `src/pages/about-us/OurTeam.tsx:179`, `src/pages/about-us/OurTeam.tsx:217`).
+- [ ] src/pages/about-us/TeamMemberDetail.tsx — Navigation, badges, sections, and timeline text use hard-coded strings (`src/pages/about-us/TeamMemberDetail.tsx:53`, `src/pages/about-us/TeamMemberDetail.tsx:88`, `src/pages/about-us/TeamMemberDetail.tsx:101`, `src/pages/about-us/TeamMemberDetail.tsx:129`, `src/pages/about-us/TeamMemberDetail.tsx:142`, `src/pages/about-us/TeamMemberDetail.tsx:187`).
+- [ ] src/pages/about-us/CertificationGallery.tsx — Hero copy, badge text, and gallery captions are static (`src/pages/about-us/CertificationGallery.tsx:94`, `src/pages/about-us/CertificationGallery.tsx:95`, `src/pages/about-us/CertificationGallery.tsx:112`, `src/pages/about-us/CertificationGallery.tsx:114`, `src/pages/about-us/CertificationGallery.tsx:116`, `src/pages/about-us/CertificationGallery.tsx:18`).
+
+## Components
+
+- [ ] src/components/Footer.tsx — Newsletter copy, navigation labels, and footer CTAs remain literal (`src/components/Footer.tsx:77`, `src/components/Footer.tsx:82`, `src/components/Footer.tsx:101`, `src/components/Footer.tsx:156`, `src/components/Footer.tsx:177`, `src/components/Footer.tsx:291`).
+- [ ] src/components/HeroSection.tsx — Home hero messaging, button labels, stats, and scroll prompt are hard-coded (`src/components/HeroSection.tsx:51`, `src/components/HeroSection.tsx:237`, `src/components/HeroSection.tsx:254`, `src/components/HeroSection.tsx:267`, `src/components/HeroSection.tsx:279`, `src/components/HeroSection.tsx:398`).
+- [ ] src/components/LocationMap.tsx — Category labels, headings, and controls use fixed strings (`src/components/LocationMap.tsx:36`, `src/components/LocationMap.tsx:267`, `src/components/LocationMap.tsx:270`, `src/components/LocationMap.tsx:320`, `src/components/LocationMap.tsx:431`, `src/components/LocationMap.tsx:463`).
+- [ ] src/components/FloatingWhatsApp.tsx — Tooltip text is hard-coded (`src/components/FloatingWhatsApp.tsx:12`).
+- [ ] src/components/GalleryImageCard.tsx — Hover label and quality badge use literal strings (`src/components/GalleryImageCard.tsx:96`, `src/components/GalleryImageCard.tsx:121`).
+- [ ] src/components/HeroProvider.tsx — Default hero labels/titles/descriptions are embedded strings (`src/components/HeroProvider.tsx:23`, `src/components/HeroProvider.tsx:40`, `src/components/HeroProvider.tsx:54`, `src/components/HeroProvider.tsx:71`, `src/components/HeroProvider.tsx:97`, `src/components/HeroProvider.tsx:125`).

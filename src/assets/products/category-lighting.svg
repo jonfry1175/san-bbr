@@ -1,0 +1,26 @@
+<svg width="160" height="120" viewBox="0 0 160 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-lighting" x1="0" y1="0" x2="160" y2="120" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0E2644" />
+      <stop offset="1" stop-color="#1C4B87" />
+    </linearGradient>
+    <linearGradient id="accent-lighting" x1="20" y1="20" x2="140" y2="100" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#E31E24" />
+      <stop offset="1" stop-color="#FF9C9E" />
+    </linearGradient>
+  </defs>
+  <rect width="160" height="120" rx="18" fill="url(#grad-lighting)" />
+  <g opacity="0.15">
+    <circle cx="40" cy="32" r="16" stroke="white" stroke-width="2" />
+    <circle cx="120" cy="36" r="20" stroke="white" stroke-width="2" />
+    <path d="M24 92C40 80 64 76 92 82C120 88 136 82 148 70" stroke="white" stroke-width="2" stroke-linecap="round" />
+  </g>
+  <g transform="translate(36 20)">
+    <rect x="22" width="44" height="18" rx="8" fill="#F9FAFB" fill-opacity="0.85" />
+    <rect x="0" y="18" width="88" height="10" rx="5" fill="#F9FAFB" fill-opacity="0.45" />
+    <rect x="40" y="18" width="8" height="60" fill="#F9FAFB" fill-opacity="0.9" />
+    <rect x="28" y="78" width="32" height="14" rx="4" fill="url(#accent-lighting)" />
+    <path d="M14 26L40 46L34 46L58 62H52L24 44L28 44L14 34V26Z" fill="#F9FAFB" fill-opacity="0.92" />
+    <path d="M74 26L48 46L54 46L30 62H36L64 44L60 44L74 34V26Z" fill="#F9FAFB" fill-opacity="0.92" />
+  </g>
+</svg>

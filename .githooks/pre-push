@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+# Pre-push hook: amend the most recent commit to have a specified author/email before push
+set -e
+
+# Target author info for push
+TARGET_NAME="Galuh Pradipta"
+TARGET_EMAIL="galuhpradipta95@gmail.com"
+
+echo "[githook] Amending last commit author to: ${TARGET_NAME} <${TARGET_EMAIL}>"
+
+# Only amend if there is at least one commit
+if git rev-parse --verify HEAD >/dev/null 2>&1; then
+  # Amend the last commit's author while keeping the same commit message
+  git commit --amend --no-edit --author="${TARGET_NAME} <${TARGET_EMAIL}>" || true
+else
+  echo "[githook] No commits yet, skipping amend."
+fi
+
+exit 0

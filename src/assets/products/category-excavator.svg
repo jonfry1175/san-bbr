@@ -1,0 +1,29 @@
+<svg width="160" height="120" viewBox="0 0 160 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad-excavator" x1="0" y1="0" x2="160" y2="120" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0D2A4C" />
+      <stop offset="1" stop-color="#1F4F8C" />
+    </linearGradient>
+    <linearGradient id="accent-excavator" x1="20" y1="20" x2="140" y2="100" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#E31E24" />
+      <stop offset="1" stop-color="#F86668" />
+    </linearGradient>
+  </defs>
+  <rect width="160" height="120" rx="18" fill="url(#grad-excavator)" />
+  <g opacity="0.12">
+    <circle cx="30" cy="30" r="24" stroke="white" stroke-width="2" />
+    <circle cx="130" cy="30" r="18" stroke="white" stroke-width="2" />
+    <path d="M20 94C34 78 62 74 90 80C118 86 138 74 148 58" stroke="white" stroke-width="2" stroke-linecap="round" />
+  </g>
+  <g transform="translate(28 34)">
+    <rect x="22" y="36" width="52" height="22" rx="6" fill="url(#accent-excavator)" />
+    <rect x="34" y="6" width="36" height="34" rx="6" fill="#F9FAFB" fill-opacity="0.9" />
+    <path d="M74 12L102 44L94 50L66 22Z" fill="#F9FAFB" fill-opacity="0.92" />
+    <path d="M98 46H108C110.21 46 112 47.79 112 50V58H98V46Z" fill="#F9FAFB" fill-opacity="0.85" />
+    <circle cx="34" cy="68" r="12" fill="#0D2A4C" />
+    <circle cx="82" cy="68" r="12" fill="#0D2A4C" />
+    <circle cx="34" cy="68" r="6" fill="#DCE7F5" />
+    <circle cx="82" cy="68" r="6" fill="#DCE7F5" />
+    <rect x="8" y="44" width="14" height="8" rx="4" fill="#F9FAFB" fill-opacity="0.85" />
+  </g>
+</svg>
