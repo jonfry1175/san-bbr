@@ -32,8 +32,8 @@ export const zhTranslations: TranslationResources = {
       contact: "联系我们",
     },
     productLinks: {
-      forSale: "销售产品",
-      forRent: "租赁产品",
+      rentalAlatBerat: "重型设备租赁 (PT SAN)",
+      jasaKonstruksi: "采矿建筑服务 (PT BBR)",
     },
     careerLinks: {
       employee: "员工职位",

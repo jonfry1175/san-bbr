@@ -41,8 +41,8 @@ type HeaderTranslations = {
     contact: string;
   };
   productLinks: {
-    forSale: string;
-    forRent: string;
+    rentalAlatBerat: string;
+    jasaKonstruksi: string;
   };
   careerLinks: {
     employee: string;

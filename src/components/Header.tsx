@@ -12,6 +12,7 @@ import companyLogo from "@/assets/company-logo.png";
 import { Link, useLocation } from "react-router-dom";
 import { useI18n } from "@/lib/i18n";
 import { cn } from "@/lib/utils";
+import { toast } from "sonner";
 
 const aboutLinkConfig = [
   { key: "ourCompany", href: "/about-us/our-company" },
@@ -21,8 +22,8 @@ const aboutLinkConfig = [
 ] as const;
 
 const productLinkConfig = [
-  { key: "forRent", href: "/products?category=rent" },
-  { key: "forSale", href: "/products?category=sale" },
+  { key: "rentalAlatBerat", href: "/products?category=rent" },
+  { key: "jasaKonstruksi", href: "/products?category=sale" },
 ] as const;
 
 const careerLinkConfig = [
@@ -39,9 +40,8 @@ const navigationLinkConfig = [
 ] as const;
 
 const Header = () => {
-  const { language, setLanguage, languageMeta, translations, t } = useI18n();
+  const { language, languageMeta, translations, t } = useI18n();
   const location = useLocation();
-  const [isSearchOpen, setIsSearchOpen] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
@@ -65,11 +65,14 @@ const Header = () => {
   }));
 
   const productLinks = productLinkConfig.map((link) => {
-    const productKey = link.key.replace(/^for/, "").toLowerCase(); // forSale -> sale
+    // Extract category from href to compare with currentSalesCategory
+    const categoryMatch = link.href.match(/category=([^&]*)/);
+    const linkCategory = categoryMatch ? categoryMatch[1] : null;
+
     return {
       ...link,
       label: headerCopy.productLinks[link.key],
-      isActive: currentSalesCategory === productKey,
+      isActive: currentSalesCategory === linkCategory,
     };
   });
 
@@ -95,6 +98,10 @@ const Header = () => {
     window.addEventListener("scroll", onScroll);
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
+
+  const handleLanguageClick = () => {
+    toast.info("Fitur bahasa sedang dalam pengembangan");
+  };
 
   return (
     <>
@@ -197,7 +204,7 @@ const Header = () => {
                   </button>
                 </DropdownMenuTrigger>
                 <DropdownMenuContent
-                  className="w-48 bg-neutral-900/95 text-white border border-white/10"
+                  className="w-64 bg-neutral-900/95 text-white border border-white/10"
                   align="start"
                 >
                   {productLinks.map((link) => (
@@ -289,33 +296,6 @@ const Header = () => {
 
             {/* Right Actions */}
             <div className="flex items-center space-x-2 md:space-x-4">
-              {/* Search */}
-              {/* <div className="relative hidden md:block">
-                {isSearchOpen ? (
-                  <div className="flex items-center space-x-2">
-                    <Input
-                      placeholder="Search..."
-                      className="w-64 bg-neutral-800 text-white placeholder:text-white/70 border-white/20 focus-visible:ring-white"
-                      autoFocus
-                    />
-                    <Button
-                      variant="ghost"
-                      size="icon"
-                      onClick={() => setIsSearchOpen(false)}
-                    >
-                      <X className="h-4 w-4" />
-                    </Button>
-                  </div>
-                ) : (
-                    <Button
-                      variant="ghost"
-                      size="icon"
-                      onClick={() => setIsSearchOpen(true)}
-                    >
-                    <Search className="h-4 w-4" />
-                  </Button>
-                )}
-              </div> */}
 
               {/* Language selector (compact for main bar) */}
               <div className="hidden md:block">
@@ -340,7 +320,7 @@ const Header = () => {
                     className="w-44 bg-neutral-900/95 text-white border border-white/10"
                   >
                     <DropdownMenuItem
-                      onClick={() => setLanguage("EN")}
+                      onClick={handleLanguageClick}
                       className="justify-between text-white hover:bg-white/10"
                     >
                       <span className="flex items-center gap-2">
@@ -354,7 +334,7 @@ const Header = () => {
                       )}
                     </DropdownMenuItem>
                     <DropdownMenuItem
-                      onClick={() => setLanguage("ID")}
+                      onClick={handleLanguageClick}
                       className="justify-between text-white hover:bg-white/10"
                     >
                       <span className="flex items-center gap-2">
@@ -368,7 +348,7 @@ const Header = () => {
                       )}
                     </DropdownMenuItem>
                     <DropdownMenuItem
-                      onClick={() => setLanguage("ZH")}
+                      onClick={handleLanguageClick}
                       className="justify-between text-white hover:bg-white/10"
                     >
                       <span className="flex items-center gap-2">
@@ -530,7 +510,7 @@ const Header = () => {
                           variant={language === "EN" ? "default" : "outline"}
                           className={`w-full h-10 ${language === "EN" ? "" : "text-black"}`}
                           onClick={() => {
-                            setLanguage("EN");
+                            handleLanguageClick();
                             setMobileMenuOpen(false);
                           }}
                           aria-label={headerCopy.switchLanguageAria.EN}
@@ -544,7 +524,7 @@ const Header = () => {
                           variant={language === "ID" ? "default" : "outline"}
                           className={`w-full h-10 ${language === "ID" ? "" : "text-black"}`}
                           onClick={() => {
-                            setLanguage("ID");
+                            handleLanguageClick();
                             setMobileMenuOpen(false);
                           }}
                           aria-label={headerCopy.switchLanguageAria.ID}
@@ -558,7 +538,7 @@ const Header = () => {
                           variant={language === "ZH" ? "default" : "outline"}
                           className={`w-full h-10 ${language === "ZH" ? "" : "text-black"}`}
                           onClick={() => {
-                            setLanguage("ZH");
+                            handleLanguageClick();
                             setMobileMenuOpen(false);
                           }}
                           aria-label={headerCopy.switchLanguageAria.ZH}

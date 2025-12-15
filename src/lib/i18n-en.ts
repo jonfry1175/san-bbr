@@ -32,8 +32,8 @@ export const enTranslations: TranslationResources = {
       contact: "Contact Us",
     },
     productLinks: {
-      forSale: "For Sale",
-      forRent: "For Rent",
+      rentalAlatBerat: "Heavy Equipment Rental (PT SAN)",
+      jasaKonstruksi: "Mining Construction Services (PT BBR)",
     },
     careerLinks: {
       employee: "Employee Positions",

@@ -8,7 +8,7 @@ import plugin from "tailwindcss/plugin";
  * Example: "210 100% 15%"
  */
 const brand = {
-  primary: "210 100% 15%",
+  primary: "142 76% 36%", // Green theme (Forest Green style)
 } as const;
 
 function clamp(n: number, min: number, max: number) {

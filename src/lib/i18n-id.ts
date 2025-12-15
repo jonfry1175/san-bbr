@@ -32,8 +32,8 @@ export const idTranslations: TranslationResources = {
       contact: "Hubungi Kami",
     },
     productLinks: {
-      forSale: "Produk Jual",
-      forRent: "Produk Sewa",
+      rentalAlatBerat: "Rental Alat Berat (PT SAN)",
+      jasaKonstruksi: "Jasa Konstruksi Tambang (PT BBR)",
     },
     careerLinks: {
       employee: "Peluang Karir",
@@ -53,7 +53,7 @@ export const idTranslations: TranslationResources = {
         paragraph1:
           "Kami terdiri dari para ahli konstruksi jalan, <em>earthwork</em>, dan <em>hotmix</em> yang berpengalaman lebih dari tiga dekade. Budaya kerja kami menekankan keselamatan, kolaborasi lintas divisi, dan inovasi berkelanjutan agar setiap proyek terselesaikan dengan standar terbaik.",
         paragraph2:
-          "Dengan dukungan armada peralatan <em>heavy-duty</em> yang lengkap serta sertifikasi keselamatan kerja, tim PT. Karya Halim Sampoerna siap mewujudkan infrastruktur berkualitas bagi klien pemerintah maupun swasta.",
+          "Dengan dukungan armada peralatan <em>heavy-duty</em> yang lengkap serta sertifikasi keselamatan kerja, tim PT SAN & PT BBR siap mewujudkan infrastruktur berkualitas bagi klien pemerintah maupun swasta.",
         imageAlt:
           "Tim lapangan PT. Karya Halim Sampoerna mengenakan seragam keselamatan di area proyek",
         slogan:
@@ -104,7 +104,7 @@ export const idTranslations: TranslationResources = {
         trainingHours: { label: "Jam Pelatihan Tahunan", value: "1.200" },
       },
       organization: {
-        badgeCompany: "PT. Karya Halim Sampoerna",
+        badgeCompany: "PT SAN & PT BBR",
         title: "Struktur Organisasi",
         paragraph1:
           "Jalur koordinasi utama dari pemegang saham hingga divisi operasional divisualisasikan sebagai bagan pohon, memudahkan setiap pemangku kepentingan membaca alur mandat dan tanggung jawab.",
@@ -176,7 +176,7 @@ export const idTranslations: TranslationResources = {
         description:
           "Tonggak penting yang menyoroti pertumbuhan, kepemimpinan, dan dampak.",
         descriptionTemplate:
-          "Tonggak perjalanan karir yang membentuk gaya kepemimpinan {name} di PT. Karya Halim Sampoerna.",
+          "Tonggak perjalanan karir yang membentuk gaya kepemimpinan {name} di PT SAN & PT BBR.",
       },
     },
     certificationGallery: {
@@ -644,15 +644,15 @@ export const idTranslations: TranslationResources = {
     },
   },
   aboutSection: {
-    label: "Sejarah Singkat Perusahaan",
-    title: "PT. Karya Halim Sampoerna",
+    label: "Tentang Perusahaan",
+    title: "PT SAN & PT BBR",
     description: {
       paragraph1:
-        "PT. Karya Halim Sampoerna didirikan pada tanggal 15 Januari 2003 sebagai kelanjutan dari CV. Halim Sampoerna yang berdiri sejak tahun 1990. Kami adalah perusahaan yang bergerak di bidang jasa konstruksi dengan spesialisasi infrastruktur jalan dan jalan raya.",
+        "PT SAN (Rental Alat Berat) dan PT BBR (Jasa Konstruksi Tambang) hadir sebagai solusi terintegrasi untuk kebutuhan industri pertambangan dan konstruksi di Indonesia.",
       paragraph2:
-        "Dengan pengalaman lebih dari 35 tahun di bidang konstruksi, kami telah menyelesaikan ratusan proyek di Kalimantan Tengah dan Kalimantan Selatan. Komitmen kami terhadap kualitas dan inovasi menjadikan kami mitra terpercaya bagi berbagai institusi pemerintah dan swasta.",
+        "Dengan pengalaman yang solid di bidangnya masing-masing, sinergi kedua entitas ini menghadirkan layanan komprehensif mulai dari penyediaan alat berat berkualitas hingga eksekusi proyek konstruksi tambang yang presisi.",
       paragraph3:
-        "Kami terus tumbuh dan berkembang dengan mengadopsi teknologi terkini dan praktik terbaik dalam industri konstruksi untuk memberikan solusi optimal bagi setiap proyek yang kami tangani.",
+        "Komitmen kami terhadap keselamatan, efisiensi, dan kepuasan klien menjadikan kami mitra terpercaya bagi berbagai perusahaan tambang dan konstruksi terkemuka.",
     },
     achievements: {
       established: "Didirikan",
@@ -691,8 +691,8 @@ export const idTranslations: TranslationResources = {
   },
   visionMission: {
     label: "Visi & Misi",
-    title: "PT. Karya Halim Sampoerna",
-    subtitle: "Bekerja dengan Integritas, Menghasilkan Kualitas",
+    title: "PT SAN & PT BBR",
+    subtitle: "Sinergi Kekuatan untuk Membangun Masa Depan",
     vision: {
       title: "Visi Kami",
       content:
@@ -1457,7 +1457,7 @@ export const idTranslations: TranslationResources = {
     viewAll: "Lihat Semua Berita",
     pageTitle: "Berita & Insight",
     pageDescription:
-      "Pembaruan proyek, praktik terbaik, dan informasi industri konstruksi dari PT. Karya Halim Sampoerna.",
+      "Pembaruan proyek, praktik terbaik, dan informasi industri konstruksi dari PT SAN & PT BBR.",
     detail: {
       backToNews: "Kembali ke Berita",
       shareLabel: "Bagikan:",
@@ -1532,7 +1532,7 @@ export const idTranslations: TranslationResources = {
     label: "Strategi Perusahaan",
     title: "SIPADU",
     description:
-      "Merupakan singkatan dari Sinergi, Integritas, Perlindungan, Amanah, Dedikasi, dan Unggul — pedoman kerja PT. Karya Halim Sampoerna untuk mendukung pembangunan nasional dengan keselamatan, mutu, dan efisiensi.",
+      "Merupakan singkatan dari Sinergi, Integritas, Perlindungan, Amanah, Dedikasi, dan Unggul — pedoman kerja PT SAN & PT BBR untuk mendukung pembangunan nasional dengan keselamatan, mutu, dan efisiensi.",
     sipadu: {
       sinergi: {
         title: "Sinergi",
@@ -1561,7 +1561,7 @@ export const idTranslations: TranslationResources = {
     },
     logoMeaning: {
       title: "Makna Perusahaan",
-      companyName: "PT. Karya Halim Sampoerna",
+      companyName: "PT SAN & PT BBR",
       items: {
         redColor: {
           title: "Warna Merah",
@@ -1821,7 +1821,7 @@ export const idTranslations: TranslationResources = {
       qualityAssured: "Kualitas Terjamin",
       completedProjects: "Proyek Selesai",
     },
-    modal: { companyName: "PT. Karya Halim Sampoerna" },
+    modal: { companyName: "PT SAN & PT BBR" },
     ariaGalleryNavigation:
       "{title} galeri - gunakan tombol panah untuk navigasi",
   },
@@ -1874,9 +1874,9 @@ export const idTranslations: TranslationResources = {
   },
   footer: {
     company: {
-      title: "PT. Karya Halim Sampoerna",
+      title: "PT SAN & PT BBR",
       description:
-        "Mitra terpercaya Anda dalam pembangunan konstruksi dan infrastruktur dengan pengalaman lebih dari 35 tahun.",
+        "Mitra terpercaya Anda dalam solusi rental alat berat dan jasa konstruksi tambang.",
       followUs: "Ikuti Kami",
     },
     quickLinks: {
@@ -1915,6 +1915,6 @@ export const idTranslations: TranslationResources = {
     },
     ctaLookingForPartner: "Mencari mitra yang terpercaya?",
     ctaLetsBuild: "Mari membangun sesuatu yang hebat bersama.",
-    copyright: "© 2024 PT. Karya Halim Sampoerna. Semua hak dilindungi.",
+    copyright: "© 2024 PT SAN & PT BBR. Semua hak dilindungi.",
   },
 };
