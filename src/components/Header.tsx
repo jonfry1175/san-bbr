@@ -19,7 +19,6 @@ const companyLogo = "https://placehold.co/200x80/white/000000?text=Company+Logo"
 import { Link, useLocation } from "react-router-dom";
 import { useI18n } from "@/lib/i18n";
 import { cn } from "@/lib/utils";
-import { toast } from "sonner";
 
 const aboutLinkConfig = [
   { key: "ourCompany", href: "/about-us/our-company" },
@@ -47,7 +46,7 @@ const navigationLinkConfig = [
 ] as const;
 
 const Header = () => {
-  const { language, languageMeta, translations, t } = useI18n();
+  const { language, setLanguage, languageMeta, translations, t } = useI18n();
   const location = useLocation();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
@@ -105,10 +104,6 @@ const Header = () => {
     window.addEventListener("scroll", onScroll);
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
-
-  const handleLanguageClick = () => {
-    toast.info("Fitur bahasa sedang dalam pengembangan");
-  };
 
   return (
     <>
@@ -327,7 +322,7 @@ const Header = () => {
                     className="w-44 bg-neutral-900/95 text-white border border-white/10"
                   >
                     <DropdownMenuItem
-                      onClick={handleLanguageClick}
+                      onClick={() => setLanguage("EN")}
                       className="justify-between text-white hover:bg-white/10"
                     >
                       <span className="flex items-center gap-2">
@@ -341,7 +336,7 @@ const Header = () => {
                       )}
                     </DropdownMenuItem>
                     <DropdownMenuItem
-                      onClick={handleLanguageClick}
+                      onClick={() => setLanguage("ID")}
                       className="justify-between text-white hover:bg-white/10"
                     >
                       <span className="flex items-center gap-2">
@@ -528,7 +523,7 @@ const Header = () => {
                           variant={language === "EN" ? "default" : "outline"}
                           className={cn("w-full", language !== "EN" && "bg-transparent text-white border-white/20 hover:bg-white/10")}
                           onClick={() => {
-                            handleLanguageClick();
+                            setLanguage("EN");
                             setMobileMenuOpen(false);
                           }}
                         >
@@ -539,7 +534,7 @@ const Header = () => {
                           variant={language === "ID" ? "default" : "outline"}
                           className={cn("w-full", language !== "ID" && "bg-transparent text-white border-white/20 hover:bg-white/10")}
                           onClick={() => {
-                            handleLanguageClick();
+                            setLanguage("ID");
                             setMobileMenuOpen(false);
                           }}
                         >
@@ -548,7 +543,7 @@ const Header = () => {
                         </Button>
                      </div>
                   </div>
-                </SheetContent>>
+                </SheetContent>
               </Sheet>
             </div>
           </div>
