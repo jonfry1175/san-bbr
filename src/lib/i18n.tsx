@@ -64,6 +64,14 @@ type AboutSectionTranslations = {
     paragraph2: string;
     paragraph3: string;
   };
+  ptSan: {
+    title: string;
+    description: string;
+  };
+  ptBbr: {
+    title: string;
+    description: string;
+  };
   achievements: {
     established: string;
     establishedDesc: string;
@@ -100,6 +108,14 @@ type VisionMissionTranslations = {
   label: string;
   title: string;
   subtitle: string;
+  ptSan: {
+    vision: { title: string; content: string };
+    mission: { title: string; points: string[] };
+  };
+  ptBbr: {
+    vision: { title: string; content: string };
+    mission: { title: string; points: string[] };
+  };
   vision: {
     title: string;
     content: string;
@@ -114,6 +130,16 @@ type ServicesSectionTranslations = {
   label: string;
   title: string;
   description: string;
+  ptSan: {
+    title: string;
+    description: string;
+    action: string;
+  };
+  ptBbr: {
+    title: string;
+    description: string;
+    action: string;
+  };
   viewAll: string;
   learnMore: string;
   ctaTitle: string;
@@ -222,6 +248,14 @@ type CompanyStrategyTranslations = {
   label: string;
   title: string;
   description: string;
+  ptSan: {
+    title: string;
+    description: string;
+  };
+  ptBbr: {
+    title: string;
+    description: string;
+  };
   sipadu: {
     sinergi: {
       title: string;

@@ -1,8 +1,8 @@
-# Product Requirements Document: Website Redevelopment for PT. Karya Halim Sampoerna
+# Product Requirements Document: Website Rebranding for PT SAN & PT BBR
 
 ## 1. Objective
 
-To redevelop the corporate website for PT. Karya Halim Sampoerna (`karyahalimsampoerna.id`). The new website must include all features from the existing site while adopting a new, modern, and professional design identity inspired by `https://www.pttun.co.id/`. The goal is to create a user-friendly, responsive, and professional online presence that effectively showcases the company's services, projects, and corporate identity.
+To redevelop the corporate website platform to represent two distinct entities: **PT SAN** (Rental Alat Berat) and **PT BBR** (Jasa Konstruksi Tambang). The new website must include all features from the existing site while clearly distinguishing and showcasing the services of both companies under a unified professional platform. The goal is to create a user-friendly, responsive, and professional online presence.
 
 ## 2. Design and Branding Guidelines (Inspired by pttun.co.id)
 

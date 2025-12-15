@@ -1,10 +1,14 @@
- # Gemini Project Context: Karya Halim Modern Platform
+ # Gemini Project Context: SAN & BBR Platform
 
 This document provides context for the AI assistant to understand the project structure, conventions, and goals.
 
 ## Project Overview
 
-This is a modern web application for "Karya Halim," a company likely involved in construction or heavy industry. The application serves as a corporate profile or marketing platform.
+This is a modern web application serving as a platform for two entities:
+- **PT SAN** (Rental Alat Berat)
+- **PT BBR** (Jasa Konstruksi Tambang)
+
+The application serves as a corporate profile or marketing platform.
 
 - **Framework:** React (using Vite for bundling)
 - **Language:** TypeScript

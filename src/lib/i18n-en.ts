@@ -582,14 +582,22 @@ export const enTranslations: TranslationResources = {
 
   aboutSection: {
     label: "Brief Company History",
-    title: "PT. Karya Halim Sampoerna",
+    title: "PT SAN & PT BBR",
+    ptSan: {
+      title: "PT SAN (Heavy Equipment Rental)",
+      description: "Trusted partner in providing high-quality heavy equipment for construction and mining projects. We ensure excellent unit availability and reliable technical support.",
+    },
+    ptBbr: {
+      title: "PT BBR (Mining Construction Services)",
+      description: "Specialist in mining construction and earthwork services. We prioritize efficient, safe work methods that comply with mining industry standards.",
+    },
     description: {
       paragraph1:
-        "PT. Karya Halim Sampoerna was established on January 15, 2003, as a continuation of CV. Halim Sampoerna which was founded in 1990. We are a company engaged in construction services specializing in road and highway infrastructure.",
+        "PT SAN (Heavy Equipment Rental) and PT BBR (Mining Construction Services) are here as an integrated solution for the mining and construction industry needs in Indonesia.",
       paragraph2:
-        "With more than 35 years of experience in construction, we have completed hundreds of projects in Central Kalimantan and South Kalimantan. Our commitment to quality and innovation has made us a trusted partner for various government and private institutions.",
+        "With solid experience in their respective fields, the synergy of these two entities delivers comprehensive services ranging from providing quality heavy equipment to precise mining construction project execution.",
       paragraph3:
-        "We continue to grow and develop by adopting the latest technology and best practices in the construction industry to provide optimal solutions for every project we handle.",
+        "Our commitment to safety, efficiency, and client satisfaction makes us a trusted partner for various leading mining and construction companies.",
     },
     achievements: {
       established: "Established",
@@ -628,8 +636,36 @@ export const enTranslations: TranslationResources = {
   },
   visionMission: {
     label: "Vision & Mission",
-    title: "PT. Karya Halim Sampoerna",
-    subtitle: "Work with Integrity, Deliver Excellence",
+    title: "PT SAN & PT BBR",
+    subtitle: "Synergy of Strength to Build the Future",
+    ptSan: {
+      vision: {
+        title: "PT SAN Vision",
+        content: "To be the leading, reliable, and efficient heavy equipment solution provider in Indonesia.",
+      },
+      mission: {
+        title: "PT SAN Mission",
+        points: [
+          "Provide high-quality and well-maintained heavy equipment fleet.",
+          "Deliver responsive after-sales service and technical support.",
+          "Build long-term partnerships with customers.",
+        ],
+      },
+    },
+    ptBbr: {
+      vision: {
+        title: "PT BBR Vision",
+        content: "To be a mining and construction contractor that excels in safety and productivity.",
+      },
+      mission: {
+        title: "PT BBR Mission",
+        points: [
+          "Execute mining construction work with the highest safety standards.",
+          "Improve operational efficiency through work method innovation.",
+          "Provide added value to stakeholders.",
+        ],
+      },
+    },
     vision: {
       title: "Our Vision",
       content:
@@ -652,6 +688,16 @@ export const enTranslations: TranslationResources = {
     title: "Providing Solutions of Every Kind",
     description:
       "We provide the most complete construction solutions with the best quality and modern technology to meet your project needs.",
+    ptSan: {
+      title: "Heavy Equipment Rental (PT SAN)",
+      description: "Complete heavy equipment rental services for various project needs.",
+      action: "View Equipment Catalog",
+    },
+    ptBbr: {
+      title: "Mining Construction Services (PT BBR)",
+      description: "Professional mining contractor and civil engineering services.",
+      action: "View Construction Services",
+    },
     viewAll: "View All Services",
     learnMore: "Learn More",
     ctaTitle: "Need a Custom Solution?",
@@ -1525,7 +1571,15 @@ export const enTranslations: TranslationResources = {
     label: "Company Strategy",
     title: "SIPADU",
     description:
-      "An acronym for Synergy, Integrity, Protection, Trust, Dedication, and Excellence — PT. Karya Halim Sampoerna's work guidelines to support national development with safety, quality, and efficiency.",
+      "An acronym for Synergy, Integrity, Protection, Trust, Dedication, and Excellence — PT SAN & PT BBR's work guidelines to support national development with safety, quality, and efficiency.",
+    ptSan: {
+      title: "PT SAN Strategy",
+      description: "Focus on preventive maintenance and high unit availability to support client operations.",
+    },
+    ptBbr: {
+      title: "PT BBR Strategy",
+      description: "Prioritizing operational efficiency and work safety in every mining project execution.",
+    },
     sipadu: {
       sinergi: {
         title: "Synergy",

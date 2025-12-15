@@ -15,7 +15,7 @@ Before submitting changes, ensure `npm run lint` and `npm run build` pass.
 
 ## Project Architecture
 
-This is a Vite + React + TypeScript web application for PT. Karya Halim Sampoerna using shadcn/ui + Tailwind CSS.
+This is a Vite + React + TypeScript web application for PT SAN (Rental Alat Berat) and PT BBR (Jasa Konstruksi Tambang) using shadcn/ui + Tailwind CSS.
 
 ### Tech Stack
 
@@ -105,15 +105,16 @@ Routes are wrapped with `AppLayout` component which provides Header, Footer, Her
 
 ## Business Context
 
-This is a corporate website for PT. Karya Halim Sampoerna, an Indonesian construction company. The site showcases:
+This is a corporate website platform for PT SAN and PT BBR. The site showcases:
 
-- Construction services (asphalt, earthwork, CTRB, etc.)
+- **PT SAN**: Heavy equipment rental services (Rental Alat Berat)
+- **PT BBR**: Mining construction services (Jasa Konstruksi Tambang)
 - Portfolio of completed projects
 - Company news and updates
 - Career opportunities
 - Company information and contact details
 
-The design follows a professional corporate aesthetic with blue/gold color scheme inspired by pttun.co.id.
+The design follows a professional corporate aesthetic.
 
 ## Configuration Notes
 

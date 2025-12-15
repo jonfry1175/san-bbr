@@ -646,6 +646,14 @@ export const idTranslations: TranslationResources = {
   aboutSection: {
     label: "Tentang Perusahaan",
     title: "PT SAN & PT BBR",
+    ptSan: {
+      title: "PT SAN (Rental Alat Berat)",
+      description: "Mitra terpercaya dalam penyediaan alat berat berkualitas untuk kebutuhan proyek konstruksi dan pertambangan. Kami menjamin ketersediaan unit yang prima dan dukungan teknis yang handal.",
+    },
+    ptBbr: {
+      title: "PT BBR (Jasa Konstruksi Tambang)",
+      description: "Spesialis dalam jasa konstruksi tambang dan pekerjaan tanah (earthwork). Kami mengedepankan metode kerja yang efisien, aman, dan sesuai standar industri pertambangan.",
+    },
     description: {
       paragraph1:
         "PT SAN (Rental Alat Berat) dan PT BBR (Jasa Konstruksi Tambang) hadir sebagai solusi terintegrasi untuk kebutuhan industri pertambangan dan konstruksi di Indonesia.",
@@ -693,6 +701,34 @@ export const idTranslations: TranslationResources = {
     label: "Visi & Misi",
     title: "PT SAN & PT BBR",
     subtitle: "Sinergi Kekuatan untuk Membangun Masa Depan",
+    ptSan: {
+      vision: {
+        title: "Visi PT SAN",
+        content: "Menjadi penyedia solusi alat berat terkemuka yang handal dan efisien di Indonesia.",
+      },
+      mission: {
+        title: "Misi PT SAN",
+        points: [
+          "Menyediakan armada alat berat yang berkualitas dan terawat.",
+          "Memberikan layanan purna jual dan dukungan teknis yang responsif.",
+          "Membangun kemitraan jangka panjang dengan pelanggan.",
+        ],
+      },
+    },
+    ptBbr: {
+      vision: {
+        title: "Visi PT BBR",
+        content: "Menjadi kontraktor pertambangan dan konstruksi yang unggul dalam keselamatan dan produktivitas.",
+      },
+      mission: {
+        title: "Misi PT BBR",
+        points: [
+          "Melaksanakan pekerjaan konstruksi tambang dengan standar keselamatan tertinggi.",
+          "Meningkatkan efisiensi operasional melalui inovasi metode kerja.",
+          "Memberikan nilai tambah bagi pemangku kepentingan.",
+        ],
+      },
+    },
     vision: {
       title: "Visi Kami",
       content:
@@ -715,6 +751,16 @@ export const idTranslations: TranslationResources = {
     title: "Menyediakan Solusi untuk Setiap Kebutuhan",
     description:
       "Kami menyediakan solusi konstruksi terlengkap dengan kualitas terbaik dan teknologi modern untuk memenuhi kebutuhan proyek Anda.",
+    ptSan: {
+      title: "Rental Alat Berat (PT SAN)",
+      description: "Layanan penyewaan alat berat lengkap untuk berbagai kebutuhan proyek.",
+      action: "Lihat Katalog Alat",
+    },
+    ptBbr: {
+      title: "Jasa Konstruksi Tambang (PT BBR)",
+      description: "Jasa kontraktor pertambangan dan pekerjaan sipil yang profesional.",
+      action: "Lihat Layanan Konstruksi",
+    },
     viewAll: "Lihat Semua Layanan",
     learnMore: "Pelajari Lebih Lanjut",
     ctaTitle: "Butuh Solusi Khusus?",
@@ -1533,6 +1579,14 @@ export const idTranslations: TranslationResources = {
     title: "SIPADU",
     description:
       "Merupakan singkatan dari Sinergi, Integritas, Perlindungan, Amanah, Dedikasi, dan Unggul — pedoman kerja PT SAN & PT BBR untuk mendukung pembangunan nasional dengan keselamatan, mutu, dan efisiensi.",
+    ptSan: {
+      title: "Strategi PT SAN",
+      description: "Fokus pada pemeliharaan preventif dan ketersediaan unit tinggi untuk mendukung operasional klien.",
+    },
+    ptBbr: {
+      title: "Strategi PT BBR",
+      description: "Mengutamakan efisiensi operasional dan keselamatan kerja dalam setiap eksekusi proyek tambang.",
+    },
     sipadu: {
       sinergi: {
         title: "Sinergi",

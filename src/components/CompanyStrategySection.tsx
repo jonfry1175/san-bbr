@@ -1,5 +1,11 @@
 import { MotionSection } from "@/components/MotionSection";
-import { Card, CardContent } from "@/components/ui/card";
+import {
+  Card,
+  CardContent,
+  CardHeader,
+  CardTitle,
+  CardDescription,
+} from "@/components/ui/card";
 import {
   BadgeCheck,
   Lightbulb,
@@ -7,6 +13,8 @@ import {
   Users,
   HeartHandshake,
   Cog,
+  Truck,
+  HardHat,
 } from "lucide-react";
 // import logo from "@/assets/logo.jpg";
 const logo = "https://placehold.co/500x500/e2e8f0/1e293b?text=Company+Logo";
@@ -15,7 +23,7 @@ import { useI18n } from "@/lib/i18n";
 import React, { memo } from "react";
 
 const CompanyStrategySectionComponent = () => {
-  const { t, translations } = useI18n();
+  const { t } = useI18n();
 
   // Words to highlight (both English and Indonesian). Only these exact words will be bolded.
   const highlightTargets = [
@@ -136,9 +144,50 @@ const CompanyStrategySectionComponent = () => {
           </p>
         </div>
 
+        {/* Split Strategy Cards */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 mb-12">
+          {/* PT SAN */}
+          <Card className="border-card-border shadow-sm hover:shadow-md transition-all">
+            <CardHeader>
+              <div className="flex items-center gap-3">
+                <div className="p-2 bg-accent/10 rounded-lg">
+                  <Truck className="w-5 h-5 text-accent" />
+                </div>
+                <CardTitle className="text-xl text-primary">
+                  {t("companyStrategy.ptSan.title")}
+                </CardTitle>
+              </div>
+            </CardHeader>
+            <CardContent>
+              <CardDescription className="text-base text-muted-foreground">
+                {t("companyStrategy.ptSan.description")}
+              </CardDescription>
+            </CardContent>
+          </Card>
+
+          {/* PT BBR */}
+          <Card className="border-card-border shadow-sm hover:shadow-md transition-all">
+            <CardHeader>
+              <div className="flex items-center gap-3">
+                <div className="p-2 bg-primary/10 rounded-lg">
+                  <HardHat className="w-5 h-5 text-primary" />
+                </div>
+                <CardTitle className="text-xl text-primary">
+                  {t("companyStrategy.ptBbr.title")}
+                </CardTitle>
+              </div>
+            </CardHeader>
+            <CardContent>
+              <CardDescription className="text-base text-muted-foreground">
+                {t("companyStrategy.ptBbr.description")}
+              </CardDescription>
+            </CardContent>
+          </Card>
+        </div>
+
         {/* SIPADU grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-5">
-          {sipadu.map((item, idx) => (
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-5 mb-16">
+          {sipadu.map((item) => (
             <Card
               key={item.titleKey}
               className="group border-card-border hover:shadow-lg transition-shadow h-full"

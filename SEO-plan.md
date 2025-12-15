@@ -2,7 +2,7 @@ whats user neeeds
 
 ## User Goal
 
-- Improve SEO for https://karyahalimsampoerna.id by adding sitemap, enhancing metadata, and strengthening structured data.
+- Improve SEO for the platform (showcasing PT SAN & PT BBR) by adding sitemap, enhancing metadata, and strengthening structured data.
 
 ## High-Level Plan
 

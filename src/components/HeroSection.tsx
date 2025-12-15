@@ -370,7 +370,7 @@ const HeroSection = () => {
                     className="w-full sm:w-auto bg-accent hover:bg-accent-light text-accent-foreground font-semibold px-6 sm:px-8 py-3 sm:py-4 text-sm sm:text-base rounded-xl button-glow group"
                   >
                     <Link to="/products" className="inline-flex items-center">
-                      {t("ctaSection.viewProducts")}
+                      {t("header.productLinks.rentalAlatBerat")}
                       <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
                     </Link>
                   </Button>
@@ -381,7 +381,7 @@ const HeroSection = () => {
                     className="w-full sm:w-auto border-white/30 text-black hover:text-white hover:bg-white/10 px-6 sm:px-8 py-3 sm:py-4 text-sm sm:text-base rounded-xl backdrop-blur-sm group"
                   >
                     <Link to="/services" className="inline-flex items-center">
-                      {t("servicesSection.label")}
+                      {t("header.productLinks.jasaKonstruksi")}
                     </Link>
                   </Button>
                 </div>
@@ -446,7 +446,7 @@ const HeroSection = () => {
                   className="w-full sm:w-auto bg-accent hover:bg-accent-light text-accent-foreground font-semibold px-6 sm:px-8 py-3 sm:py-4 text-sm sm:text-base rounded-xl button-glow group"
                 >
                   <Link to="/products">
-                    {t("ctaSection.viewProducts")}
+                    {t("header.productLinks.rentalAlatBerat")}
                     <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5 group-hover:translate-x-1 transition-transform" />
                   </Link>
                 </Button>
@@ -457,7 +457,7 @@ const HeroSection = () => {
                   className="w-full sm:w-auto border-white/30 text-black hover:text-white hover:bg-white/10 px-6 sm:px-8 py-3 sm:py-4 text-sm sm:text-base rounded-xl backdrop-blur-sm group"
                 >
                   <Link to="/services" className="inline-flex items-center">
-                    {t("servicesSection.label")}
+                    {t("header.productLinks.jasaKonstruksi")}
                   </Link>
                 </Button>
               </div>
