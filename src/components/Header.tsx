@@ -29,9 +29,8 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import logoSanFull from "@/assets/logo-san-full.jpeg";
-// import companyLogo from "@/assets/company-logo-san-full.jpeg";
-const companyLogo = logoSanFull;
+// Logo is served from public folder
+const companyLogo = "/logo.png";
 import { Link, useLocation } from "react-router-dom";
 import { useI18n } from "@/lib/i18n";
 import { cn } from "@/lib/utils";
@@ -139,10 +138,9 @@ const Header = () => {
                 <img
                   src={companyLogo}
                   alt="PT SINERGY AGTER NUSANTARA & PT BUMI BLAMBANGAN RESOURCES"
-                  width="200"
-                  className={`transition-all duration-300 w-auto bg-white p-2 rounded-lg ${
+                  className={`transition-all duration-300 w-auto bg-white p-2 rounded-lg max-w-[320px] md:max-w-[400px] ${
                     // Larger logo when scrolled
-                    isScrolled ? "h-12 md:h-14" : "h-14 md:h-20"
+                    isScrolled ? "h-10 md:h-12" : "h-12 md:h-16"
                   }`}
                 />
               </Link>
@@ -383,7 +381,8 @@ const Header = () => {
                       <img
                         src={companyLogo}
                         alt="Logo"
-                        className="h-16 w-auto bg-white p-1 rounded"
+                        className="h-14 w-auto bg-white p-1 rounded"
+                        style={{ maxWidth: "420px" }}
                       />
                       <span className="font-bold text-lg tracking-wider">
                         MENU
