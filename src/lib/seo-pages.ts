@@ -99,14 +99,14 @@ export const staticPageMeta: Record<StaticPageKey, PageMeta> = {
     title: "Tentang PT SINERGY AGTER NUSANTARA & PT BUMI BLAMBANGAN RESOURCES",
     description:
       "Sejarah, visi misi, dan strategi perusahaan PT SINERGY AGTER NUSANTARA & PT BUMI BLAMBANGAN RESOURCES sebagai mitra konstruksi tepercaya di Kalimantan Tengah.",
-    path: "/about-us/our-company",
+    path: "/about-us/company-introduction",
     image: defaultImage,
   },
   aboutTeam: {
     title: "Tim Kepemimpinan & Organisasi",
     description:
       "Kenali tim kepemimpinan PT SINERGY AGTER NUSANTARA & PT BUMI BLAMBANGAN RESOURCES yang menggerakkan proyek konstruksi dan infrastruktur di Kalimantan.",
-    path: "/about-us/our-team",
+    path: "/about-us/company-leadership",
     image: defaultImage,
   },
   certifications: {

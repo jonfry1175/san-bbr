@@ -25,10 +25,8 @@ type HeaderTranslations = {
   getQuote: string;
   switchLanguageAria: Record<Language, string>;
   aboutLinks: {
-    ourCompany: string;
-    ourTeam: string;
-    certifications: string;
-    companyAwards: string;
+    companyIntroduction: string;
+    companyLeadership: string;
   };
   navigationItems: {
     services: string;
@@ -337,6 +335,8 @@ type CareerTranslations = {
   internPositionsLabel: string;
   internPositionsDescription: string;
   requirementsLabel: string;
+  visionText?: string;
+  missionText?: string;
   jobs: Record<
     string,
     {
@@ -616,6 +616,42 @@ type AboutPagesTranslations = {
   };
 };
 
+type AboutPageTranslations = {
+  companyIntroduction: string;
+  companyLeadership: string;
+  description: string;
+  badge: string;
+  ourStory: string;
+  storyText1: string;
+  storyText2: string;
+  whyChooseTitle: string;
+  whyChooseDesc: string;
+  comprehensiveWarranty: string;
+  lightingTowerWarranty: string;
+  excavatorWarranty: string;
+  dumpTruckWarranty: string;
+  factorySupport: string;
+  expertSupport: string;
+  dedicatedSupport: string;
+  sparePartsAvailability: string;
+  branchSupport: string;
+  lifetimePerformance: string;
+  provenTrackRecord: string;
+  globalDeployment: string;
+  strongPresence: string;
+  extensiveNetwork: string;
+  trustedCompanies: string;
+  ourLeadershipTitle: string;
+  leadershipHeroDesc: string;
+  viewProfile: string;
+  viewProfileDesc: string;
+};
+
+type LeadersTranslations = {
+  suherman: { position: string };
+  bisterPanjaitan: { position: string };
+};
+
 type ServiceDetailTranslations = {
   scopeOfWork: string;
   specifications: string;
@@ -681,6 +717,12 @@ export type TranslationResources = {
     }
   >;
   aboutPages: AboutPagesTranslations;
+  aboutPage: AboutPageTranslations;
+  leaders: LeadersTranslations;
+  about: {
+    ourVision: string;
+    ourMission: string;
+  };
   products: {
     hero: {
       label: string;

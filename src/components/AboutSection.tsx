@@ -230,7 +230,7 @@ const AboutSectionComponent = () => {
                 className="bg-gradient-accent button-glow text-sm sm:text-base"
               >
                 <Link
-                  to="/about-us/our-company"
+                  to="/about-us/company-introduction"
                   aria-label="Learn more about PT SINERGY AGTER NUSANTARA & PT BUMI BLAMBANGAN RESOURCES"
                 >
                   {t("aboutSection.learnMore")}

@@ -16,10 +16,8 @@ export const idTranslations: TranslationResources = {
       ZH: "Ganti ke Bahasa Mandarin Sederhana",
     },
     aboutLinks: {
-      ourCompany: "Perusahaan Kami",
-      ourTeam: "Tim Kami",
-      certifications: "Sertifikasi",
-      companyAwards: "Penghargaan Perusahaan",
+      companyIntroduction: "Tentang Perusahaan",
+      companyLeadership: "Pimpinan Perusahaan",
     },
     navigationItems: {
       services: "Layanan",
@@ -396,10 +394,10 @@ export const idTranslations: TranslationResources = {
         "Butuh informasi tambahan? Tim kami siap membantu menyesuaikan solusi terbaik.",
       whatsappButton: "Hubungi via WhatsApp",
       rentPrefix: salesCategoryDefinitions
-        .find((c) => c.id === "rent")
+        .find((c) => c.id === "rental-alat-berat")
         ?.defaultLabel.toUpperCase(),
       salePrefix: salesCategoryDefinitions
-        .find((c) => c.id === "sale")
+        .find((c) => c.id === "jasa-konstruksi-tambang")
         ?.defaultLabel.toUpperCase(),
       locationTitle: "Lokasi",
       locationValue: "Kota Palangka Raya, Kalimantan Tengah",
@@ -1682,6 +1680,8 @@ export const idTranslations: TranslationResources = {
     },
   },
   career: {
+    visionText: "Menjadi perusahaan konstruksi terdepan di Indonesia yang terpercaya, inovatif, dan berkelanjutan dalam menyediakan solusi infrastruktur berkualitas.",
+    missionText: "Menjalankan tata kelola perusahaan yang baik dan sistem manajemen untuk menjamin keselamatan, kesehatan kerja, kualitas, dan lingkungan kerja.",
     label: "Karir",
     internPageLabel: "Program Magang",
     internPageTitle: "Bangun Masa Depan, Bergabung Bersama Kami",
@@ -1945,6 +1945,44 @@ export const idTranslations: TranslationResources = {
     pageNotFound: "Ups! Halaman tidak ditemukan",
     pageNotFoundDescription:
       "Kami tidak dapat menemukan halaman yang Anda cari. Coba tautan di bawah ini atau kembali ke beranda.",
+  },
+  aboutPage: {
+    companyIntroduction: "Tentang Perusahaan",
+    companyLeadership: "Pimpinan Perusahaan",
+    description: "PT SINERGY AGTER NUSANTARA (Rental Alat Berat) dan PT BUMI BLAMBANGAN RESOURCES (Jasa Konstruksi Tambang) hadir sebagai solusi terintegrasi untuk kebutuhan industri pertambangan dan konstruksi di Indonesia.",
+    badge: "Sejarah Singkat Perusahaan",
+    ourStory: "Cerita Kami",
+    storyText1: "Didirikan dengan visi untuk menyediakan solusi terintegrasi bagi sektor pertambangan dan konstruksi, kami telah tumbuh menjadi mitra terpercaya untuk proyek-proyek besar di seluruh Indonesia.",
+    storyText2: "Sinergi kami memungkinkan kami untuk memberikan layanan komprehensif, dari penyewaan alat berat hingga konstruksi tambang skala penuh.",
+    whyChooseTitle: "Mengapa Memilih Kami?",
+    whyChooseDesc: "Kami memberikan keunggulan melalui komitmen terhadap kualitas, keselamatan, dan keandalan.",
+    comprehensiveWarranty: "Garansi Komprehensif",
+    lightingTowerWarranty: "Garansi Menara Lampu",
+    excavatorWarranty: "Garansi Ekskavator",
+    dumpTruckWarranty: "Garansi Dump Truck",
+    factorySupport: "Dukungan Pabrik",
+    expertSupport: "Dukungan Ahli",
+    dedicatedSupport: "Tim Dukungan Khusus",
+    sparePartsAvailability: "Ketersediaan Suku Cadang",
+    branchSupport: "Jaringan Dukungan Cabang",
+    lifetimePerformance: "Jaminan Kinerja Seumur Hidup",
+    provenTrackRecord: "Rekam Jejak Terbukti",
+    globalDeployment: "Pengalaman Penempatan Global",
+    strongPresence: "Kehadiran Lokal yang Kuat",
+    extensiveNetwork: "Jaringan Luas",
+    trustedCompanies: "Dipercaya oleh Perusahaan Besar",
+    ourLeadershipTitle: "Pimpinan Kami",
+    leadershipHeroDesc: "Temui para pemimpin yang mendorong visi dan strategi kami ke depan.",
+    viewProfile: "Lihat Profil",
+    viewProfileDesc: "Pelajari lebih lanjut tentang perjalanan profesional dan kontribusi mereka."
+  },
+  leaders: {
+    suherman: { position: "Direktur" },
+    bisterPanjaitan: { position: "Komisaris" }
+  },
+  about: {
+    ourVision: "Visi Kami",
+    ourMission: "Misi Kami"
   },
   footer: {
     company: {

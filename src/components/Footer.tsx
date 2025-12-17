@@ -36,8 +36,14 @@ const Footer = () => {
 
   const { t } = useI18n();
   const quickLinks = [
-    { name: t("footer.quickLinks.aboutUs"), href: "/about-us/our-company" },
-    { name: t("footer.quickLinks.ourTeam"), href: "/about-us/our-team" },
+    {
+      name: t("footer.quickLinks.aboutUs"),
+      href: "/about-us/company-introduction",
+    },
+    {
+      name: t("footer.quickLinks.ourTeam"),
+      href: "/about-us/company-leadership",
+    },
     { name: t("footer.quickLinks.services"), href: "/services" },
     { name: t("footer.quickLinks.projects"), href: "/works" },
     { name: t("footer.quickLinks.news"), href: "/news" },

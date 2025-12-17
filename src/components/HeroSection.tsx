@@ -210,6 +210,10 @@ const HeroSection = () => {
         ["news", imgNews],
         ["latest news", imgNews],
         ["berita terkini", imgNews],
+        ["company introduction", imgOurCompany],
+        ["perusahaan kami", imgOurCompany],
+        ["company leadership", imgOurTeam],
+        ["pimpinan perusahaan", imgOurTeam],
         ["tentang kami", imgOurCompany],
         ["about us", imgOurCompany],
         ["tim kami", imgOurTeam],
@@ -257,7 +261,9 @@ const HeroSection = () => {
   // If the hero image is the certified professionals asset, slightly zoom out
   const isCertifiedImage = heroImage === imgCertifiedProfessionals;
 
-  const isOurTeamRoute = location.pathname.startsWith("/about-us/our-team");
+  const isOurTeamRoute = location.pathname.startsWith(
+    "/about-us/company-leadership"
+  );
   const isCareerRoute = location.pathname.startsWith("/career");
 
   return (
@@ -314,6 +320,8 @@ const HeroSection = () => {
           })}
           {/* Gradient overlay */}
           <div className="absolute inset-0 bg-gradient-overlay" />
+          {/* Black overlay to darken video */}
+          <div className="absolute inset-0 bg-black/50" />
         </div>
       ) : (
         <div
@@ -354,7 +362,7 @@ const HeroSection = () => {
                     // hero description may include simple <em> tags from translations
                     dangerouslySetInnerHTML={{
                       __html: String(
-                        t("aboutPages.ourCompany.hero.description")
+                        t("aboutPages.companyIntroduction.hero.description")
                       ),
                     }}
                   />
@@ -431,7 +439,7 @@ const HeroSection = () => {
                 dangerouslySetInnerHTML={{
                   __html: String(
                     hero.description ??
-                      t("aboutPages.ourCompany.hero.description")
+                      t("aboutPages.companyIntroduction.hero.description")
                   ),
                 }}
               />

@@ -16,10 +16,8 @@ export const enTranslations: TranslationResources = {
       ZH: "Switch to Simplified Chinese",
     },
     aboutLinks: {
-      ourCompany: "Our Company",
-      ourTeam: "Our Team",
-      certifications: "Certifications",
-      companyAwards: "Company Awards",
+      companyIntroduction: "Company Introduction",
+      companyLeadership: "Company Leadership",
     },
     navigationItems: {
       services: "Services",
@@ -1675,6 +1673,8 @@ export const enTranslations: TranslationResources = {
     },
   },
   career: {
+    visionText: "To become a leading construction company in Indonesia that is trusted, innovative, and sustainable in providing quality infrastructure solutions.",
+    missionText: "Implement good corporate governance and management systems to ensure workplace safety, health, quality, and work environment.",
     label: "Career",
     internPageLabel: "Internship Programs",
     internPageTitle: "Build Your Future, Join Us",
@@ -2133,6 +2133,44 @@ export const enTranslations: TranslationResources = {
     pageNotFound: "Oops! Page not found",
     pageNotFoundDescription:
       "We couldn't find the page you were looking for. Try the links below or go back to the homepage.",
+  },
+  aboutPage: {
+    companyIntroduction: "Company Introduction",
+    companyLeadership: "Company Leadership",
+    description: "PT SINERGY AGTER NUSANTARA (Heavy Equipment Rental) and PT BUMI BLAMBANGAN RESOURCES (Mining Construction Services) are here as an integrated solution for the mining and construction industry needs in Indonesia.",
+    badge: "Brief Company History",
+    ourStory: "Our Story",
+    storyText1: "Founded with a vision to provide integrated solutions for the mining and construction sectors, we have grown into a trusted partner for major projects across Indonesia.",
+    storyText2: "Our synergy allows us to deliver comprehensive services, from heavy equipment rental to full-scale mining construction.",
+    whyChooseTitle: "Why Choose Us?",
+    whyChooseDesc: "We deliver excellence through our commitment to quality, safety, and reliability.",
+    comprehensiveWarranty: "Comprehensive Warranty",
+    lightingTowerWarranty: "Lighting Tower Warranty",
+    excavatorWarranty: "Excavator Warranty",
+    dumpTruckWarranty: "Dump Truck Warranty",
+    factorySupport: "Factory Support",
+    expertSupport: "Expert Support",
+    dedicatedSupport: "Dedicated Support Team",
+    sparePartsAvailability: "Spare Parts Availability",
+    branchSupport: "Branch Support Network",
+    lifetimePerformance: "Lifetime Performance Guarantee",
+    provenTrackRecord: "Proven Track Record",
+    globalDeployment: "Global Deployment Experience",
+    strongPresence: "Strong Local Presence",
+    extensiveNetwork: "Extensive Network",
+    trustedCompanies: "Trusted by Major Companies",
+    ourLeadershipTitle: "Our Leadership",
+    leadershipHeroDesc: "Meet the leaders who drive our vision and strategy forward.",
+    viewProfile: "View Profile",
+    viewProfileDesc: "Learn more about their professional journey and contributions."
+  },
+  leaders: {
+    suherman: { position: "Director" },
+    bisterPanjaitan: { position: "Commissioner" }
+  },
+  about: {
+    ourVision: "Our Vision",
+    ourMission: "Our Mission"
   },
   footer: {
     company: {

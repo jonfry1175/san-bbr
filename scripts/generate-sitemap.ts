@@ -107,7 +107,7 @@ const main = async () => {
   const teamSlugs = await extractSlugs("src/lib/team.ts");
   teamSlugs.forEach((slug) => {
     addEntry({
-      loc: buildCanonicalUrl(`/about-us/our-team/${slug}`),
+      loc: buildCanonicalUrl(`/about-us/company-leadership/${slug}`),
       priority: 0.6,
       lastmod: nowIso,
     });

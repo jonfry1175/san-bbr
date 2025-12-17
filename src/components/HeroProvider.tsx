@@ -53,45 +53,27 @@ const getDefaultHeroForPath: (
   }
 
   // Static pages
-  if (pathname.startsWith("/about-us/our-team")) {
+  if (pathname.startsWith("/about-us/company-leadership")) {
     return {
       variant: "simple",
-      label: t("aboutPages.ourTeam.hero.label"),
-      title: t("aboutPages.ourTeam.hero.title"),
-      description: t("aboutPages.ourTeam.hero.description"),
+      label: t("aboutPages.companyLeadership.hero.label"),
+      title: t("aboutPages.companyLeadership.hero.title"),
+      description: t("aboutPages.companyLeadership.hero.description"),
     } satisfies HeroState;
   }
-  if (pathname.startsWith("/about-us/certifications")) {
+  if (pathname.startsWith("/about-us/company-introduction")) {
     return {
       variant: "simple",
-      label: t("aboutPages.certificationGallery.hero.label"),
-      title: t("aboutPages.certificationGallery.hero.title"),
-      description: t("aboutPages.certificationGallery.hero.description"),
-      backgroundImage: heroCertifiedBackground,
-    } satisfies HeroState;
-  }
-  if (pathname.startsWith("/about-us/company-awards")) {
-    return {
-      variant: "simple",
-      label: t("aboutPages.companyAwardsGallery.hero.label"),
-      title: t("aboutPages.companyAwardsGallery.hero.title"),
-      description: t("aboutPages.companyAwardsGallery.hero.description"),
-      backgroundImage: heroAwardsBackground,
-    } satisfies HeroState;
-  }
-  if (pathname.startsWith("/about-us/our-company")) {
-    return {
-      variant: "simple",
-      label: t("aboutPages.ourCompany.hero.label"),
-      title: t("aboutPages.ourCompany.hero.title"),
-      description: t("aboutPages.ourCompany.hero.description"),
+      label: t("aboutPages.companyIntroduction.hero.label"),
+      title: t("aboutPages.companyIntroduction.hero.title"),
+      description: t("aboutPages.companyIntroduction.hero.description"),
     } satisfies HeroState;
   }
   if (pathname.startsWith("/about")) {
     return {
       variant: "simple",
-      label: t("aboutPages.ourCompany.hero.label"),
-      title: t("aboutPages.ourCompany.hero.title"),
+      label: t("aboutPages.companyIntroduction.hero.label"),
+      title: t("aboutPages.companyIntroduction.hero.title"),
     } satisfies HeroState;
   }
   if (pathname.startsWith("/works/")) {

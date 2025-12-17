@@ -18,8 +18,10 @@ import { I18nProvider } from "@/lib/i18n";
 
 const Index = lazy(() => import("./pages/Index"));
 const Gallery = lazy(() => import("./pages/Gallery"));
-const OurCompany = lazy(() => import("./pages/about-us/OurCompany"));
-const OurTeam = lazy(() => import("./pages/about-us/OurTeam"));
+const CompanyIntroductionPage = lazy(() => import("./pages/about-us/CompanyIntroductionPage"));
+const CompanyLeadershipPage = lazy(() => import("./pages/about-us/CompanyLeadershipPage"));
+// const OurCompany = lazy(() => import("./pages/about-us/OurCompany"));
+// const OurTeam = lazy(() => import("./pages/about-us/OurTeam"));
 const TeamMemberDetail = lazy(
   () => import("./pages/about-us/TeamMemberDetail"),
 );
@@ -87,6 +89,22 @@ const AnimatedRoutes = () => {
             }
           />
           <Route
+            path="/about-us/company-introduction"
+            element={
+              <Page>
+                <CompanyIntroductionPage />
+              </Page>
+            }
+          />
+          <Route
+            path="/about-us/company-leadership"
+            element={
+              <Page>
+                <CompanyLeadershipPage />
+              </Page>
+            }
+          />
+          {/* <Route
             path="/about-us/our-company"
             element={
               <Page>
@@ -101,9 +119,9 @@ const AnimatedRoutes = () => {
                 <OurTeam />
               </Page>
             }
-          />
+          /> */}
           <Route
-            path="/about-us/our-team/:slug"
+            path="/about-us/company-leadership/:slug"
             element={
               <Page>
                 <TeamMemberDetail />
@@ -128,11 +146,11 @@ const AnimatedRoutes = () => {
           />
           <Route
             path="/about"
-            element={<Navigate to="/about-us/our-company" replace />}
+            element={<Navigate to="/about-us/company-introduction" replace />}
           />
           <Route
             path="/about-us"
-            element={<Navigate to="/about-us/our-company" replace />}
+            element={<Navigate to="/about-us/company-introduction" replace />}
           />
           <Route
             path="/works"

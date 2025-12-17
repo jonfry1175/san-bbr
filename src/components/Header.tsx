@@ -37,10 +37,8 @@ import { useI18n } from "@/lib/i18n";
 import { cn } from "@/lib/utils";
 
 const aboutLinkConfig = [
-  { key: "ourCompany", href: "/about-us/our-company" },
-  { key: "ourTeam", href: "/about-us/our-team" },
-  { key: "certifications", href: "/about-us/certifications" },
-  { key: "companyAwards", href: "/about-us/company-awards" },
+  { key: "companyIntroduction", href: "/about-us/company-introduction" },
+  { key: "companyLeadership", href: "/about-us/company-leadership" },
 ] as const;
 
 const productLinkConfig = [

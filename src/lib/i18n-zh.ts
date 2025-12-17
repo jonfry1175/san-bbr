@@ -16,10 +16,8 @@ export const zhTranslations: TranslationResources = {
       ZH: "切换到简体中文",
     },
     aboutLinks: {
-      ourCompany: "我们公司",
-      ourTeam: "我们的团队",
-      certifications: "资质认证",
-      companyAwards: "公司奖项",
+      companyIntroduction: "公司介绍",
+      companyLeadership: "公司领导",
     },
     navigationItems: {
       services: "服务",
@@ -826,6 +824,8 @@ export const zhTranslations: TranslationResources = {
     },
   },
   career: {
+    visionText: "To become a leading construction company in Indonesia that is trusted, innovative, and sustainable in providing quality infrastructure solutions.",
+    missionText: "Implement good corporate governance and management systems to ensure workplace safety, health, quality, and work environment.",
     label: "职业",
     internPageLabel: "实习计划",
     internPageTitle: "建设未来，加入我们",
@@ -1505,6 +1505,44 @@ export const zhTranslations: TranslationResources = {
         roadReservationProgram: "地方政府对有效规划和执行道路维护计划的奖励。",
       },
     },
+  },
+  aboutPage: {
+    companyIntroduction: "Company Introduction",
+    companyLeadership: "Company Leadership",
+    description: "PT SINERGY AGTER NUSANTARA (Heavy Equipment Rental) and PT BUMI BLAMBANGAN RESOURCES (Mining Construction Services) are here as an integrated solution for the mining and construction industry needs in Indonesia.",
+    badge: "Brief Company History",
+    ourStory: "Our Story",
+    storyText1: "Founded with a vision to provide integrated solutions for the mining and construction sectors, we have grown into a trusted partner for major projects across Indonesia.",
+    storyText2: "Our synergy allows us to deliver comprehensive services, from heavy equipment rental to full-scale mining construction.",
+    whyChooseTitle: "Why Choose Us?",
+    whyChooseDesc: "We deliver excellence through our commitment to quality, safety, and reliability.",
+    comprehensiveWarranty: "Comprehensive Warranty",
+    lightingTowerWarranty: "Lighting Tower Warranty",
+    excavatorWarranty: "Excavator Warranty",
+    dumpTruckWarranty: "Dump Truck Warranty",
+    factorySupport: "Factory Support",
+    expertSupport: "Expert Support",
+    dedicatedSupport: "Dedicated Support Team",
+    sparePartsAvailability: "Spare Parts Availability",
+    branchSupport: "Branch Support Network",
+    lifetimePerformance: "Lifetime Performance Guarantee",
+    provenTrackRecord: "Proven Track Record",
+    globalDeployment: "Global Deployment Experience",
+    strongPresence: "Strong Local Presence",
+    extensiveNetwork: "Extensive Network",
+    trustedCompanies: "Trusted by Major Companies",
+    ourLeadershipTitle: "Our Leadership",
+    leadershipHeroDesc: "Meet the leaders who drive our vision and strategy forward.",
+    viewProfile: "View Profile",
+    viewProfileDesc: "Learn more about their professional journey and contributions."
+  },
+  leaders: {
+    suherman: { position: "Director" },
+    bisterPanjaitan: { position: "Commissioner" }
+  },
+  about: {
+    ourVision: "Our Vision",
+    ourMission: "Our Mission"
   },
   products: {
     hero: {

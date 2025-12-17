@@ -49,19 +49,19 @@ const TeamMemberDetail = memo(() => {
   }, [member, setHero]);
 
   if (!member) {
-    return <Navigate to="/about-us/our-team" replace />;
+    return <Navigate to="/about-us/company-leadership" replace />;
   }
 
-  const canonical = buildCanonicalUrl(`/about-us/our-team/${member.slug}`);
+  const canonical = buildCanonicalUrl(`/about-us/company-leadership/${member.slug}`);
   const title = `${member.name} | ${member.role} - ${siteMetadata.name}`;
   const description = member.bio || member.focus;
   const breadcrumbs = createBreadcrumbJsonLd([
     { name: t("common.home"), url: "/" },
     {
-      name: t("aboutPages.ourTeam.hero.label"),
-      url: "/about-us/our-team",
+      name: t("aboutPages.companyLeadership.hero.label"),
+      url: "/about-us/company-leadership",
     },
-    { name: member.name, url: `/about-us/our-team/${member.slug}` },
+    { name: member.name, url: `/about-us/company-leadership/${member.slug}` },
   ]);
   const keywords = [
     member.role,
@@ -104,7 +104,7 @@ const TeamMemberDetail = memo(() => {
                 className="text-white/70 hover:text-white"
               >
                 <Link
-                  to="/about-us/our-team"
+                  to="/about-us/company-leadership"
                   className="inline-flex items-center gap-2"
                 >
                   <ArrowLeft className="h-4 w-4" aria-hidden="true" />
