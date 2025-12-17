@@ -676,7 +676,7 @@ export const idTranslations: TranslationResources = {
     },
     description: {
       paragraph1:
-        "PT SAN (Rental Alat Berat) dan PT BBR (Jasa Konstruksi Tambang) hadir sebagai solusi terintegrasi untuk kebutuhan industri pertambangan dan konstruksi di Indonesia.",
+        "PT SAN dan PT BBR hadir sebagai solusi terintegrasi untuk kebutuhan industri pertambangan dan konstruksi di Indonesia.",
       paragraph2:
         "Dengan pengalaman yang solid di bidangnya masing-masing, sinergi kedua entitas ini menghadirkan layanan komprehensif mulai dari penyediaan alat berat berkualitas hingga eksekusi proyek konstruksi tambang yang presisi.",
       paragraph3:
