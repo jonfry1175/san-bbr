@@ -1,7 +1,8 @@
 export type LocationCategory =
   | "head-office"
-  | "strategic-partner"
-  | "industry-partner";
+  | "branch-office"
+  | "warehouse"
+  | "site-support";
 
 export type LocationData = {
   id: string;
@@ -18,42 +19,63 @@ export const LOCATION_CATEGORY_META: Record<
   { color: string }
 > = {
   "head-office": { color: "#DC2626" },
-  "strategic-partner": { color: "#2563EB" },
-  "industry-partner": { color: "#059669" },
+  "branch-office": { color: "#059669" },
+  "warehouse": { color: "#7C3AED" },
+  "site-support": { color: "#D4AF37" },
 };
 
 export const branchLocations: LocationData[] = [
   {
-    id: "khs-palangka-raya",
-    title: "PT SAN & PT BBR (Head Office)",
-    subtitle: "Palangka Raya, Kalimantan Tengah, Kalimantan Tengah",
+    id: "head-office-bogor",
+    title: "Head Office",
+    subtitle: "Bogor",
     address:
-      "Jl. Mahir Mahar No. 88, Kel. Menteng, Kec. Jekan Raya, Kota Palangka Raya, Kalimantan Tengah, Kalimantan Tengah 73111",
-    coordinates: [113.8809038, -2.2640251],
+      "Rukan Podomoro Golf View Blok B2 No.30, Cimanggis, Gunung Putri, Bogor, Jawa Barat 16963",
+    coordinates: [106.9494, -6.4501],
     category: "head-office",
-    streetViewEmbedSrc:
-      "https://www.google.com/maps/embed?pb=!4v1757492847217!6m8!1m7!1sXc3ueHqT0GdHdX-qV0Mriw!2m2!1d-2.264455526168132!2d113.8804974210874!3f38.87230926484026!4f-18.123220054045646!5f0.7820865974627469",
   },
   {
-    id: "khs-borneo",
-    title: "PT SAN & PT BBR (site Angsana, Tanah Bumbu)",
-    subtitle: "Tanah Bumbu, Kalimantan Selatan",
+    id: "branch-office-samarinda",
+    title: "Branch Office",
+    subtitle: "Samarinda",
     address:
-      "Site BIB, Kec. Simpang Empat, Kab. Tanah Bumbu, Kalimantan Selatan 72275",
-    coordinates: [115.6477118, -3.6953489],
-    category: "strategic-partner",
-    streetViewEmbedSrc:
-      "https://www.google.com/maps/embed?pb=!4v1759084615969!6m8!1m7!1snaesT6S9uPCUpb-c0fdQ6A!2m2!1d-3.695390044055128!2d115.648227721138!3f283.30504286543794!4f-9.843522664343979!5f0.7820865974627469",
+      "Jl. Trikora Pergudangan Mangkupalas Bisnis Center Blok E 12 Simpang Pasir, Samarinda, Kalimantan Timur, 75111",
+    coordinates: [117.1611, -0.4953],
+    category: "branch-office",
   },
   {
-    id: "khs-tanjung",
-    title: "PT SAN & PT BBR (site Tanjung, Tabalong)",
-    subtitle: "Tabalong, Kalimantan Selatan",
-    address: "Site Tanjung, Kec. Tanjung, Kab. Tabalong, Kalimantan Selatan",
-    coordinates: [115.4220665, -2.1684764],
-    category: "industry-partner",
-    streetViewEmbedSrc:
-      "https://www.google.com/maps/embed?pb=!4v1759084823276!6m8!1m7!1sFINym06qgTbCaFj4GoZCgg!2m2!1d-2.167936067865387!2d115.4217514627865!3f138.14137910219927!4f-4.5186158361791655!5f0.7820865974627469",
+    id: "branch-office-banjarmasin",
+    title: "Branch Office",
+    subtitle: "Banjarmasin",
+    address:
+      "JL. Trikora RT 34 RW005, Guntung manggis, Landasan Ulin, Banjarbaru, Kalimantan Selatan 70721",
+    coordinates: [114.766542, -3.458129],
+    category: "branch-office",
+  },
+  {
+    id: "warehouse-bogor",
+    title: "Warehouse",
+    subtitle: "Bogor",
+    address:
+      "Jalan Raya Tapos, Depok Cimangsis RT 026/013, Bogor, Jawa Barat, 16963",
+    coordinates: [106.9234, -6.4234],
+    category: "warehouse",
+  },
+  {
+    id: "site-support-jambi",
+    title: "Site Support",
+    subtitle: "Jambi",
+    address: "Jambi, Sumatera",
+    coordinates: [103.6044, -1.6101],
+    category: "site-support",
+  },
+  {
+    id: "site-support-sulawesi",
+    title: "Site Support",
+    subtitle: "Sulawesi",
+    address: "Sulawesi Region",
+    coordinates: [120.1746, -2.5489],
+    category: "site-support",
   },
 ];
 

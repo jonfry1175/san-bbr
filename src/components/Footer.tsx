@@ -61,8 +61,20 @@ const Footer = () => {
   const mailtoAll = `mailto:${contactEmails.join(",")}`;
 
   const hasLocations = branchLocations.length > 0;
+
+  // Filter out locations without street view coverage for the footer carousel
+  // Based on client feedback: Sulawesi, Bogor Warehouse, Head Office Bogor
+  const footerLocations = branchLocations.filter(
+    (loc) =>
+      ![
+        "head-office-bogor",
+        "warehouse-bogor",
+        "site-support-sulawesi",
+      ].includes(loc.id)
+  );
+
   const activeLocation = hasLocations
-    ? branchLocations[Math.min(activeLocationIndex, branchLocations.length - 1)]
+    ? footerLocations[Math.min(activeLocationIndex, footerLocations.length - 1)]
     : null;
 
   useEffect(() => {
@@ -290,14 +302,14 @@ const Footer = () => {
             )}
           </div>
 
-          {hasLocations ? (
+          {hasLocations && footerLocations.length > 0 ? (
             <Carousel
               className="relative"
               opts={{ align: "start", containScroll: "trimSnaps" }}
               setApi={setLocationCarouselApi}
             >
               <CarouselContent>
-                {branchLocations.map((location, index) => {
+                {footerLocations.map((location, index) => {
                   const categoryColor =
                     LOCATION_CATEGORY_META[location.category].color;
                   const streetViewSrc =
@@ -354,7 +366,7 @@ const Footer = () => {
                               {t("footer.location.openInGoogleMaps")}
                             </a>
                             <span className="text-[11px] uppercase tracking-wide text-white/60 sm:text-xs">
-                              {index + 1} / {branchLocations.length}
+                              {index + 1} / {footerLocations.length}
                             </span>
                           </div>
                         </div>
