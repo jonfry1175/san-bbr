@@ -1,10 +1,8 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Award, Users, CheckCircle } from "lucide-react";
 // Background hero videos
-import heroVid1 from "@/assets/hero/1.mp4";
 import heroVid2 from "@/assets/hero/2.mp4";
 // Mobile hero videos
-import mobileHeroVid1 from "@/assets/hero/mobile-video/1.mp4";
 import mobileHeroVid2 from "@/assets/hero/mobile-video/2.mp4";
 import mobileHeroVid3 from "@/assets/hero/mobile-video/3.mp4";
 import mobileHeroVid4 from "@/assets/hero/mobile-video/4.mp4";
@@ -52,13 +50,8 @@ import { useI18n } from "@/lib/i18n";
 import { useCallback, useMemo, useRef, useState, useEffect } from "react";
 
 // Static video arrays - memoized outside component
-const DESKTOP_VIDEOS = [heroVid1, heroVid2];
-const MOBILE_VIDEOS = [
-  mobileHeroVid1,
-  mobileHeroVid2,
-  mobileHeroVid3,
-  mobileHeroVid4,
-];
+const DESKTOP_VIDEOS = [heroVid2];
+const MOBILE_VIDEOS = [mobileHeroVid2, mobileHeroVid4];
 
 const HeroSection = () => {
   const { hero } = useHero();
