@@ -12,6 +12,10 @@ const VisionMissionSection = lazy(
 const WhyChooseUsSection = lazy(
   () => import("@/components/WhyChooseUsSection")
 );
+const FeaturedProductsSection = lazy(
+  () => import("@/components/FeaturedProductsSection")
+);
+const LocationMap = lazy(() => import("@/components/LocationMap"));
 // const CompanyStrategySection = lazy(
 //   () => import("@/components/CompanyStrategySection")
 // );
@@ -68,10 +72,12 @@ const Index = () => {
         <AboutSection />
         <VisionMissionSection />
         <WhyChooseUsSection />
+        <FeaturedProductsSection />
+        <LocationMap />
         {/* <CompanyStrategySection /> */}
         {/* Show services on all viewports; limit to 3 on the home page */}
         <ServicesSection limit={3} />
-        <OurProductsSection />
+        {/* <OurProductsSection /> */}
         {/* <ProjectsSection /> */}
         {/* <ClientsSection /> */}
         {/* <SupportedBySection /> */}
