@@ -3,7 +3,8 @@ import { motion, useInView } from "framer-motion";
 import { Users, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import { useI18n } from "@/lib/i18n";
-import leaderPlaceholder from "@/assets/company-logo.png";
+import suhermanImage from "@/assets/bod/suherman-director.png";
+import bisterImage from "@/assets/bod/bister-panjaitan-comissioner.png";
 
 const CompanyLeadership = () => {
   const { t } = useI18n();
@@ -58,14 +59,14 @@ const CompanyLeadership = () => {
       id: "suherman",
       name: "Suherman",
       position: t("leaders.suherman.position"),
-      image: leaderPlaceholder,
+      image: suhermanImage,
       slug: "suherman",
     },
     {
       id: "bister-panjaitan",
       name: "Bister Panjaitan",
       position: t("leaders.bisterPanjaitan.position"),
-      image: leaderPlaceholder,
+      image: bisterImage,
       slug: "bister-panjaitan",
     },
   ];

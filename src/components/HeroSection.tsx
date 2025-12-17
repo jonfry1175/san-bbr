@@ -295,7 +295,7 @@ const HeroSection = () => {
                 ref={(el) => {
                   videoRefs.current[idx] = el;
                 }}
-                className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-500 ${
+                className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-500 brightness-50 ${
                   idx === activeSlide
                     ? "opacity-100 z-10"
                     : "opacity-0 z-0 pointer-events-none"
@@ -320,8 +320,6 @@ const HeroSection = () => {
           })}
           {/* Gradient overlay */}
           <div className="absolute inset-0 bg-gradient-overlay" />
-          {/* Black overlay to darken video */}
-          <div className="absolute inset-0 bg-black/50" />
         </div>
       ) : (
         <div

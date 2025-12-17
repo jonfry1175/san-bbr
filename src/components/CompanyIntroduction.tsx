@@ -9,7 +9,7 @@ import {
   Award,
 } from "lucide-react";
 import { useI18n } from "@/lib/i18n";
-import teamImage from "@/assets/our-company.jpg";
+import teamImage from "@/assets/team.webp";
 
 const CompanyIntroduction = () => {
   const { t } = useI18n();
