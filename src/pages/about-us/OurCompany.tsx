@@ -1,7 +1,7 @@
 import { useEffect, useMemo, memo } from "react";
 import AboutSection from "@/components/AboutSection";
 import VisionMissionSection from "@/components/VisionMissionSection";
-import CompanyStrategySection from "@/components/CompanyStrategySection";
+// import CompanyStrategySection from "@/components/CompanyStrategySection";
 import { useHero } from "@/hooks/use-hero";
 import { useI18n } from "@/lib/i18n";
 import SEO from "@/components/SEO";
@@ -63,7 +63,7 @@ const OurCompany = memo(() => {
         <VisionMissionSection />
 
         {/* Strategi Perusahaan (SIPADU) */}
-        <CompanyStrategySection />
+        {/* <CompanyStrategySection /> */}
       </main>
     </>
   );

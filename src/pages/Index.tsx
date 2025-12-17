@@ -9,15 +9,15 @@ const AboutSection = lazy(() => import("@/components/AboutSection"));
 const VisionMissionSection = lazy(
   () => import("@/components/VisionMissionSection")
 );
-const CompanyStrategySection = lazy(
-  () => import("@/components/CompanyStrategySection")
-);
+// const CompanyStrategySection = lazy(
+//   () => import("@/components/CompanyStrategySection")
+// );
 const ServicesSection = lazy(() => import("@/components/ServicesSection"));
 const ProjectsSection = lazy(() => import("@/components/ProjectsSection"));
-const ClientsSection = lazy(() => import("@/components/ClientsSection"));
-const SupportedBySection = lazy(
-  () => import("@/components/SupportedBySection")
-);
+// const ClientsSection = lazy(() => import("@/components/ClientsSection"));
+// const SupportedBySection = lazy(
+//   () => import("@/components/SupportedBySection")
+// );
 const NewsSection = lazy(() => import("@/components/NewsSection"));
 const CTASection = lazy(() => import("@/components/CTASection"));
 
@@ -61,12 +61,12 @@ const Index = () => {
       <Suspense fallback={null}>
         <AboutSection />
         <VisionMissionSection />
-        <CompanyStrategySection />
+        {/* <CompanyStrategySection /> */}
         {/* Show services on all viewports; limit to 3 on the home page */}
         <ServicesSection limit={3} />
         {/* <ProjectsSection /> */}
-        <ClientsSection />
-        <SupportedBySection />
+        {/* <ClientsSection /> */}
+        {/* <SupportedBySection /> */}
         <NewsSection />
         <CTASection />
       </Suspense>
