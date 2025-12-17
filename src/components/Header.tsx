@@ -140,7 +140,7 @@ const Header = () => {
                   alt="PT SINERGY AGTER NUSANTARA & PT BUMI BLAMBANGAN RESOURCES"
                   className={`transition-all duration-300 w-auto bg-white p-2 rounded-lg max-w-[320px] md:max-w-[400px] ${
                     // Larger logo when scrolled
-                    isScrolled ? "h-10 md:h-12" : "h-12 md:h-16"
+                    isScrolled ? "h-12 md:h-14" : "h-14 md:h-20"
                   }`}
                 />
               </Link>
