@@ -1,22 +1,10 @@
-import companyLogo from "@/assets/company-logo.png";
-import gatheringImage from "@/assets/news/gathering-pt-khs-direktur-untuk-keakraban.jpg";
+import companyLogo from "@/assets/company-logo-san-full.jpeg";
 import fatigueManagementHero from "@/assets/news/fatigue-management-family-visit-hero.webp";
-import kaltengCircuit from "@/assets/news/kalteng-circuit-falery-tuwan.gif";
 import constructionSecurityProgram from "@/assets/news/construction-security-program-kapuas.jpeg";
-import gatheringTeamEvent from "@/assets/news/gathering-khs-team-event.jpg";
-import gatheringPhoto1 from "@/assets/news/gathering-khs-group-photo-1.png";
-import gatheringPhoto2 from "@/assets/news/gathering-khs-group-photo-2.png";
-import gatheringPhoto3 from "@/assets/news/gathering-khs-group-photo-3.png";
 
 // const companyLogo = "https://placehold.co/200x80/white/000000?text=Company+Logo";
-// const gatheringImage = "https://placehold.co/800x600/f97316/ffffff?text=Gathering";
 // const fatigueManagementHero = "https://placehold.co/800x600/f97316/ffffff?text=Fatigue+Management";
-// const kaltengCircuit = "https://placehold.co/800x600/f97316/ffffff?text=Circuit";
 // const constructionSecurityProgram = "https://placehold.co/800x600/f97316/ffffff?text=Security+Program";
-// const gatheringTeamEvent = "https://placehold.co/800x600/f97316/ffffff?text=Team+Event";
-// const gatheringPhoto1 = "https://placehold.co/800x600/f97316/ffffff?text=Gathering+1";
-// const gatheringPhoto2 = "https://placehold.co/800x600/f97316/ffffff?text=Gathering+2";
-// const gatheringPhoto3 = "https://placehold.co/800x600/f97316/ffffff?text=Gathering+3";
 
 import type { TranslationResources } from "@/lib/i18n";
 
@@ -85,52 +73,6 @@ export const newsArticles: NewsArticle[] = [
     sourceUrl:
       "https://san-bbr.id/pt-khs-ajak-keluarga-pekerja-jadi-mitra-keselamatan-fokus-atasi-kelelahan-kerja/",
   },
-
-  {
-    id: 3,
-    slug: "keren-kalteng-miliki-sirkuit-bertaraf-internasional",
-    title: "Keren... Kalteng Miliki Sirkuit Bertaraf Internasional",
-    excerpt:
-      "Masyarakat Kalimantan Tengah wajar berbangga, karena sebentar lagi akan memiliki sirkuit bertaraf internasional di Jalan Tjilik Riwut Kilometer 29...",
-    category: "Company News",
-    author: "Admin SAN & BBR",
-    date: "2025-09-05",
-    readTime: "1 min read",
-    image: kaltengCircuit,
-    content: [
-      "Masyarakat Kalimantan Tengah wajar berbangga, karena sebentar lagi akan memiliki sirkuit bertaraf internasional di Jalan Tjilik Riwut Kilometer 29 Palangka Raya, Kalimantan Tengah.",
-      "Pembangunan Sirkuit dengan panjang 1400 meter tersebut, tak lepas dari dukungan pimpinan PT SAN & PT BBR Michael Halim , Ketua DPD Komite Nasional Pemuda Indonesia (KNPI) Kalteng Fairid Naparin dan pengusaha muda John Garinda.",
-      '"Saya sangat berterima kasih atas dukungan lahan dan peralatan berat dari ketiga tokoh itu, hingga sirkuit bertaraf nasional ini dapat terwujud di Kalteng,"kata Pelaksana Tugas (Plt) Kepala Dinas Pemuda dan Olahraga (Dispora) Kalimantan Tengah, Falery Tuwan, di Palangka Raya, Kalimantan Tengah, Rabu (28/3/2018).',
-      "Selain itu juga ia mengucapkan terimakasih atas swadaya pembangunan sirkuit terhadap praktisi otomotif lain yakni Haidir, Ether Kaharap, Kaharap, Herry Wijono dan Ferry Lohing.",
-      "Menurut Falery, biaya pembangunan sirkuit itu, menelan biaya sekitar Rp 350 juta, meliputi biaya alat berat, mobilisasi/angkutan, material dan upah.",
-      "Sirkuit ini memiliki panjang 1400 meter, lebar 5-8 meter, jumlah tikungan 18, jumlah rintangan 12 type jump dan model rintangan tablet top jump, double jump, triple jump, step on, camel up jump, bermed corner dan roller. Ditambah fasilitas lain paddock area, waiting zone, repair zone, VIP area, parkir, kantin, pohon lindung dan toilet",
-      "Dengan keberadaan sirkuit tersebut diharapkan dapat menjadi barometer bagi seluruh pembalap nasional di Indonesia. Selain sebagai pusat olahraga motocross dan grasstrack di Kalimantan Tengah.",
-      "Kawasan sirkuit ini nantinya juga akan dibangun sebagai pusat pariwisata di Tangkiling dengan beberapa fasilitas antara lain pondok-pondok, hutan lindung, kolam pancing, pendopo, Sungai Tahai, pusat out bond, olahraga adventure, camping ground,dan beberapa fasilitas lain yang cocok dengan suasana hutan di tempat ini.",
-      '"Untuk itu semua kiranya kami mendapat dukungan dari masyarakat luas dan Pemerintah Kota Palangka Raya, Kalimantan Tengah serta Pemerintah Provinsi Kalimantan Tengah" ujarnya.',
-    ],
-    contentImages: [kaltengCircuit],
-    translations: {
-      EN: {
-        title: "Central Kalimantan to Have an International-Standard Circuit",
-        excerpt:
-          "Residents of Central Kalimantan have reason to be proud—the region will soon have an international-standard circuit on Jalan Tjilik Riwut Kilometer 29...",
-        content: [
-          "Residents of Central Kalimantan have good reason to be proud, as an international-standard circuit will soon stand on Jalan Tjilik Riwut Kilometer 29, Palangka Raya, Kalimantan Tengah.",
-          "The 1,400-meter circuit construction is made possible through the support of PT SAN & PT BBR leadership Michael Halim, KNPI Kalteng Chairman Fairid Naparin, and young entrepreneur John Garinda.",
-          "“I am very grateful for the land support and heavy equipment from these three figures, enabling this national-standard circuit to materialize in Central Kalimantan,” said Acting Head of the Youth and Sports Office (Dispora) of Central Kalimantan, Falery Tuwan, in Palangka Raya, Kalimantan Tengah, Wednesday (3/28/2018).",
-          "He also expressed appreciation for the voluntary contributions from other motorsport practitioners including Haidir, Ether Kaharap, Kaharap, Herry Wijono, and Ferry Lohing.",
-          "According to Falery, construction costs amount to approximately Rp 350 million, covering heavy equipment, mobilization/transportation, materials, and labor.",
-          "The circuit spans 1,400 meters in length and 5–8 meters in width, featuring 18 turns and 12 jump obstacles including tabletops, double jumps, triple jumps, step-on, camel-up jumps, bermed corners, and rollers. Additional facilities will include a paddock area, waiting zone, repair zone, VIP area, parking, canteen, shade trees, and toilets.",
-          "The circuit is expected to become a benchmark for national racers across Indonesia as well as a center for motocross and grasstrack in Central Kalimantan.",
-          "The area will also be developed into a tourism hub in Tangkiling with facilities such as cottages, protected forest area, fishing ponds, pavilions, Tahai River access, outbound area, adventure sports, camping ground, and other nature-oriented amenities.",
-          "“For all of this we hope to receive support from the wider community and both the Palangka Raya, Kalimantan Tengah City Government and the Central Kalimantan Provincial Government,” he added.",
-        ],
-        category: "Company News",
-      },
-    },
-    sourceUrl:
-      "https://san-bbr.id/keren-kalteng-miliki-sirkuit-bertaraf-internasional/",
-  },
   {
     id: 4,
     slug: "pekerja-jasa-konstruksi-di-kapuas-didorong-aktif-dalam-program-jaminan-sosial",
@@ -187,48 +129,6 @@ export const newsArticles: NewsArticle[] = [
     },
     sourceUrl:
       "https://san-bbr.id/pekerja-jasa-konstruksi-di-kapuas-didorong-aktif-dalam-program-jaminan-sosial/",
-  },
-  {
-    id: 5,
-    slug: "gathering-pt-khs-direktur-untuk-keakraban",
-    title: "Gathering PT SAN & PT BBR, Direktur: Untuk Keakraban",
-    excerpt:
-      "PT SAN & PT BBR (SAN & BBR) mengadakan Gathering, bertempat di Kantor PT SAN & PT BBR, Jl. Mahir Mahar, Km. 4.6, No. 88, Sabtu (18/01/2020) jam 10.00...",
-    category: "Company News",
-    author: "Admin SAN & BBR",
-    date: "2025-09-05",
-    readTime: "1 min read",
-    image: gatheringImage,
-    content: [
-      "PT SAN & PT BBR (SAN & BBR) mengadakan Gathering, bertempat di Kantor PT SAN & PT BBR, Jl. Mahir Mahar, Km. 4.6, No. 88, Sabtu (18/01/2020) jam 10.00 WIB. Tujuan dari dilaksanakan kegiatan tersebut adalah untuk meningkatkan rasa nyaman dan kebersamaan antara pimpinan dan karyawan yang bekerja di lingkungan PT SAN & PT BBR.",
-      '"Kalau antara karyawan dan pimpinan terjalin kebersamaan yang erat, suatu pekerjaan pasti akan terselesaikan dengan baik," kata Direktur Utama PT SAN & PT BBR, Ciang, kepada Lintasberita1.com yang hadir dalam acara Gathering tersebut.',
-      "Lanjutnya, sebenarnya kegiatan hari ini adalah dadakan, hanya melanjutkan rencana Gathering sebelum pergantian Tahun Baru 2020 yang sempat dibatalkan. Karena sebagian karyawan PT SAN & PT BBR berasal dari luar Daerah Kalimantan Tengah.",
-      '"Saya tetap bersyukur, semoga kegiatan ini dapat mempererat hubungan antara Karyawan dan pimpinan PT SAN & PT BBR semakin solid," harap Ciang.',
-      '"Kepada para karyawan agar selalu meningkatkan kualitas kerjanya untuk semakin bagus dari yang sebelumnya," tambah Ciang.',
-    ],
-    contentImages: [
-      gatheringTeamEvent,
-      gatheringPhoto1,
-      gatheringPhoto2,
-      gatheringPhoto3,
-    ],
-    translations: {
-      EN: {
-        title: "SAN & BBR Company Gathering: Strengthening Team Bonding",
-        excerpt:
-          "PT SAN & PT BBR (SAN & BBR) held a company gathering at its office to strengthen comfort and togetherness between leadership and employees...",
-        content: [
-          "PT SAN & PT BBR (SAN & BBR) held a company gathering at its office on Saturday (01/18/2020) at 10:00 AM. The purpose was to improve comfort and strengthen togetherness between management and employees.",
-          "“When strong togetherness exists between employees and leadership, work can be completed well,” said SAN & BBR President Director Ciang to Lintasberita1.com during the event.",
-          "He continued that the activity was actually spontaneous—essentially continuing a previously canceled New Year gathering plan, as many SAN & BBR employees come from outside Central Kalimantan.",
-          "“I remain grateful. Hopefully this activity further solidifies the relationship between SAN & BBR employees and management,” Ciang said.",
-          "He also reminded employees to continue improving their work quality going forward.",
-        ],
-        category: "Company News",
-      },
-    },
-    sourceUrl:
-      "https://san-bbr.id/gathering-pt-khs-direktur-untuk-keakraban/",
   },
 ];
 

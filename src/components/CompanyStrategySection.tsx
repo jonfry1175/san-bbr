@@ -16,7 +16,7 @@ import {
   Truck,
   HardHat,
 } from "lucide-react";
-// import logo from "@/assets/logo.jpg";
+// import logo from "@/assets/logo-san-full.jpeg";
 const logo = "https://placehold.co/500x500/e2e8f0/1e293b?text=Company+Logo";
 import { cn } from "@/lib/utils";
 import { useI18n } from "@/lib/i18n";

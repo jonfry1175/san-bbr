@@ -30,7 +30,7 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import logoSanFull from "@/assets/logo-san-full.jpeg";
-// import companyLogo from "@/assets/company-logo.png";
+// import companyLogo from "@/assets/company-logo-san-full.jpeg";
 const companyLogo = logoSanFull;
 import { Link, useLocation } from "react-router-dom";
 import { useI18n } from "@/lib/i18n";

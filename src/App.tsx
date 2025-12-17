@@ -297,7 +297,7 @@ const App = () => {
                     <span className="absolute inset-1 rounded-full border-4 border-transparent border-b-[#00c48c] border-t-[#00c48c] border-l-transparent border-r-transparent animate-[spin_1.4s_linear_infinite]" />
                     <span className="relative inline-flex h-16 w-16 items-center justify-center rounded-[18px] bg-white shadow-[0_8px_28px_rgba(0,0,0,0.08)]">
                       <img
-                        src="/logo.png"
+                        src="/logo-san-full.jpeg"
                         alt="PT SAN & PT BBR logo"
                         className="h-9 w-9 object-contain"
                       />

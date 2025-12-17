@@ -20,7 +20,7 @@ export const siteMetadata = {
     "kontraktor jalan",
     "PT SAN & PT BBR",
   ],
-  defaultImage: "https://san-bbr.id/logo.png",
+  defaultImage: "https://san-bbr.id/logo-san-full.jpeg",
   contactEmail: PRIMARY_EMAIL,
   contactEmailSecondary: SECONDARY_EMAIL,
   contactEmails: [...ALL_EMAILS],
@@ -84,8 +84,8 @@ export const createOrganizationJsonLd = () => ({
   name: siteMetadata.name,
   legalName: siteMetadata.legalName,
   url: siteMetadata.siteUrl,
-  logo: toAbsoluteUrl("/logo.png"),
-  image: toAbsoluteUrl("/logo.png"),
+  logo: toAbsoluteUrl("/logo-san-full.jpeg"),
+  image: toAbsoluteUrl("/logo-san-full.jpeg"),
   contactPoint: {
     "@type": "ContactPoint",
     contactType: "customer service",
@@ -206,7 +206,7 @@ export const createNewsArticleJsonLd = (
     name: siteMetadata.name,
     logo: {
       "@type": "ImageObject",
-      url: toAbsoluteUrl("/logo.png"),
+      url: toAbsoluteUrl("/logo-san-full.jpeg"),
     },
   },
 });

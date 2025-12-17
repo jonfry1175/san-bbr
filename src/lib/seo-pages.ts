@@ -28,7 +28,7 @@ export type ResolvedPageMeta = PageMeta & {
   image: string;
 };
 
-const defaultImage = toAbsoluteUrl("/logo.png");
+const defaultImage = toAbsoluteUrl("/logo-san-full.jpeg");
 
 export const staticPageMeta: Record<StaticPageKey, PageMeta> = {
   home: {
