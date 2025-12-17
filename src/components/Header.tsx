@@ -1,6 +1,21 @@
 import { useEffect, useState, useMemo } from "react";
 import { Button } from "@/components/ui/button";
-import { Menu, Check, ChevronDown, Home, Info, Package, Wrench, Briefcase, MapPin, Image as ImageIcon, Newspaper, Users, Phone, Globe } from "lucide-react";
+import {
+  Menu,
+  Check,
+  ChevronDown,
+  Home,
+  Info,
+  Package,
+  Wrench,
+  Briefcase,
+  MapPin,
+  Image as ImageIcon,
+  Newspaper,
+  Users,
+  Phone,
+  Globe,
+} from "lucide-react";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import {
   Accordion,
@@ -14,8 +29,9 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
+import logoSanFull from "@/assets/logo-san-full.jpeg";
 // import companyLogo from "@/assets/company-logo.png";
-const companyLogo = "https://placehold.co/200x80/white/000000?text=Company+Logo";
+const companyLogo = logoSanFull;
 import { Link, useLocation } from "react-router-dom";
 import { useI18n } from "@/lib/i18n";
 import { cn } from "@/lib/utils";
@@ -125,9 +141,9 @@ const Header = () => {
                 <img
                   src={companyLogo}
                   alt="PT SAN & PT BBR"
-                  className={`transition-all duration-300 w-auto bg-white p-2 rounded-lg ${
+                  className={`transition-all duration-300 w-auto bg-white p-1 rounded-lg ${
                     // Larger logo when scrolled
-                    isScrolled ? "h-10 md:h-14" : "h-12 md:h-14"
+                    isScrolled ? "h-10 md:h-12" : "h-12 md:h-16"
                   }`}
                 />
               </Link>
@@ -298,7 +314,6 @@ const Header = () => {
 
             {/* Right Actions */}
             <div className="flex items-center space-x-2 md:space-x-4">
-
               {/* Language selector (compact for main bar) */}
               <div className="hidden md:block">
                 <DropdownMenu>
@@ -371,7 +386,9 @@ const Header = () => {
                         alt="Logo"
                         className="h-10 w-auto bg-white p-1 rounded"
                       />
-                      <span className="font-bold text-lg tracking-wider">MENU</span>
+                      <span className="font-bold text-lg tracking-wider">
+                        MENU
+                      </span>
                     </div>
                   </div>
 
@@ -387,7 +404,10 @@ const Header = () => {
                       </Link>
 
                       <Accordion type="single" collapsible className="w-full">
-                        <AccordionItem value="about" className="border-b border-white/5">
+                        <AccordionItem
+                          value="about"
+                          className="border-b border-white/5"
+                        >
                           <AccordionTrigger className="px-2 py-4 text-lg font-medium text-white hover:text-accent hover:no-underline">
                             <div className="flex items-center gap-3">
                               <Info className="h-5 w-5 text-accent" />
@@ -415,7 +435,10 @@ const Header = () => {
                           </AccordionContent>
                         </AccordionItem>
 
-                        <AccordionItem value="products" className="border-b border-white/5">
+                        <AccordionItem
+                          value="products"
+                          className="border-b border-white/5"
+                        >
                           <AccordionTrigger className="px-2 py-4 text-lg font-medium text-white hover:text-accent hover:no-underline">
                             <div className="flex items-center gap-3">
                               <Package className="h-5 w-5 text-accent" />
@@ -464,14 +487,22 @@ const Header = () => {
                             )}
                             onClick={() => setMobileMenuOpen(false)}
                           >
-                            <Icon className={cn("h-5 w-5", item.isActive ? "text-accent" : "text-accent")} />
+                            <Icon
+                              className={cn(
+                                "h-5 w-5",
+                                item.isActive ? "text-accent" : "text-accent"
+                              )}
+                            />
                             {item.label}
                           </Link>
                         );
                       })}
 
                       <Accordion type="single" collapsible className="w-full">
-                        <AccordionItem value="career" className="border-b border-white/5">
+                        <AccordionItem
+                          value="career"
+                          className="border-b border-white/5"
+                        >
                           <AccordionTrigger className="px-2 py-4 text-lg font-medium text-white hover:text-accent hover:no-underline">
                             <div className="flex items-center gap-3">
                               <Users className="h-5 w-5 text-accent" />
@@ -512,36 +543,48 @@ const Header = () => {
                   </div>
 
                   <div className="p-6 bg-neutral-900/50 border-t border-white/10">
-                     <div className="flex items-center justify-between mb-4">
-                        <span className="text-sm text-white/60 uppercase tracking-wider flex items-center gap-2">
-                          <Globe className="h-4 w-4" />
-                          {headerCopy.languageLabel}
+                    <div className="flex items-center justify-between mb-4">
+                      <span className="text-sm text-white/60 uppercase tracking-wider flex items-center gap-2">
+                        <Globe className="h-4 w-4" />
+                        {headerCopy.languageLabel}
+                      </span>
+                    </div>
+                    <div className="grid grid-cols-2 gap-3">
+                      <Button
+                        variant={language === "EN" ? "default" : "outline"}
+                        className={cn(
+                          "w-full",
+                          language !== "EN" &&
+                            "bg-transparent text-white border-white/20 hover:bg-white/10"
+                        )}
+                        onClick={() => {
+                          setLanguage("EN");
+                          setMobileMenuOpen(false);
+                        }}
+                      >
+                        <span className="mr-2 text-lg">
+                          {languageMeta.EN.flag}
                         </span>
-                     </div>
-                     <div className="grid grid-cols-2 gap-3">
-                        <Button
-                          variant={language === "EN" ? "default" : "outline"}
-                          className={cn("w-full", language !== "EN" && "bg-transparent text-white border-white/20 hover:bg-white/10")}
-                          onClick={() => {
-                            setLanguage("EN");
-                            setMobileMenuOpen(false);
-                          }}
-                        >
-                          <span className="mr-2 text-lg">{languageMeta.EN.flag}</span>
-                          EN
-                        </Button>
-                        <Button
-                          variant={language === "ID" ? "default" : "outline"}
-                          className={cn("w-full", language !== "ID" && "bg-transparent text-white border-white/20 hover:bg-white/10")}
-                          onClick={() => {
-                            setLanguage("ID");
-                            setMobileMenuOpen(false);
-                          }}
-                        >
-                          <span className="mr-2 text-lg">{languageMeta.ID.flag}</span>
-                          ID
-                        </Button>
-                     </div>
+                        EN
+                      </Button>
+                      <Button
+                        variant={language === "ID" ? "default" : "outline"}
+                        className={cn(
+                          "w-full",
+                          language !== "ID" &&
+                            "bg-transparent text-white border-white/20 hover:bg-white/10"
+                        )}
+                        onClick={() => {
+                          setLanguage("ID");
+                          setMobileMenuOpen(false);
+                        }}
+                      >
+                        <span className="mr-2 text-lg">
+                          {languageMeta.ID.flag}
+                        </span>
+                        ID
+                      </Button>
+                    </div>
                   </div>
                 </SheetContent>
               </Sheet>
