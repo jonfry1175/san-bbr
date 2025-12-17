@@ -1,5 +1,5 @@
 /**
- * Centralized email configuration for PT SAN & PT BBR
+ * Centralized email configuration for PT SINERGY AGTER NUSANTARA & PT BUMI BLAMBANGAN RESOURCES
  *
  * This module provides consistent email addresses across the application,
  * eliminating the need for hardcoded email values in components.

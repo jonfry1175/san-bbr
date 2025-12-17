@@ -32,14 +32,14 @@ export const enTranslations: TranslationResources = {
       contact: "Contact Us",
     },
     productLinks: {
-      rentalAlatBerat: "Heavy Equipment Rental (PT SAN)",
-      jasaKonstruksi: "Mining Construction Services (PT BBR)",
+      rentalAlatBerat: "Heavy Equipment Rental (PT SINERGY AGTER NUSANTARA)",
+      jasaKonstruksi: "Mining Construction Services (PT BUMI BLAMBANGAN RESOURCES)",
     },
     careerLinks: {
       employee: "Employee Positions",
       intern: "Internship Programs",
-      san: "PT SAN Careers",
-      bbr: "PT BBR Careers",
+      san: "PT SINERGY AGTER NUSANTARA Careers",
+      bbr: "PT BUMI BLAMBANGAN RESOURCES Careers",
     },
   },
   serviceDetail: {
@@ -115,27 +115,27 @@ export const enTranslations: TranslationResources = {
       label: "Products",
       title: "Heavy Equipment & Project Support",
       description:
-        "Find heavy machinery, power solutions, and project support vehicles meeting PT SAN quality standards.",
+        "Find heavy machinery, power solutions, and project support vehicles meeting PT SINERGY AGTER NUSANTARA quality standards.",
     },
     intro: {
       badge: "Our Products",
       description:
         "We provide comprehensive solutions including heavy equipment, power supply, and material transport. Each unit undergoes strict inspection and is ready to support 24/7 operations.",
       rent: {
-        badge: "Heavy Equipment Rental (PT SAN)",
+        badge: "Heavy Equipment Rental (PT SINERGY AGTER NUSANTARA)",
         title: "Reliable Heavy Equipment Solutions",
         description:
           "We provide high-quality heavy equipment fleet for your construction and mining project needs with 24/7 technical support.",
       },
       sale: {
-        badge: "Construction Services & Materials (PT BBR)",
+        badge: "Construction Services & Materials (PT BUMI BLAMBANGAN RESOURCES)",
         title: "Quality Construction & Materials",
         description:
           "Professional mining construction services and quality material supply to support your operations.",
       },
       all: {
         badge: "Products & Services",
-        title: "Complete Solutions by PT SAN & PT BBR",
+        title: "Complete Solutions by PT SINERGY AGTER NUSANTARA & PT BUMI BLAMBANGAN RESOURCES",
         description:
           "Explore our wide range of heavy equipment and construction services designed for your project efficiency and reliability.",
       },
@@ -602,18 +602,18 @@ export const enTranslations: TranslationResources = {
 
   aboutSection: {
     label: "Brief Company History",
-    title: "PT SAN & PT BBR",
+    title: "PT SINERGY AGTER NUSANTARA & PT BUMI BLAMBANGAN RESOURCES",
     ptSan: {
-      title: "PT SAN (Heavy Equipment Rental)",
+      title: "PT SINERGY AGTER NUSANTARA (Heavy Equipment Rental)",
       description: "Trusted partner in providing high-quality heavy equipment for construction and mining projects. We ensure excellent unit availability and reliable technical support.",
     },
     ptBbr: {
-      title: "PT BBR (Mining Construction Services)",
+      title: "PT BUMI BLAMBANGAN RESOURCES (Mining Construction Services)",
       description: "Specialist in mining construction and earthwork services. We prioritize efficient, safe work methods that comply with mining industry standards.",
     },
     description: {
       paragraph1:
-        "PT SAN (Heavy Equipment Rental) and PT BBR (Mining Construction Services) are here as an integrated solution for the mining and construction industry needs in Indonesia.",
+        "PT SINERGY AGTER NUSANTARA (Heavy Equipment Rental) and PT BUMI BLAMBANGAN RESOURCES (Mining Construction Services) are here as an integrated solution for the mining and construction industry needs in Indonesia.",
       paragraph2:
         "With solid experience in their respective fields, the synergy of these two entities delivers comprehensive services ranging from providing quality heavy equipment to precise mining construction project execution.",
       paragraph3:
@@ -656,15 +656,15 @@ export const enTranslations: TranslationResources = {
   },
   visionMission: {
     label: "Vision & Mission",
-    title: "PT SAN & PT BBR",
+    title: "PT SINERGY AGTER NUSANTARA & PT BUMI BLAMBANGAN RESOURCES",
     subtitle: "Synergy of Strength to Build the Future",
     ptSan: {
       vision: {
-        title: "PT SAN Vision",
+        title: "PT SINERGY AGTER NUSANTARA Vision",
         content: "To be the leading, reliable, and efficient heavy equipment solution provider in Indonesia.",
       },
       mission: {
-        title: "PT SAN Mission",
+        title: "PT SINERGY AGTER NUSANTARA Mission",
         points: [
           "Provide high-quality and well-maintained heavy equipment fleet.",
           "Deliver responsive after-sales service and technical support.",
@@ -674,11 +674,11 @@ export const enTranslations: TranslationResources = {
     },
     ptBbr: {
       vision: {
-        title: "PT BBR Vision",
+        title: "PT BUMI BLAMBANGAN RESOURCES Vision",
         content: "To be a mining and construction contractor that excels in safety and productivity.",
       },
       mission: {
-        title: "PT BBR Mission",
+        title: "PT BUMI BLAMBANGAN RESOURCES Mission",
         points: [
           "Execute mining construction work with the highest safety standards.",
           "Improve operational efficiency through work method innovation.",
@@ -709,12 +709,12 @@ export const enTranslations: TranslationResources = {
     description:
       "We provide the most complete construction solutions with the best quality and modern technology to meet your project needs.",
     ptSan: {
-      title: "Heavy Equipment Rental (PT SAN)",
+      title: "Heavy Equipment Rental (PT SINERGY AGTER NUSANTARA)",
       description: "Complete heavy equipment rental services for various project needs.",
       action: "View Equipment Catalog",
     },
     ptBbr: {
-      title: "Mining Construction Services (PT BBR)",
+      title: "Mining Construction Services (PT BUMI BLAMBANGAN RESOURCES)",
       description: "Professional mining contractor and civil engineering services.",
       action: "View Construction Services",
     },
@@ -726,10 +726,10 @@ export const enTranslations: TranslationResources = {
     ctaRequestQuote: "Request Quote",
   },
   projectsSection: {
-    label: "PT SAN & PT BBR Portfolio",
-    title: "Featured Projects of PT SAN & PT BBR",
+    label: "PT SINERGY AGTER NUSANTARA & PT BUMI BLAMBANGAN RESOURCES Portfolio",
+    title: "Featured Projects of PT SINERGY AGTER NUSANTARA & PT BUMI BLAMBANGAN RESOURCES",
     description:
-      "Explore our portfolio of successful construction projects across Central Kalimantan and South Kalimantan, showcasing the expertise and commitment of PT SAN & PT BBR to excellence.",
+      "Explore our portfolio of successful construction projects across Central Kalimantan and South Kalimantan, showcasing the expertise and commitment of PT SINERGY AGTER NUSANTARA & PT BUMI BLAMBANGAN RESOURCES to excellence.",
     viewAll: "View All Projects",
     client: "Client",
     location: "Location",
@@ -1505,7 +1505,7 @@ export const enTranslations: TranslationResources = {
     label: "Supported By Industry Partners",
     title: "Join a Part of Our Success",
     description:
-      "This program has been initiated by PT SAN & PT BBR in collaboration with educational institutions to provide opportunities for members of these institutions to develop skills and start professional careers in their fields.",
+      "This program has been initiated by PT SINERGY AGTER NUSANTARA & PT BUMI BLAMBANGAN RESOURCES in collaboration with educational institutions to provide opportunities for members of these institutions to develop skills and start professional careers in their fields.",
   },
   newsSection: {
     categories: {
@@ -1517,9 +1517,9 @@ export const enTranslations: TranslationResources = {
       "Read about our latest projects, achievements, and industry insights.",
     readMore: "Read More",
     viewAll: "View All News",
-    pageTitle: "News & Insights of PT SAN & PT BBR",
+    pageTitle: "News & Insights of PT SINERGY AGTER NUSANTARA & PT BUMI BLAMBANGAN RESOURCES",
     pageDescription:
-      "Project updates, best practices, and construction industry information from PT SAN & PT BBR.",
+      "Project updates, best practices, and construction industry information from PT SINERGY AGTER NUSANTARA & PT BUMI BLAMBANGAN RESOURCES.",
     detail: {
       backToNews: "Back to News",
       shareLabel: "Share:",
@@ -1591,13 +1591,13 @@ export const enTranslations: TranslationResources = {
     label: "Company Strategy",
     title: "SIPADU",
     description:
-      "An acronym for Synergy, Integrity, Protection, Trust, Dedication, and Excellence — PT SAN & PT BBR's work guidelines to support national development with safety, quality, and efficiency.",
+      "An acronym for Synergy, Integrity, Protection, Trust, Dedication, and Excellence — PT SINERGY AGTER NUSANTARA & PT BUMI BLAMBANGAN RESOURCES's work guidelines to support national development with safety, quality, and efficiency.",
     ptSan: {
-      title: "PT SAN Strategy",
+      title: "PT SINERGY AGTER NUSANTARA Strategy",
       description: "Focus on preventive maintenance and high unit availability to support client operations.",
     },
     ptBbr: {
-      title: "PT BBR Strategy",
+      title: "PT BUMI BLAMBANGAN RESOURCES Strategy",
       description: "Prioritizing operational efficiency and work safety in every mining project execution.",
     },
     sipadu: {
@@ -1628,7 +1628,7 @@ export const enTranslations: TranslationResources = {
     },
     logoMeaning: {
       title: "Company Meaning",
-      companyName: "PT SAN & PT BBR",
+      companyName: "PT SINERGY AGTER NUSANTARA & PT BUMI BLAMBANGAN RESOURCES",
       items: {
         redColor: {
           title: "Red Color",
@@ -1799,16 +1799,16 @@ export const enTranslations: TranslationResources = {
         paragraph1:
           "We are a team of road construction, <em>earthwork</em>, and <em>hotmix</em> experts with over three decades of experience. Our work culture emphasizes safety, cross-division collaboration, and continuous innovation to ensure every project meets the highest standards.",
         paragraph2:
-          "Supported by a complete fleet of <em>heavy-duty</em> equipment and safety certifications, the PT SAN & PT BBR team is ready to deliver quality infrastructure for both government and private clients.",
+          "Supported by a complete fleet of <em>heavy-duty</em> equipment and safety certifications, the PT SINERGY AGTER NUSANTARA & PT BUMI BLAMBANGAN RESOURCES team is ready to deliver quality infrastructure for both government and private clients.",
         imageAlt:
-          "PT SAN & PT BBR field team wearing safety gear at a project site",
+          "PT SINERGY AGTER NUSANTARA & PT BUMI BLAMBANGAN RESOURCES field team wearing safety gear at a project site",
         slogan: "Commitment to safety • Focus on quality • Strong teamwork",
       },
     },
     ourTeam: {
       hero: {
-        label: "PT SAN & PT BBR Team",
-        title: "Professional Team of PT SAN & PT BBR",
+        label: "PT SINERGY AGTER NUSANTARA & PT BUMI BLAMBANGAN RESOURCES Team",
+        title: "Professional Team of PT SINERGY AGTER NUSANTARA & PT BUMI BLAMBANGAN RESOURCES",
         description:
           "Our leaders drive a culture of safety, efficiency, and quality in every construction project across Central Kalimantan and South Kalimantan.",
       },
@@ -1849,7 +1849,7 @@ export const enTranslations: TranslationResources = {
         trainingHours: { label: "Annual Training Hours", value: "1,200" },
       },
       organization: {
-        badgeCompany: "PT SAN & PT BBR",
+        badgeCompany: "PT SINERGY AGTER NUSANTARA & PT BUMI BLAMBANGAN RESOURCES",
         title: "Organizational Structure",
         paragraph1:
           "The main coordination path from shareholders to operational divisions is visualized as a tree diagram, making it easy for stakeholders to read the flow of mandates and responsibilities.",
@@ -1921,13 +1921,13 @@ export const enTranslations: TranslationResources = {
         description:
           "Key milestones that highlight growth, leadership, and impact.",
         descriptionTemplate:
-          "Career milestones that shape {name}'s leadership at PT SAN & PT BBR.",
+          "Career milestones that shape {name}'s leadership at PT SINERGY AGTER NUSANTARA & PT BUMI BLAMBANGAN RESOURCES.",
       },
     },
     certificationGallery: {
       hero: {
         label: "Professional Certifications",
-        title: "Certifications of PT SAN & PT BBR",
+        title: "Certifications of PT SINERGY AGTER NUSANTARA & PT BUMI BLAMBANGAN RESOURCES",
         description:
           "A collection of official certificates ensuring our team meets safety, quality, and project leadership standards.",
       },
@@ -1951,7 +1951,7 @@ export const enTranslations: TranslationResources = {
     companyAwardsGallery: {
       hero: {
         label: "Company Awards",
-        title: "Awards of PT SAN & PT BBR",
+        title: "Awards of PT SINERGY AGTER NUSANTARA & PT BUMI BLAMBANGAN RESOURCES",
         description:
           "A showcase of accolades affirming our dedication to safety, service quality, and long-term partnerships.",
       },
@@ -2084,7 +2084,7 @@ export const enTranslations: TranslationResources = {
       qualityAssured: "Quality Assured",
       completedProjects: "Completed Projects",
     },
-    modal: { companyName: "PT SAN & PT BBR" },
+    modal: { companyName: "PT SINERGY AGTER NUSANTARA & PT BUMI BLAMBANGAN RESOURCES" },
     ariaGalleryNavigation: "{title} gallery - use arrow keys to navigate",
   },
   location: {
@@ -2136,7 +2136,7 @@ export const enTranslations: TranslationResources = {
   },
   footer: {
     company: {
-      title: "PT SAN & PT BBR",
+      title: "PT SINERGY AGTER NUSANTARA & PT BUMI BLAMBANGAN RESOURCES",
       description:
         "Your trusted partner in construction and infrastructure development with over 35 years of experience.",
       followUs: "Follow Us",
@@ -2177,6 +2177,6 @@ export const enTranslations: TranslationResources = {
     },
     ctaLookingForPartner: "Looking for a reliable partner?",
     ctaLetsBuild: "Let's build something great together.",
-    copyright: "© 2024 PT SAN & PT BBR. All rights reserved.",
+    copyright: "© 2024 PT SINERGY AGTER NUSANTARA & PT BUMI BLAMBANGAN RESOURCES. All rights reserved.",
   },
 };

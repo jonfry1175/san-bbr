@@ -56,8 +56,14 @@ const Footer = () => {
   ];
 
   const featuredServices = [
-    { id: "rental-alat-berat", name: "Rental Alat Berat (PT SAN)" },
-    { id: "jasa-konstruksi-tambang", name: "Jasa Konstruksi Tambang (PT BBR)" },
+    {
+      id: "rental-alat-berat",
+      name: "Rental Alat Berat (PT SINERGY AGTER NUSANTARA)",
+    },
+    {
+      id: "jasa-konstruksi-tambang",
+      name: "Jasa Konstruksi Tambang (PT BUMI BLAMBANGAN RESOURCES)",
+    },
   ];
   const contactEmails = [PRIMARY_EMAIL, HIRING_ALIAS_EMAIL];
   const mailtoAll = `mailto:${contactEmails.join(",")}`;
@@ -167,7 +173,7 @@ const Footer = () => {
             <Link to="/" className="block">
               <img
                 src={companyLogo}
-                alt="PT SAN & PT BBR"
+                alt="PT SINERGY AGTER NUSANTARA & PT BUMI BLAMBANGAN RESOURCES"
                 className="h-16 w-auto mb-6 opacity-90 hover:opacity-100 transition-opacity"
               />
             </Link>

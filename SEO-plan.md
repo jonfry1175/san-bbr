@@ -2,7 +2,7 @@ whats user neeeds
 
 ## User Goal
 
-- Improve SEO for the platform (showcasing PT SAN & PT BBR) by adding sitemap, enhancing metadata, and strengthening structured data.
+- Improve SEO for the platform (showcasing PT SINERGY AGTER NUSANTARA & PT BUMI BLAMBANGAN RESOURCES) by adding sitemap, enhancing metadata, and strengthening structured data.
 
 ## High-Level Plan
 

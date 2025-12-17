@@ -5,8 +5,8 @@ This document provides context for the AI assistant to understand the project st
 ## Project Overview
 
 This is a modern web application serving as a platform for two entities:
-- **PT SAN** (Rental Alat Berat)
-- **PT BBR** (Jasa Konstruksi Tambang)
+- **PT SINERGY AGTER NUSANTARA** (Rental Alat Berat)
+- **PT BUMI BLAMBANGAN RESOURCES** (Jasa Konstruksi Tambang)
 
 The application serves as a corporate profile or marketing platform.
 

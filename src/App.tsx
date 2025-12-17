@@ -298,7 +298,7 @@ const App = () => {
                     <span className="relative inline-flex h-16 w-16 items-center justify-center rounded-[18px] bg-white shadow-[0_8px_28px_rgba(0,0,0,0.08)]">
                       <img
                         src="/logo-san-full.jpeg"
-                        alt="PT SAN & PT BBR logo"
+                        alt="PT SINERGY AGTER NUSANTARA & PT BUMI BLAMBANGAN RESOURCES logo"
                         className="h-9 w-9 object-contain"
                       />
                     </span>

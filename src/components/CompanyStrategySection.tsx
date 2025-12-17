@@ -146,7 +146,7 @@ const CompanyStrategySectionComponent = () => {
 
         {/* Split Strategy Cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 mb-12">
-          {/* PT SAN */}
+          {/* PT SINERGY AGTER NUSANTARA */}
           <Card className="border-card-border shadow-sm hover:shadow-md transition-all">
             <CardHeader>
               <div className="flex items-center gap-3">
@@ -165,7 +165,7 @@ const CompanyStrategySectionComponent = () => {
             </CardContent>
           </Card>
 
-          {/* PT BBR */}
+          {/* PT BUMI BLAMBANGAN RESOURCES */}
           <Card className="border-card-border shadow-sm hover:shadow-md transition-all">
             <CardHeader>
               <div className="flex items-center gap-3">
@@ -232,7 +232,7 @@ const CompanyStrategySectionComponent = () => {
               <div className="w-full max-w-md md:max-w-lg lg:max-w-[38rem] xl:max-w-[44rem] aspect-square bg-white">
                 <img
                   src={logo}
-                  alt="Logo Perusahaan PT SAN & PT BBR"
+                  alt="Logo Perusahaan PT SINERGY AGTER NUSANTARA & PT BUMI BLAMBANGAN RESOURCES"
                   className="h-full w-full object-cover"
                 />
               </div>

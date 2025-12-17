@@ -3,8 +3,8 @@
 Vite + React + TypeScript + Tailwind CSS with shadcn/ui.
 
 This platform serves as the digital presence for two entities:
-- **PT SAN** (Rental Alat Berat)
-- **PT BBR** (Jasa Konstruksi Tambang)
+- **PT SINERGY AGTER NUSANTARA** (Rental Alat Berat)
+- **PT BUMI BLAMBANGAN RESOURCES** (Jasa Konstruksi Tambang)
 
 ## Brand color (primary)
 

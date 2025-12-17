@@ -217,7 +217,7 @@ const CompanyAwardsGallery = memo(() => {
               </Badge>
               <h1 className="heading-md mt-4">
                 {t("aboutPages.companyAwardsGallery.headingTemplate", {
-                  company: "PT SAN & PT BBR",
+                  company: "PT SINERGY AGTER NUSANTARA & PT BUMI BLAMBANGAN RESOURCES",
                 })}
               </h1>
               <p className="mt-4 text-lg text-slate-600 md:whitespace-nowrap">

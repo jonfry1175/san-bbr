@@ -140,7 +140,7 @@ const Header = () => {
               <Link to="/">
                 <img
                   src={companyLogo}
-                  alt="PT SAN & PT BBR"
+                  alt="PT SINERGY AGTER NUSANTARA & PT BUMI BLAMBANGAN RESOURCES"
                   width="200"
                   className={`transition-all duration-300 w-auto bg-white p-2 rounded-lg ${
                     // Larger logo when scrolled

@@ -38,13 +38,13 @@ const VisionMissionSection = memo(() => {
         {/* Vision & Mission Split */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch">
           
-          {/* PT SAN */}
+          {/* PT SINERGY AGTER NUSANTARA */}
           <div className="space-y-6">
              <div className="flex items-center gap-3 justify-center lg:justify-start">
                 <div className="p-2 bg-accent/10 rounded-lg">
                   <Truck className="w-6 h-6 text-accent" />
                 </div>
-                <h3 className="text-2xl font-bold text-primary">PT SAN</h3>
+                <h3 className="text-2xl font-bold text-primary">PT SINERGY AGTER NUSANTARA</h3>
              </div>
              
              {/* Vision */}
@@ -83,13 +83,13 @@ const VisionMissionSection = memo(() => {
              </Card>
           </div>
 
-          {/* PT BBR */}
+          {/* PT BUMI BLAMBANGAN RESOURCES */}
           <div className="space-y-6">
              <div className="flex items-center gap-3 justify-center lg:justify-start">
                 <div className="p-2 bg-primary/10 rounded-lg">
                   <HardHat className="w-6 h-6 text-primary" />
                 </div>
-                <h3 className="text-2xl font-bold text-primary">PT BBR</h3>
+                <h3 className="text-2xl font-bold text-primary">PT BUMI BLAMBANGAN RESOURCES</h3>
              </div>
              
              {/* Vision */}

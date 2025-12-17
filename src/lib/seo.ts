@@ -5,20 +5,20 @@ import type { TeamMember } from "@/lib/team";
 import { PRIMARY_EMAIL, SECONDARY_EMAIL, ALL_EMAILS } from "@/lib/email-config";
 
 export const siteMetadata = {
-  name: "PT SAN & PT BBR",
-  legalName: "PT SAN & PT BBR",
+  name: "PT SINERGY AGTER NUSANTARA & PT BUMI BLAMBANGAN RESOURCES",
+  legalName: "PT SINERGY AGTER NUSANTARA & PT BUMI BLAMBANGAN RESOURCES",
   siteUrl: "https://san-bbr.id",
   locale: "id_ID",
   defaultTitle:
-    "PT SAN & PT BBR | Infrastruktur & Roadworks Kalimantan",
+    "PT SINERGY AGTER NUSANTARA & PT BUMI BLAMBANGAN RESOURCES | Infrastruktur & Roadworks Kalimantan",
   defaultDescription:
-    "PT SAN & PT BBR adalah mitra konstruksi dan infrastruktur yang berfokus pada pembangunan jalan, earthwork, dan layanan aspal di Kalimantan Tengah.",
+    "PT SINERGY AGTER NUSANTARA & PT BUMI BLAMBANGAN RESOURCES adalah mitra konstruksi dan infrastruktur yang berfokus pada pembangunan jalan, earthwork, dan layanan aspal di Kalimantan Tengah.",
   defaultKeywords: [
     "konstruksi kalimantan tengah",
     "aspal hotmix",
     "earthwork",
     "kontraktor jalan",
-    "PT SAN & PT BBR",
+    "PT SINERGY AGTER NUSANTARA & PT BUMI BLAMBANGAN RESOURCES",
   ],
   defaultImage: "https://san-bbr.id/logo-san-full.jpeg",
   contactEmail: PRIMARY_EMAIL,
@@ -231,7 +231,7 @@ export const createContactPageJsonLd = () => ({
   name: `${siteMetadata.name} Contact`,
   url: buildCanonicalUrl("/contact"),
   description:
-    "Hubungi PT SAN & PT BBR untuk konsultasi layanan konstruksi, infrastruktur, dan proyek jalan di Kalimantan Tengah.",
+    "Hubungi PT SINERGY AGTER NUSANTARA & PT BUMI BLAMBANGAN RESOURCES untuk konsultasi layanan konstruksi, infrastruktur, dan proyek jalan di Kalimantan Tengah.",
   inLanguage: siteMetadata.locale,
   publisher: {
     "@id": siteMetadata.organizationId,

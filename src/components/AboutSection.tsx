@@ -119,9 +119,9 @@ const AboutSectionComponent = () => {
           </div>
         </div>
 
-        {/* Split Cards for PT SAN and PT BBR */}
+        {/* Split Cards for PT SINERGY AGTER NUSANTARA and PT BUMI BLAMBANGAN RESOURCES */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8 mb-16">
-          {/* PT SAN */}
+          {/* PT SINERGY AGTER NUSANTARA */}
           <Card className="flex flex-col h-full border-l-4 border-l-accent shadow-md hover:shadow-lg transition-shadow">
             <CardHeader>
               <div className="flex items-center gap-3 mb-2">
@@ -150,7 +150,7 @@ const AboutSectionComponent = () => {
             </CardContent>
           </Card>
 
-          {/* PT BBR */}
+          {/* PT BUMI BLAMBANGAN RESOURCES */}
           <Card className="flex flex-col h-full border-l-4 border-l-primary shadow-md hover:shadow-lg transition-shadow">
              <CardHeader>
               <div className="flex items-center gap-3 mb-2">
@@ -231,7 +231,7 @@ const AboutSectionComponent = () => {
               >
                 <Link
                   to="/about-us/our-company"
-                  aria-label="Learn more about PT SAN & PT BBR"
+                  aria-label="Learn more about PT SINERGY AGTER NUSANTARA & PT BUMI BLAMBANGAN RESOURCES"
                 >
                   {t("aboutSection.learnMore")}
                   <ArrowRight className="md:ml-2 h-5 w-5" />

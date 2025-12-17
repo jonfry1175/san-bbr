@@ -15,7 +15,7 @@ Before submitting changes, ensure `npm run lint` and `npm run build` pass.
 
 ## Project Architecture
 
-This is a Vite + React + TypeScript web application for PT SAN (Rental Alat Berat) and PT BBR (Jasa Konstruksi Tambang) using shadcn/ui + Tailwind CSS.
+This is a Vite + React + TypeScript web application for PT SINERGY AGTER NUSANTARA (Rental Alat Berat) and PT BUMI BLAMBANGAN RESOURCES (Jasa Konstruksi Tambang) using shadcn/ui + Tailwind CSS.
 
 ### Tech Stack
 
@@ -105,10 +105,10 @@ Routes are wrapped with `AppLayout` component which provides Header, Footer, Her
 
 ## Business Context
 
-This is a corporate website platform for PT SAN and PT BBR. The site showcases:
+This is a corporate website platform for PT SINERGY AGTER NUSANTARA and PT BUMI BLAMBANGAN RESOURCES. The site showcases:
 
-- **PT SAN**: Heavy equipment rental services (Rental Alat Berat)
-- **PT BBR**: Mining construction services (Jasa Konstruksi Tambang)
+- **PT SINERGY AGTER NUSANTARA**: Heavy equipment rental services (Rental Alat Berat)
+- **PT BUMI BLAMBANGAN RESOURCES**: Mining construction services (Jasa Konstruksi Tambang)
 - Portfolio of completed projects
 - Company news and updates
 - Career opportunities

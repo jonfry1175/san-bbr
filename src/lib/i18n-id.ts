@@ -32,14 +32,14 @@ export const idTranslations: TranslationResources = {
       contact: "Hubungi Kami",
     },
     productLinks: {
-      rentalAlatBerat: "Rental Alat Berat (PT SAN)",
-      jasaKonstruksi: "Jasa Konstruksi Tambang (PT BBR)",
+      rentalAlatBerat: "Rental Alat Berat (PT SINERGY AGTER NUSANTARA)",
+      jasaKonstruksi: "Jasa Konstruksi Tambang (PT BUMI BLAMBANGAN RESOURCES)",
     },
     careerLinks: {
       employee: "Peluang Karir",
       intern: "Program Magang",
-      san: "Karir PT SAN",
-      bbr: "Karir PT BBR",
+      san: "Karir PT SINERGY AGTER NUSANTARA",
+      bbr: "Karir PT BUMI BLAMBANGAN RESOURCES",
     },
   },
   aboutPages: {
@@ -55,17 +55,17 @@ export const idTranslations: TranslationResources = {
         paragraph1:
           "Kami terdiri dari para ahli konstruksi jalan, <em>earthwork</em>, dan <em>hotmix</em> yang berpengalaman lebih dari tiga dekade. Budaya kerja kami menekankan keselamatan, kolaborasi lintas divisi, dan inovasi berkelanjutan agar setiap proyek terselesaikan dengan standar terbaik.",
         paragraph2:
-          "Dengan dukungan armada peralatan <em>heavy-duty</em> yang lengkap serta sertifikasi keselamatan kerja, tim PT SAN & PT BBR siap mewujudkan infrastruktur berkualitas bagi klien pemerintah maupun swasta.",
+          "Dengan dukungan armada peralatan <em>heavy-duty</em> yang lengkap serta sertifikasi keselamatan kerja, tim PT SINERGY AGTER NUSANTARA & PT BUMI BLAMBANGAN RESOURCES siap mewujudkan infrastruktur berkualitas bagi klien pemerintah maupun swasta.",
         imageAlt:
-          "Tim lapangan PT SAN & PT BBR mengenakan seragam keselamatan di area proyek",
+          "Tim lapangan PT SINERGY AGTER NUSANTARA & PT BUMI BLAMBANGAN RESOURCES mengenakan seragam keselamatan di area proyek",
         slogan:
           "Komitmen pada keselamatan • Fokus pada kualitas • Kerja tim solid",
       },
     },
     ourTeam: {
       hero: {
-        label: "Tim PT SAN & PT BBR",
-        title: "Tim Profesional PT SAN & PT BBR",
+        label: "Tim PT SINERGY AGTER NUSANTARA & PT BUMI BLAMBANGAN RESOURCES",
+        title: "Tim Profesional PT SINERGY AGTER NUSANTARA & PT BUMI BLAMBANGAN RESOURCES",
         description:
           "Para pemimpin kami menggerakkan budaya keselamatan, efisiensi, dan kualitas pada setiap proyek konstruksi di Kalimantan Tengah dan Kalimantan Selatan.",
       },
@@ -106,7 +106,7 @@ export const idTranslations: TranslationResources = {
         trainingHours: { label: "Jam Pelatihan Tahunan", value: "1.200" },
       },
       organization: {
-        badgeCompany: "PT SAN & PT BBR",
+        badgeCompany: "PT SINERGY AGTER NUSANTARA & PT BUMI BLAMBANGAN RESOURCES",
         title: "Struktur Organisasi",
         paragraph1:
           "Jalur koordinasi utama dari pemegang saham hingga divisi operasional divisualisasikan sebagai bagan pohon, memudahkan setiap pemangku kepentingan membaca alur mandat dan tanggung jawab.",
@@ -178,13 +178,13 @@ export const idTranslations: TranslationResources = {
         description:
           "Tonggak penting yang menyoroti pertumbuhan, kepemimpinan, dan dampak.",
         descriptionTemplate:
-          "Tonggak perjalanan karir yang membentuk gaya kepemimpinan {name} di PT SAN & PT BBR.",
+          "Tonggak perjalanan karir yang membentuk gaya kepemimpinan {name} di PT SINERGY AGTER NUSANTARA & PT BUMI BLAMBANGAN RESOURCES.",
       },
     },
     certificationGallery: {
       hero: {
         label: "Sertifikasi Profesional",
-        title: "Sertifikasi PT SAN & PT BBR",
+        title: "Sertifikasi PT SINERGY AGTER NUSANTARA & PT BUMI BLAMBANGAN RESOURCES",
         description:
           "Kumpulan sertifikat resmi yang memastikan tim kami memenuhi standar keselamatan, mutu, dan kepemimpinan proyek.",
       },
@@ -208,7 +208,7 @@ export const idTranslations: TranslationResources = {
     companyAwardsGallery: {
       hero: {
         label: "Penghargaan Perusahaan",
-        title: "Penghargaan PT SAN & PT BBR",
+        title: "Penghargaan PT SINERGY AGTER NUSANTARA & PT BUMI BLAMBANGAN RESOURCES",
         description:
           "Kumpulan penghargaan yang menegaskan dedikasi kami pada keselamatan, kualitas layanan, dan kemitraan jangka panjang.",
       },
@@ -321,27 +321,27 @@ export const idTranslations: TranslationResources = {
       label: "Produk",
       title: "Alat Berat & Dukungan Proyek",
       description:
-        "Temukan alat berat, solusi kelistrikan, dan kendaraan pendukung proyek yang memenuhi standar kualitas PT SAN.",
+        "Temukan alat berat, solusi kelistrikan, dan kendaraan pendukung proyek yang memenuhi standar kualitas PT SINERGY AGTER NUSANTARA.",
     },
     intro: {
       badge: "Produk Kami",
       description:
         "Kami menyediakan solusi komprehensif mulai dari alat berat, penyedia daya, hingga transportasi material. Setiap unit melewati inspeksi menyeluruh dan siap mendukung operasional 24/7.",
       rent: {
-        badge: "Rental Alat Berat (PT SAN)",
+        badge: "Rental Alat Berat (PT SINERGY AGTER NUSANTARA)",
         title: "Solusi Alat Berat Terpercaya",
         description:
           "Kami menyediakan armada alat berat berkualitas tinggi untuk kebutuhan proyek konstruksi dan pertambangan dengan dukungan teknis 24/7.",
       },
       sale: {
-        badge: "Jasa & Material Konstruksi (PT BBR)",
+        badge: "Jasa & Material Konstruksi (PT BUMI BLAMBANGAN RESOURCES)",
         title: "Konstruksi & Material Berkualitas",
         description:
           "Layanan konstruksi tambang profesional dan penyediaan material berkualitas untuk mendukung operasional Anda.",
       },
       all: {
         badge: "Produk & Layanan",
-        title: "Solusi Lengkap PT SAN & PT BBR",
+        title: "Solusi Lengkap PT SINERGY AGTER NUSANTARA & PT BUMI BLAMBANGAN RESOURCES",
         description:
           "Jelajahi berbagai pilihan alat berat dan layanan konstruksi kami yang dirancang untuk efisiensi dan keandalan proyek Anda.",
       },
@@ -665,13 +665,13 @@ export const idTranslations: TranslationResources = {
   },
   aboutSection: {
     label: "Tentang Perusahaan",
-    title: "PT SAN & PT BBR",
+    title: "PT SINERGY AGTER NUSANTARA & PT BUMI BLAMBANGAN RESOURCES",
     ptSan: {
-      title: "PT SAN (Rental Alat Berat)",
+      title: "PT SINERGY AGTER NUSANTARA (Rental Alat Berat)",
       description: "Mitra terpercaya dalam penyediaan alat berat berkualitas untuk kebutuhan proyek konstruksi dan pertambangan. Kami menjamin ketersediaan unit yang prima dan dukungan teknis yang handal.",
     },
     ptBbr: {
-      title: "PT BBR (Jasa Konstruksi Tambang)",
+      title: "PT BUMI BLAMBANGAN RESOURCES (Jasa Konstruksi Tambang)",
       description: "Spesialis dalam jasa konstruksi tambang dan pekerjaan tanah (earthwork). Kami mengedepankan metode kerja yang efisien, aman, dan sesuai standar industri pertambangan.",
     },
     description: {
@@ -719,15 +719,15 @@ export const idTranslations: TranslationResources = {
   },
   visionMission: {
     label: "Visi & Misi",
-    title: "PT SAN & PT BBR",
+    title: "PT SINERGY AGTER NUSANTARA & PT BUMI BLAMBANGAN RESOURCES",
     subtitle: "Sinergi Kekuatan untuk Membangun Masa Depan",
     ptSan: {
       vision: {
-        title: "Visi PT SAN",
+        title: "Visi PT SINERGY AGTER NUSANTARA",
         content: "Menjadi penyedia solusi alat berat terkemuka yang handal dan efisien di Indonesia.",
       },
       mission: {
-        title: "Misi PT SAN",
+        title: "Misi PT SINERGY AGTER NUSANTARA",
         points: [
           "Menyediakan armada alat berat yang berkualitas dan terawat.",
           "Memberikan layanan purna jual dan dukungan teknis yang responsif.",
@@ -737,11 +737,11 @@ export const idTranslations: TranslationResources = {
     },
     ptBbr: {
       vision: {
-        title: "Visi PT BBR",
+        title: "Visi PT BUMI BLAMBANGAN RESOURCES",
         content: "Menjadi kontraktor pertambangan dan konstruksi yang unggul dalam keselamatan dan produktivitas.",
       },
       mission: {
-        title: "Misi PT BBR",
+        title: "Misi PT BUMI BLAMBANGAN RESOURCES",
         points: [
           "Melaksanakan pekerjaan konstruksi tambang dengan standar keselamatan tertinggi.",
           "Meningkatkan efisiensi operasional melalui inovasi metode kerja.",
@@ -772,12 +772,12 @@ export const idTranslations: TranslationResources = {
     description:
       "Kami menyediakan solusi konstruksi terlengkap dengan kualitas terbaik dan teknologi modern untuk memenuhi kebutuhan proyek Anda.",
     ptSan: {
-      title: "Rental Alat Berat (PT SAN)",
+      title: "Rental Alat Berat (PT SINERGY AGTER NUSANTARA)",
       description: "Layanan penyewaan alat berat lengkap untuk berbagai kebutuhan proyek.",
       action: "Lihat Katalog Alat",
     },
     ptBbr: {
-      title: "Jasa Konstruksi Tambang (PT BBR)",
+      title: "Jasa Konstruksi Tambang (PT BUMI BLAMBANGAN RESOURCES)",
       description: "Jasa kontraktor pertambangan dan pekerjaan sipil yang profesional.",
       action: "Lihat Layanan Konstruksi",
     },
@@ -789,10 +789,10 @@ export const idTranslations: TranslationResources = {
     ctaRequestQuote: "Minta Penawaran",
   },
   projectsSection: {
-    label: "Portofolio PT SAN & PT BBR",
-    title: "Proyek Unggulan PT SAN & PT BBR",
+    label: "Portofolio PT SINERGY AGTER NUSANTARA & PT BUMI BLAMBANGAN RESOURCES",
+    title: "Proyek Unggulan PT SINERGY AGTER NUSANTARA & PT BUMI BLAMBANGAN RESOURCES",
     description:
-      "Jelajahi portofolio proyek konstruksi sukses kami di Kalimantan Tengah dan Kalimantan Selatan, menunjukkan keahlian dan komitmen PT SAN & PT BBR terhadap keunggulan.",
+      "Jelajahi portofolio proyek konstruksi sukses kami di Kalimantan Tengah dan Kalimantan Selatan, menunjukkan keahlian dan komitmen PT SINERGY AGTER NUSANTARA & PT BUMI BLAMBANGAN RESOURCES terhadap keunggulan.",
     viewAll: "Lihat Semua Proyek",
     client: "Klien",
     location: "Lokasi",
@@ -1259,7 +1259,7 @@ export const idTranslations: TranslationResources = {
     label: "Didukung Oleh Mitra Industri",
     title: "Bergabung Menjadi Bagian Sukses Bersama Kami",
     description:
-      "Program ini telah dimulai PT SAN & PT BBR dan bekerja sama dengan institusi-institusi pendidikan untuk menyediakan wadah bagi anggota institusi agar bisa mengembangkan kemampuan dan memulai karir dibidangnya secara profesional.",
+      "Program ini telah dimulai PT SINERGY AGTER NUSANTARA & PT BUMI BLAMBANGAN RESOURCES dan bekerja sama dengan institusi-institusi pendidikan untuk menyediakan wadah bagi anggota institusi agar bisa mengembangkan kemampuan dan memulai karir dibidangnya secara profesional.",
   },
   // Per-service translations (ID)
   services: {
@@ -1521,9 +1521,9 @@ export const idTranslations: TranslationResources = {
       "Baca tentang proyek terbaru kami, pencapaian, dan wawasan industri.",
     readMore: "Baca Selengkapnya",
     viewAll: "Lihat Semua Berita",
-    pageTitle: "Berita & Wawasan PT SAN & PT BBR",
+    pageTitle: "Berita & Wawasan PT SINERGY AGTER NUSANTARA & PT BUMI BLAMBANGAN RESOURCES",
     pageDescription:
-      "Pembaruan proyek, praktik terbaik, dan informasi industri konstruksi dari PT SAN & PT BBR.",
+      "Pembaruan proyek, praktik terbaik, dan informasi industri konstruksi dari PT SINERGY AGTER NUSANTARA & PT BUMI BLAMBANGAN RESOURCES.",
     detail: {
       backToNews: "Kembali ke Berita",
       shareLabel: "Bagikan:",
@@ -1598,13 +1598,13 @@ export const idTranslations: TranslationResources = {
     label: "Strategi Perusahaan",
     title: "SIPADU",
     description:
-      "Merupakan singkatan dari Sinergi, Integritas, Perlindungan, Amanah, Dedikasi, dan Unggul — pedoman kerja PT SAN & PT BBR untuk mendukung pembangunan nasional dengan keselamatan, mutu, dan efisiensi.",
+      "Merupakan singkatan dari Sinergi, Integritas, Perlindungan, Amanah, Dedikasi, dan Unggul — pedoman kerja PT SINERGY AGTER NUSANTARA & PT BUMI BLAMBANGAN RESOURCES untuk mendukung pembangunan nasional dengan keselamatan, mutu, dan efisiensi.",
     ptSan: {
-      title: "Strategi PT SAN",
+      title: "Strategi PT SINERGY AGTER NUSANTARA",
       description: "Fokus pada pemeliharaan preventif dan ketersediaan unit tinggi untuk mendukung operasional klien.",
     },
     ptBbr: {
-      title: "Strategi PT BBR",
+      title: "Strategi PT BUMI BLAMBANGAN RESOURCES",
       description: "Mengutamakan efisiensi operasional dan keselamatan kerja dalam setiap eksekusi proyek tambang.",
     },
     sipadu: {
@@ -1635,7 +1635,7 @@ export const idTranslations: TranslationResources = {
     },
     logoMeaning: {
       title: "Makna Perusahaan",
-      companyName: "PT SAN & PT BBR",
+      companyName: "PT SINERGY AGTER NUSANTARA & PT BUMI BLAMBANGAN RESOURCES",
       items: {
         redColor: {
           title: "Warna Merah",
@@ -1895,7 +1895,7 @@ export const idTranslations: TranslationResources = {
       qualityAssured: "Kualitas Terjamin",
       completedProjects: "Proyek Selesai",
     },
-    modal: { companyName: "PT SAN & PT BBR" },
+    modal: { companyName: "PT SINERGY AGTER NUSANTARA & PT BUMI BLAMBANGAN RESOURCES" },
     ariaGalleryNavigation:
       "{title} galeri - gunakan tombol panah untuk navigasi",
   },
@@ -1948,7 +1948,7 @@ export const idTranslations: TranslationResources = {
   },
   footer: {
     company: {
-      title: "PT SAN & PT BBR",
+      title: "PT SINERGY AGTER NUSANTARA & PT BUMI BLAMBANGAN RESOURCES",
       description:
         "Mitra terpercaya Anda dalam solusi rental alat berat dan jasa konstruksi tambang.",
       followUs: "Ikuti Kami",
@@ -1989,6 +1989,6 @@ export const idTranslations: TranslationResources = {
     },
     ctaLookingForPartner: "Mencari mitra yang terpercaya?",
     ctaLetsBuild: "Mari membangun sesuatu yang hebat bersama.",
-    copyright: "© 2024 PT SAN & PT BBR. Semua hak dilindungi.",
+    copyright: "© 2024 PT SINERGY AGTER NUSANTARA & PT BUMI BLAMBANGAN RESOURCES. Semua hak dilindungi.",
   },
 };

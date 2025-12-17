@@ -1,8 +1,8 @@
-# Product Requirements Document: Website Rebranding for PT SAN & PT BBR
+# Product Requirements Document: Website Rebranding for PT SINERGY AGTER NUSANTARA & PT BUMI BLAMBANGAN RESOURCES
 
 ## 1. Objective
 
-To redevelop the corporate website platform to represent two distinct entities: **PT SAN** (Rental Alat Berat) and **PT BBR** (Jasa Konstruksi Tambang). The new website must include all features from the existing site while clearly distinguishing and showcasing the services of both companies under a unified professional platform. The goal is to create a user-friendly, responsive, and professional online presence.
+To redevelop the corporate website platform to represent two distinct entities: **PT SINERGY AGTER NUSANTARA** (Rental Alat Berat) and **PT BUMI BLAMBANGAN RESOURCES** (Jasa Konstruksi Tambang). The new website must include all features from the existing site while clearly distinguishing and showcasing the services of both companies under a unified professional platform. The goal is to create a user-friendly, responsive, and professional online presence.
 
 ## 2. Design and Branding Guidelines (Inspired by pttun.co.id)
 

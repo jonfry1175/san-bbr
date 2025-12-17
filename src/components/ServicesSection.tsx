@@ -72,7 +72,7 @@ const ServicesSection = memo(({ limit }: ServicesSectionProps) => {
           whileInView="show"
           viewport={{ once: true, amount: 0.2 }}
         >
-          {/* PT SAN - Rental */}
+          {/* PT SINERGY AGTER NUSANTARA - Rental */}
           <motion.div variants={item} className="h-full">
             <Card className="flex flex-col h-full hover:shadow-lg transition-all border-l-4 border-l-accent">
               <CardHeader>
@@ -103,7 +103,7 @@ const ServicesSection = memo(({ limit }: ServicesSectionProps) => {
             </Card>
           </motion.div>
 
-          {/* PT BBR - Construction */}
+          {/* PT BUMI BLAMBANGAN RESOURCES - Construction */}
           <motion.div variants={item} className="h-full">
             <Card className="flex flex-col h-full hover:shadow-lg transition-all border-l-4 border-l-primary">
               <CardHeader>
