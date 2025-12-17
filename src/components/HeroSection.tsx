@@ -89,7 +89,7 @@ const HeroSection = () => {
   useEffect(() => {
     videoRefs.current = videoRefs.current.slice(0, videos.length);
   }, [videos.length]);
-
+  //
   // Memoize stats array
   const stats = useMemo(
     () => [
