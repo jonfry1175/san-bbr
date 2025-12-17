@@ -11,9 +11,9 @@
     --primary-foreground: 0 0% 100%;
 
     /* Accent Green (Matching Primary) */
-    --accent: 142 76% 36%; /* Green to match Primary */
+    --accent: 28 92% 54%; /* Orange to match Primary */
     --accent-foreground: 0 0% 100%;
-    --accent-light: 142 76% 46%;
+    --accent-light: 28 92% 64%;
 
     /* Background & Surface */
     --background: 0 0% 100%; /* Pure White */

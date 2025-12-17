@@ -16,23 +16,23 @@
 // import miningSafetyImplementationImg from "@/assets/awards/program-penilaian-implementasi-keselamatan-pertambangan.jpg";
 // import roadReservationProgramImg from "@/assets/awards/program-reservasi-jalan.jpg";
 
-const heroAwardsBackground = "https://placehold.co/1920x600/10b981/ffffff?text=Awards+Hero";
-const certK3Img = "https://placehold.co/600x800/10b981/ffffff?text=K3+Cert";
-const certZeroLostTimeInjury2023Img = "https://placehold.co/600x800/10b981/ffffff?text=Zero+LTI+2023";
-const certZeroLostTimeInjury20233Img = "https://placehold.co/600x800/10b981/ffffff?text=Zero+LTI+2023+Plaque";
-const certZeroLostTimeInjury20234Img = "https://placehold.co/600x800/10b981/ffffff?text=Zero+LTI+2023+Ceremony";
-const corporateSocialResponsibilityImg = "https://placehold.co/600x800/10b981/ffffff?text=CSR+Award";
-const ohsMonth2025MainImg = "https://placehold.co/600x800/10b981/ffffff?text=OHS+Month+2025";
-const ohsMonth2025AppreciationImg = "https://placehold.co/600x800/10b981/ffffff?text=OHS+Appreciation";
-const pertaminaBestEndUserAspal2022AwardImg = "https://placehold.co/600x800/10b981/ffffff?text=Pertamina+Award+2022";
-const pertaminaBestEndUserAspal2022CertificateImg = "https://placehold.co/600x800/10b981/ffffff?text=Pertamina+Cert+2022";
-const pertaminaBestEndUserAspal2023Img = "https://placehold.co/600x800/10b981/ffffff?text=Pertamina+Award+2023";
-const pertaminaBestEndUserAspal2024Img = "https://placehold.co/600x800/10b981/ffffff?text=Pertamina+Award+2024";
-const astraPlaqueImg = "https://placehold.co/600x800/10b981/ffffff?text=Astra+Plaque";
-const pertaminaBestEndUserPlaque2023Img = "https://placehold.co/600x800/10b981/ffffff?text=Pertamina+Plaque+2023";
-const ohsGoldSponsorPlaqueImg = "https://placehold.co/600x800/10b981/ffffff?text=OHS+Gold+Sponsor";
-const miningSafetyImplementationImg = "https://placehold.co/600x800/10b981/ffffff?text=Mining+Safety";
-const roadReservationProgramImg = "https://placehold.co/600x800/10b981/ffffff?text=Road+Reservation";
+const heroAwardsBackground = "https://placehold.co/1920x600/f97316/ffffff?text=Awards+Hero";
+const certK3Img = "https://placehold.co/600x800/f97316/ffffff?text=K3+Cert";
+const certZeroLostTimeInjury2023Img = "https://placehold.co/600x800/f97316/ffffff?text=Zero+LTI+2023";
+const certZeroLostTimeInjury20233Img = "https://placehold.co/600x800/f97316/ffffff?text=Zero+LTI+2023+Plaque";
+const certZeroLostTimeInjury20234Img = "https://placehold.co/600x800/f97316/ffffff?text=Zero+LTI+2023+Ceremony";
+const corporateSocialResponsibilityImg = "https://placehold.co/600x800/f97316/ffffff?text=CSR+Award";
+const ohsMonth2025MainImg = "https://placehold.co/600x800/f97316/ffffff?text=OHS+Month+2025";
+const ohsMonth2025AppreciationImg = "https://placehold.co/600x800/f97316/ffffff?text=OHS+Appreciation";
+const pertaminaBestEndUserAspal2022AwardImg = "https://placehold.co/600x800/f97316/ffffff?text=Pertamina+Award+2022";
+const pertaminaBestEndUserAspal2022CertificateImg = "https://placehold.co/600x800/f97316/ffffff?text=Pertamina+Cert+2022";
+const pertaminaBestEndUserAspal2023Img = "https://placehold.co/600x800/f97316/ffffff?text=Pertamina+Award+2023";
+const pertaminaBestEndUserAspal2024Img = "https://placehold.co/600x800/f97316/ffffff?text=Pertamina+Award+2024";
+const astraPlaqueImg = "https://placehold.co/600x800/f97316/ffffff?text=Astra+Plaque";
+const pertaminaBestEndUserPlaque2023Img = "https://placehold.co/600x800/f97316/ffffff?text=Pertamina+Plaque+2023";
+const ohsGoldSponsorPlaqueImg = "https://placehold.co/600x800/f97316/ffffff?text=OHS+Gold+Sponsor";
+const miningSafetyImplementationImg = "https://placehold.co/600x800/f97316/ffffff?text=Mining+Safety";
+const roadReservationProgramImg = "https://placehold.co/600x800/f97316/ffffff?text=Road+Reservation";
 
 export type CertificateImage = {
   id: string;

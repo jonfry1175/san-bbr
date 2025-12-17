@@ -9,7 +9,7 @@ import { createBreadcrumbJsonLd, createWebPageJsonLd } from "@/lib/seo";
 import { getStaticPageMeta, resolveMeta } from "@/lib/seo-pages";
 // import heroAwardsBackground from "@/assets/hero-section-penghargaan-kami.jpg";
 const heroAwardsBackground =
-  "https://placehold.co/1920x600/10b981/ffffff?text=Company+Awards";
+  "https://placehold.co/1920x600/f97316/ffffff?text=Company+Awards";
 import {
   certificateImageDefinitions,
   type CertificateImage,

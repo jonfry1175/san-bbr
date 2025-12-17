@@ -48,23 +48,23 @@ export type Service = {
 // import uDitchConstructionImg from "@/assets/services/u-ditch-construction.jpg";
 // import pengerasanBetonImg from "@/assets/services/pengerasan-beton.jpg";
 
-const earthworkImg = "https://placehold.co/800x600/10b981/ffffff?text=Earthwork";
-const upgradeUnboundImg = "https://placehold.co/800x600/10b981/ffffff?text=Upgrade+Unbound";
-const ctrbImg = "https://placehold.co/800x600/10b981/ffffff?text=CTRB";
-const ctrsbImg = "https://placehold.co/800x600/10b981/ffffff?text=CTRSB";
-const chipsealImg = "https://placehold.co/800x600/10b981/ffffff?text=Chipseal";
-const aspalHotmixImg = "https://placehold.co/800x600/10b981/ffffff?text=Aspal+Hotmix";
-const bridgeConstructionAndMaintenanceImg = "https://placehold.co/800x600/10b981/ffffff?text=Bridge+Construction";
-const soilCementBaseImg = "https://placehold.co/800x600/10b981/ffffff?text=Soil+Cement+Base";
-const irrigationSystemImg = "https://placehold.co/800x600/10b981/ffffff?text=Irrigation+System";
-const drainageSystemConstructionImg = "https://placehold.co/800x600/10b981/ffffff?text=Drainage+System";
-const pedestrianFacilityImg = "https://placehold.co/800x600/10b981/ffffff?text=Pedestrian+Facility";
-const roadMedianConstructionImg = "https://placehold.co/800x600/10b981/ffffff?text=Road+Median";
-const hardeningConcreteImg = "https://placehold.co/800x600/10b981/ffffff?text=Hardening+Concrete";
-const roadOverlayMethodImg = "https://placehold.co/800x600/10b981/ffffff?text=Road+Overlay";
-const boxCulvertConstructionImg = "https://placehold.co/800x600/10b981/ffffff?text=Box+Culvert";
-const uDitchConstructionImg = "https://placehold.co/800x600/10b981/ffffff?text=U-Ditch";
-const pengerasanBetonImg = "https://placehold.co/800x600/10b981/ffffff?text=Concrete+Pavement";
+const earthworkImg = "https://placehold.co/800x600/f97316/ffffff?text=Earthwork";
+const upgradeUnboundImg = "https://placehold.co/800x600/f97316/ffffff?text=Upgrade+Unbound";
+const ctrbImg = "https://placehold.co/800x600/f97316/ffffff?text=CTRB";
+const ctrsbImg = "https://placehold.co/800x600/f97316/ffffff?text=CTRSB";
+const chipsealImg = "https://placehold.co/800x600/f97316/ffffff?text=Chipseal";
+const aspalHotmixImg = "https://placehold.co/800x600/f97316/ffffff?text=Aspal+Hotmix";
+const bridgeConstructionAndMaintenanceImg = "https://placehold.co/800x600/f97316/ffffff?text=Bridge+Construction";
+const soilCementBaseImg = "https://placehold.co/800x600/f97316/ffffff?text=Soil+Cement+Base";
+const irrigationSystemImg = "https://placehold.co/800x600/f97316/ffffff?text=Irrigation+System";
+const drainageSystemConstructionImg = "https://placehold.co/800x600/f97316/ffffff?text=Drainage+System";
+const pedestrianFacilityImg = "https://placehold.co/800x600/f97316/ffffff?text=Pedestrian+Facility";
+const roadMedianConstructionImg = "https://placehold.co/800x600/f97316/ffffff?text=Road+Median";
+const hardeningConcreteImg = "https://placehold.co/800x600/f97316/ffffff?text=Hardening+Concrete";
+const roadOverlayMethodImg = "https://placehold.co/800x600/f97316/ffffff?text=Road+Overlay";
+const boxCulvertConstructionImg = "https://placehold.co/800x600/f97316/ffffff?text=Box+Culvert";
+const uDitchConstructionImg = "https://placehold.co/800x600/f97316/ffffff?text=U-Ditch";
+const pengerasanBetonImg = "https://placehold.co/800x600/f97316/ffffff?text=Concrete+Pavement";
 
 export const services: Service[] = [
   {

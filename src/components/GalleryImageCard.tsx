@@ -122,7 +122,7 @@ export const GalleryImageCard = memo(({ src, alt }: Props) => {
               }}
               transition={{ duration: 0.3, delay: 0.2 }}
             >
-              <span className="inline-flex items-center gap-1 rounded-lg bg-green-500/90 px-2 py-1 text-xs font-medium text-white shadow-sm">
+              <span className="inline-flex items-center gap-1 rounded-lg bg-primary/90 px-2 py-1 text-xs font-medium text-white shadow-sm">
                 <div className="w-2 h-2 bg-white rounded-full" />
                 {t("gallery.card.hdBadge")}
               </span>

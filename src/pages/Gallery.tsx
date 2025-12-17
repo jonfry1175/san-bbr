@@ -34,13 +34,13 @@ import { useKeyboardShortcuts } from "@/hooks/use-keyboard-shortcuts";
 // import featuredCement from "@/assets/our-works/gallery/bor-5.jpg";
 
 const featuredAd =
-  "https://placehold.co/800x600/10b981/ffffff?text=Adaro+Project";
+  "https://placehold.co/800x600/f97316/ffffff?text=Adaro+Project";
 const featuredBorneo =
-  "https://placehold.co/800x600/10b981/ffffff?text=Borneo+Project";
+  "https://placehold.co/800x600/f97316/ffffff?text=Borneo+Project";
 const featuredKalimantan =
-  "https://placehold.co/800x600/10b981/ffffff?text=Kalimantan+Project";
+  "https://placehold.co/800x600/f97316/ffffff?text=Kalimantan+Project";
 const featuredCement =
-  "https://placehold.co/800x600/10b981/ffffff?text=Cement+Project";
+  "https://placehold.co/800x600/f97316/ffffff?text=Cement+Project";
 
 const meta = resolveMeta(getStaticPageMeta("gallery"));
 

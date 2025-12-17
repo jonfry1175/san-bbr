@@ -9,14 +9,14 @@
 // import gatheringPhoto3 from "@/assets/news/gathering-khs-group-photo-3.png";
 
 const companyLogo = "https://placehold.co/200x80/white/000000?text=Company+Logo";
-const gatheringImage = "https://placehold.co/800x600/10b981/ffffff?text=Gathering";
-const fatigueManagementHero = "https://placehold.co/800x600/10b981/ffffff?text=Fatigue+Management";
-const kaltengCircuit = "https://placehold.co/800x600/10b981/ffffff?text=Circuit";
-const constructionSecurityProgram = "https://placehold.co/800x600/10b981/ffffff?text=Security+Program";
-const gatheringTeamEvent = "https://placehold.co/800x600/10b981/ffffff?text=Team+Event";
-const gatheringPhoto1 = "https://placehold.co/800x600/10b981/ffffff?text=Gathering+1";
-const gatheringPhoto2 = "https://placehold.co/800x600/10b981/ffffff?text=Gathering+2";
-const gatheringPhoto3 = "https://placehold.co/800x600/10b981/ffffff?text=Gathering+3";
+const gatheringImage = "https://placehold.co/800x600/f97316/ffffff?text=Gathering";
+const fatigueManagementHero = "https://placehold.co/800x600/f97316/ffffff?text=Fatigue+Management";
+const kaltengCircuit = "https://placehold.co/800x600/f97316/ffffff?text=Circuit";
+const constructionSecurityProgram = "https://placehold.co/800x600/f97316/ffffff?text=Security+Program";
+const gatheringTeamEvent = "https://placehold.co/800x600/f97316/ffffff?text=Team+Event";
+const gatheringPhoto1 = "https://placehold.co/800x600/f97316/ffffff?text=Gathering+1";
+const gatheringPhoto2 = "https://placehold.co/800x600/f97316/ffffff?text=Gathering+2";
+const gatheringPhoto3 = "https://placehold.co/800x600/f97316/ffffff?text=Gathering+3";
 
 import type { TranslationResources } from "@/lib/i18n";
 

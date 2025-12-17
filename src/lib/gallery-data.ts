@@ -35,34 +35,34 @@ export type ImgItem = {
 // import ad7 from "../assets/our-works/gallery/ad-7.jpg";
 // import ad9 from "../assets/our-works/gallery/ad-9.jpg";
 
-const kal1 = "https://placehold.co/800x600/10b981/ffffff?text=Kalimantan+1";
-const kal2 = "https://placehold.co/800x600/10b981/ffffff?text=Kalimantan+2";
-const kal3 = "https://placehold.co/800x600/10b981/ffffff?text=Kalimantan+3";
-const kal4 = "https://placehold.co/800x600/10b981/ffffff?text=Kalimantan+4";
-const kal5 = "https://placehold.co/800x600/10b981/ffffff?text=Kalimantan+5";
-const kal6 = "https://placehold.co/800x600/10b981/ffffff?text=Kalimantan+6";
-const kal7 = "https://placehold.co/800x600/10b981/ffffff?text=Kalimantan+7";
-const kal8 = "https://placehold.co/800x600/10b981/ffffff?text=Kalimantan+8";
-const kal9 = "https://placehold.co/800x600/10b981/ffffff?text=Kalimantan+9";
+const kal1 = "https://placehold.co/800x600/f97316/ffffff?text=Kalimantan+1";
+const kal2 = "https://placehold.co/800x600/f97316/ffffff?text=Kalimantan+2";
+const kal3 = "https://placehold.co/800x600/f97316/ffffff?text=Kalimantan+3";
+const kal4 = "https://placehold.co/800x600/f97316/ffffff?text=Kalimantan+4";
+const kal5 = "https://placehold.co/800x600/f97316/ffffff?text=Kalimantan+5";
+const kal6 = "https://placehold.co/800x600/f97316/ffffff?text=Kalimantan+6";
+const kal7 = "https://placehold.co/800x600/f97316/ffffff?text=Kalimantan+7";
+const kal8 = "https://placehold.co/800x600/f97316/ffffff?text=Kalimantan+8";
+const kal9 = "https://placehold.co/800x600/f97316/ffffff?text=Kalimantan+9";
 
-const bor1 = "https://placehold.co/800x600/10b981/ffffff?text=Borneo+1";
-const bor2 = "https://placehold.co/800x600/10b981/ffffff?text=Borneo+2";
-const bor3 = "https://placehold.co/800x600/10b981/ffffff?text=Borneo+3";
-const bor4 = "https://placehold.co/800x600/10b981/ffffff?text=Borneo+4";
-const bor5 = "https://placehold.co/800x600/10b981/ffffff?text=Borneo+5";
-const bor6 = "https://placehold.co/800x600/10b981/ffffff?text=Borneo+6";
-const bor7 = "https://placehold.co/800x600/10b981/ffffff?text=Borneo+7";
-const bor8 = "https://placehold.co/800x600/10b981/ffffff?text=Borneo+8";
-const bor9 = "https://placehold.co/800x600/10b981/ffffff?text=Borneo+9";
+const bor1 = "https://placehold.co/800x600/f97316/ffffff?text=Borneo+1";
+const bor2 = "https://placehold.co/800x600/f97316/ffffff?text=Borneo+2";
+const bor3 = "https://placehold.co/800x600/f97316/ffffff?text=Borneo+3";
+const bor4 = "https://placehold.co/800x600/f97316/ffffff?text=Borneo+4";
+const bor5 = "https://placehold.co/800x600/f97316/ffffff?text=Borneo+5";
+const bor6 = "https://placehold.co/800x600/f97316/ffffff?text=Borneo+6";
+const bor7 = "https://placehold.co/800x600/f97316/ffffff?text=Borneo+7";
+const bor8 = "https://placehold.co/800x600/f97316/ffffff?text=Borneo+8";
+const bor9 = "https://placehold.co/800x600/f97316/ffffff?text=Borneo+9";
 
-const ad1 = "https://placehold.co/800x600/10b981/ffffff?text=Adaro+1";
-const ad2 = "https://placehold.co/800x600/10b981/ffffff?text=Adaro+2";
-const ad3 = "https://placehold.co/800x600/10b981/ffffff?text=Adaro+3";
-const ad4 = "https://placehold.co/800x600/10b981/ffffff?text=Adaro+4";
-const ad5 = "https://placehold.co/800x600/10b981/ffffff?text=Adaro+5";
-const ad6 = "https://placehold.co/800x600/10b981/ffffff?text=Adaro+6";
-const ad7 = "https://placehold.co/800x600/10b981/ffffff?text=Adaro+7";
-const ad9 = "https://placehold.co/800x600/10b981/ffffff?text=Adaro+9";
+const ad1 = "https://placehold.co/800x600/f97316/ffffff?text=Adaro+1";
+const ad2 = "https://placehold.co/800x600/f97316/ffffff?text=Adaro+2";
+const ad3 = "https://placehold.co/800x600/f97316/ffffff?text=Adaro+3";
+const ad4 = "https://placehold.co/800x600/f97316/ffffff?text=Adaro+4";
+const ad5 = "https://placehold.co/800x600/f97316/ffffff?text=Adaro+5";
+const ad6 = "https://placehold.co/800x600/f97316/ffffff?text=Adaro+6";
+const ad7 = "https://placehold.co/800x600/f97316/ffffff?text=Adaro+7";
+const ad9 = "https://placehold.co/800x600/f97316/ffffff?text=Adaro+9";
 
 export const kalimantan: ImgItem[] = [
   {

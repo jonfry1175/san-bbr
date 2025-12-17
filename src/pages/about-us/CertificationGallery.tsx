@@ -10,7 +10,7 @@ import { getStaticPageMeta, resolveMeta } from "@/lib/seo-pages";
 
 // import heroCertifiedBackground from "@/assets/hero-section-profesional-bersertifikat.jpg";
 const heroCertifiedBackground =
-  "https://placehold.co/1920x600/10b981/ffffff?text=Certified+Professionals";
+  "https://placehold.co/1920x600/f97316/ffffff?text=Certified+Professionals";
 import {
   certificateImageDefinitions,
   type CertificateImageDefinition,
