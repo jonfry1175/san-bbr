@@ -6,63 +6,63 @@ export type ImgItem = {
 };
 
 // Static imports for local gallery assets. Vite will return the resolved URL string for each import.
-// import kal1 from "../assets/our-works/gallery/kal-1.jpg";
-// import kal2 from "../assets/our-works/gallery/kal-2.jpg";
-// import kal3 from "../assets/our-works/gallery/kal-3.jpg";
-// import kal4 from "../assets/our-works/gallery/kal-4.jpg";
-// import kal5 from "../assets/our-works/gallery/kal-5.jpg";
-// import kal6 from "../assets/our-works/gallery/kal-6.jpg";
-// import kal7 from "../assets/our-works/gallery/kal-7.jpg";
-// import kal8 from "../assets/our-works/gallery/kal-8.jpg";
-// import kal9 from "../assets/our-works/gallery/kal-9.jpg";
+import kal1 from "../assets/our-works/gallery/kal-1.jpg";
+import kal2 from "../assets/our-works/gallery/kal-2.jpg";
+import kal3 from "../assets/our-works/gallery/kal-3.jpg";
+import kal4 from "../assets/our-works/gallery/kal-4.jpg";
+import kal5 from "../assets/our-works/gallery/kal-5.jpg";
+import kal6 from "../assets/our-works/gallery/kal-6.jpg";
+import kal7 from "../assets/our-works/gallery/kal-7.jpg";
+import kal8 from "../assets/our-works/gallery/kal-8.jpg";
+import kal9 from "../assets/our-works/gallery/kal-9.jpg";
 
-// import bor1 from "../assets/our-works/gallery/bor-1.jpg";
-// import bor2 from "../assets/our-works/gallery/bor-2.jpg";
-// import bor3 from "../assets/our-works/gallery/bor-3.jpg";
-// import bor4 from "../assets/our-works/gallery/bor-4.jpg";
-// import bor5 from "../assets/our-works/gallery/bor-5.jpg";
-// import bor6 from "../assets/our-works/gallery/bor-6.jpg";
-// import bor7 from "../assets/our-works/gallery/bor-7.jpg";
-// import bor8 from "../assets/our-works/gallery/bor-8.jpg";
-// import bor9 from "../assets/our-works/gallery/bor-9.jpg";
+import bor1 from "../assets/our-works/gallery/bor-1.jpg";
+import bor2 from "../assets/our-works/gallery/bor-2.jpg";
+import bor3 from "../assets/our-works/gallery/bor-3.jpg";
+import bor4 from "../assets/our-works/gallery/bor-4.jpg";
+import bor5 from "../assets/our-works/gallery/bor-5.jpg";
+import bor6 from "../assets/our-works/gallery/bor-6.jpg";
+import bor7 from "../assets/our-works/gallery/bor-7.jpg";
+import bor8 from "../assets/our-works/gallery/bor-8.jpg";
+import bor9 from "../assets/our-works/gallery/bor-9.jpg";
 
-// import ad1 from "../assets/our-works/gallery/ad-1.jpg";
-// import ad2 from "../assets/our-works/gallery/ad-2.jpg";
-// import ad3 from "../assets/our-works/gallery/ad-3.jpg";
-// import ad4 from "../assets/our-works/gallery/ad-4.jpg";
-// import ad5 from "../assets/our-works/gallery/ad-5.jpg";
-// import ad6 from "../assets/our-works/gallery/ad-6.jpg";
-// import ad7 from "../assets/our-works/gallery/ad-7.jpg";
-// import ad9 from "../assets/our-works/gallery/ad-9.jpg";
+import ad1 from "../assets/our-works/gallery/ad-1.jpg";
+import ad2 from "../assets/our-works/gallery/ad-2.jpg";
+import ad3 from "../assets/our-works/gallery/ad-3.jpg";
+import ad4 from "../assets/our-works/gallery/ad-4.jpg";
+import ad5 from "../assets/our-works/gallery/ad-5.jpg";
+import ad6 from "../assets/our-works/gallery/ad-6.jpg";
+import ad7 from "../assets/our-works/gallery/ad-7.jpg";
+import ad9 from "../assets/our-works/gallery/ad-9.jpg";
 
-const kal1 = "https://placehold.co/800x600/f97316/ffffff?text=Kalimantan+1";
-const kal2 = "https://placehold.co/800x600/f97316/ffffff?text=Kalimantan+2";
-const kal3 = "https://placehold.co/800x600/f97316/ffffff?text=Kalimantan+3";
-const kal4 = "https://placehold.co/800x600/f97316/ffffff?text=Kalimantan+4";
-const kal5 = "https://placehold.co/800x600/f97316/ffffff?text=Kalimantan+5";
-const kal6 = "https://placehold.co/800x600/f97316/ffffff?text=Kalimantan+6";
-const kal7 = "https://placehold.co/800x600/f97316/ffffff?text=Kalimantan+7";
-const kal8 = "https://placehold.co/800x600/f97316/ffffff?text=Kalimantan+8";
-const kal9 = "https://placehold.co/800x600/f97316/ffffff?text=Kalimantan+9";
+// const kal1 = "https://placehold.co/800x600/f97316/ffffff?text=Kalimantan+1";
+// const kal2 = "https://placehold.co/800x600/f97316/ffffff?text=Kalimantan+2";
+// const kal3 = "https://placehold.co/800x600/f97316/ffffff?text=Kalimantan+3";
+// const kal4 = "https://placehold.co/800x600/f97316/ffffff?text=Kalimantan+4";
+// const kal5 = "https://placehold.co/800x600/f97316/ffffff?text=Kalimantan+5";
+// const kal6 = "https://placehold.co/800x600/f97316/ffffff?text=Kalimantan+6";
+// const kal7 = "https://placehold.co/800x600/f97316/ffffff?text=Kalimantan+7";
+// const kal8 = "https://placehold.co/800x600/f97316/ffffff?text=Kalimantan+8";
+// const kal9 = "https://placehold.co/800x600/f97316/ffffff?text=Kalimantan+9";
 
-const bor1 = "https://placehold.co/800x600/f97316/ffffff?text=Borneo+1";
-const bor2 = "https://placehold.co/800x600/f97316/ffffff?text=Borneo+2";
-const bor3 = "https://placehold.co/800x600/f97316/ffffff?text=Borneo+3";
-const bor4 = "https://placehold.co/800x600/f97316/ffffff?text=Borneo+4";
-const bor5 = "https://placehold.co/800x600/f97316/ffffff?text=Borneo+5";
-const bor6 = "https://placehold.co/800x600/f97316/ffffff?text=Borneo+6";
-const bor7 = "https://placehold.co/800x600/f97316/ffffff?text=Borneo+7";
-const bor8 = "https://placehold.co/800x600/f97316/ffffff?text=Borneo+8";
-const bor9 = "https://placehold.co/800x600/f97316/ffffff?text=Borneo+9";
+// const bor1 = "https://placehold.co/800x600/f97316/ffffff?text=Borneo+1";
+// const bor2 = "https://placehold.co/800x600/f97316/ffffff?text=Borneo+2";
+// const bor3 = "https://placehold.co/800x600/f97316/ffffff?text=Borneo+3";
+// const bor4 = "https://placehold.co/800x600/f97316/ffffff?text=Borneo+4";
+// const bor5 = "https://placehold.co/800x600/f97316/ffffff?text=Borneo+5";
+// const bor6 = "https://placehold.co/800x600/f97316/ffffff?text=Borneo+6";
+// const bor7 = "https://placehold.co/800x600/f97316/ffffff?text=Borneo+7";
+// const bor8 = "https://placehold.co/800x600/f97316/ffffff?text=Borneo+8";
+// const bor9 = "https://placehold.co/800x600/f97316/ffffff?text=Borneo+9";
 
-const ad1 = "https://placehold.co/800x600/f97316/ffffff?text=Adaro+1";
-const ad2 = "https://placehold.co/800x600/f97316/ffffff?text=Adaro+2";
-const ad3 = "https://placehold.co/800x600/f97316/ffffff?text=Adaro+3";
-const ad4 = "https://placehold.co/800x600/f97316/ffffff?text=Adaro+4";
-const ad5 = "https://placehold.co/800x600/f97316/ffffff?text=Adaro+5";
-const ad6 = "https://placehold.co/800x600/f97316/ffffff?text=Adaro+6";
-const ad7 = "https://placehold.co/800x600/f97316/ffffff?text=Adaro+7";
-const ad9 = "https://placehold.co/800x600/f97316/ffffff?text=Adaro+9";
+// const ad1 = "https://placehold.co/800x600/f97316/ffffff?text=Adaro+1";
+// const ad2 = "https://placehold.co/800x600/f97316/ffffff?text=Adaro+2";
+// const ad3 = "https://placehold.co/800x600/f97316/ffffff?text=Adaro+3";
+// const ad4 = "https://placehold.co/800x600/f97316/ffffff?text=Adaro+4";
+// const ad5 = "https://placehold.co/800x600/f97316/ffffff?text=Adaro+5";
+// const ad6 = "https://placehold.co/800x600/f97316/ffffff?text=Adaro+6";
+// const ad7 = "https://placehold.co/800x600/f97316/ffffff?text=Adaro+7";
+// const ad9 = "https://placehold.co/800x600/f97316/ffffff?text=Adaro+9";
 
 export const kalimantan: ImgItem[] = [
   {

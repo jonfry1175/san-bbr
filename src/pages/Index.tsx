@@ -14,6 +14,9 @@ const VisionMissionSection = lazy(
 // );
 const ServicesSection = lazy(() => import("@/components/ServicesSection"));
 const ProjectsSection = lazy(() => import("@/components/ProjectsSection"));
+const OurProductsSection = lazy(
+  () => import("@/components/OurProductsSection")
+);
 // const ClientsSection = lazy(() => import("@/components/ClientsSection"));
 // const SupportedBySection = lazy(
 //   () => import("@/components/SupportedBySection")
@@ -64,6 +67,7 @@ const Index = () => {
         {/* <CompanyStrategySection /> */}
         {/* Show services on all viewports; limit to 3 on the home page */}
         <ServicesSection limit={3} />
+        <OurProductsSection />
         {/* <ProjectsSection /> */}
         {/* <ClientsSection /> */}
         {/* <SupportedBySection /> */}
