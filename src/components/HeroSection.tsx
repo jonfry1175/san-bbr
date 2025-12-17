@@ -237,9 +237,8 @@ const HeroSection = () => {
   );
 
   const defaultHeroImage =
-    heroImageMap.get(normalizeHeroKey("Tentang Kami")) ||
-    imgOurCompany;
-    // "https://placehold.co/1920x600/f97316/ffffff?text=Default+Hero";
+    heroImageMap.get(normalizeHeroKey("Tentang Kami")) || imgOurCompany;
+  // "https://placehold.co/1920x600/f97316/ffffff?text=Default+Hero";
 
   // Pick image by label, fallback to company/about, then Unsplash
   // Handle location image separately since it's lazy loaded
