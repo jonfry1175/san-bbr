@@ -3,8 +3,6 @@ import { ArrowRight, Award, Users, CheckCircle } from "lucide-react";
 // Background hero videos
 import heroVid1 from "@/assets/hero/1.mp4";
 import heroVid2 from "@/assets/hero/2.mp4";
-import heroVid3 from "@/assets/hero/3.mp4";
-import heroVid4 from "@/assets/hero/4.mp4";
 // Mobile hero videos
 import mobileHeroVid1 from "@/assets/hero/mobile-video/1.mp4";
 import mobileHeroVid2 from "@/assets/hero/mobile-video/2.mp4";
@@ -54,7 +52,7 @@ import { useI18n } from "@/lib/i18n";
 import { useCallback, useMemo, useRef, useState, useEffect } from "react";
 
 // Static video arrays - memoized outside component
-const DESKTOP_VIDEOS = [heroVid1, heroVid2, heroVid3, heroVid4];
+const DESKTOP_VIDEOS = [heroVid1, heroVid2];
 const MOBILE_VIDEOS = [
   mobileHeroVid1,
   mobileHeroVid2,
