@@ -141,9 +141,10 @@ const Header = () => {
                 <img
                   src={companyLogo}
                   alt="PT SAN & PT BBR"
-                  className={`transition-all duration-300 w-auto bg-white p-1 rounded-lg ${
+                  width="200"
+                  className={`transition-all duration-300 w-auto bg-white p-2 rounded-lg ${
                     // Larger logo when scrolled
-                    isScrolled ? "h-10 md:h-12" : "h-12 md:h-16"
+                    isScrolled ? "h-12 md:h-14" : "h-14 md:h-20"
                   }`}
                 />
               </Link>
@@ -384,7 +385,7 @@ const Header = () => {
                       <img
                         src={companyLogo}
                         alt="Logo"
-                        className="h-10 w-auto bg-white p-1 rounded"
+                        className="h-16 w-auto bg-white p-1 rounded"
                       />
                       <span className="font-bold text-lg tracking-wider">
                         MENU
