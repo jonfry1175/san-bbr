@@ -23,9 +23,7 @@ import {
   ArrowUp,
   Loader2,
 } from "lucide-react";
-// import companyLogo from "@/assets/company-logo.png";
-const companyLogo =
-  "https://placehold.co/200x80/white/000000?text=Company+Logo";
+import companyLogo from "@/assets/logo-new.png";
 import { services as serviceList } from "@/lib/services";
 import { Link } from "react-router-dom";
 
@@ -156,7 +154,7 @@ const Footer = () => {
               <img
                 src={companyLogo}
                 alt="PT SAN & PT BBR"
-                className="h-16 w-auto mb-6 brightness-0 invert opacity-90 hover:opacity-100 transition-opacity"
+                className="h-16 w-auto mb-6 opacity-90 hover:opacity-100 transition-opacity"
               />
             </Link>
             <p className="text-neutral-400 leading-relaxed max-w-sm text-base">
@@ -196,7 +194,7 @@ const Footer = () => {
           </nav>
 
           {/* Services - Spans 3 columns */}
-          <div className="lg:col-span-3">
+          <nav className="lg:col-span-3" aria-label="Footer Services Nav">
             <h4 className="font-heading font-bold text-lg mb-6 text-white inline-block relative after:absolute after:bottom-[-8px] after:left-0 after:w-12 after:h-1 after:bg-accent after:rounded-full">
               {t("footer.services.title")}
             </h4>
@@ -226,7 +224,7 @@ const Footer = () => {
                 </Link>
               </li>
             </ul>
-          </div>
+          </nav>
 
           {/* Contact Info - Spans 3 columns */}
           <div className="lg:col-span-3">
