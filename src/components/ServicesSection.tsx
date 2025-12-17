@@ -94,7 +94,7 @@ const ServicesSection = memo(({ limit }: ServicesSectionProps) => {
                   size="lg"
                   className="w-full sm:w-auto bg-gradient-accent text-white button-glow"
                 >
-                  <Link to="/products">
+                  <Link to="/products/rental-alat-berat">
                     {t("servicesSection.ptSan.action")}
                     <ArrowRight className="ml-2 h-5 w-5" />
                   </Link>
@@ -126,7 +126,7 @@ const ServicesSection = memo(({ limit }: ServicesSectionProps) => {
                   variant="outline"
                   className="w-full sm:w-auto border-primary text-primary hover:bg-primary hover:text-white"
                 >
-                  <Link to="/services">
+                  <Link to="/products/jasa-konstruksi-tambang">
                     {t("servicesSection.ptBbr.action")}
                     <ArrowRight className="ml-2 h-5 w-5" />
                   </Link>

@@ -15,7 +15,8 @@ import {
   ArrowUp,
   Loader2,
 } from "lucide-react";
-import companyLogo from "@/assets/logo-new.png";
+// Logo from public folder for better static asset handling
+const companyLogo = "/logo.png";
 import { Link } from "react-router-dom";
 
 import { useI18n } from "@/lib/i18n";

@@ -34,8 +34,14 @@ export type ProductCategory = {
 };
 
 export const salesCategoryDefinitions = [
-  { id: "rent", defaultLabel: "Produk Sewa" },
-  { id: "sale", defaultLabel: "Produk Jual" },
+  {
+    id: "rental-alat-berat",
+    defaultLabel: "Rental Alat Berat (PT SINERGY AGTER NUSANTARA)",
+  },
+  {
+    id: "jasa-konstruksi-tambang",
+    defaultLabel: "Jasa Konstruksi Tambang (PT BUMI BLAMBANGAN RESOURCES)",
+  },
 ] as const;
 
 export type SalesCategory = (typeof salesCategoryDefinitions)[number]["id"];
@@ -330,25 +336,25 @@ const selectCategoryImage = (categoryId: CategoryId) => {
 };
 
 const categorySalesCategoryMap: Record<CategoryId, SalesCategory> = {
-  excavator: "rent",
-  "vibratory-roller": "rent",
-  "pad-foot-roller": "rent",
-  "motor-grader": "rent",
-  "wheel-loader": "rent",
-  "peralatan-aspal": "rent",
-  "batching-plant": "rent",
-  "combination-roller": "rent",
-  "tandem-roller": "rent",
-  "pneumatic-tire-roller": "rent",
-  bulldozer: "rent",
-  "crawler-crane": "rent",
-  "road-sweeper": "rent",
-  "dump-truck": "rent",
-  "mixer-truck": "rent",
-  "self-loader-truck": "rent",
-  "tractor-head-trailer": "rent",
-  aspal: "sale",
-  "ready-mix": "sale",
+  excavator: "rental-alat-berat",
+  "vibratory-roller": "jasa-konstruksi-tambang",
+  "pad-foot-roller": "rental-alat-berat",
+  "motor-grader": "rental-alat-berat",
+  "wheel-loader": "rental-alat-berat",
+  "peralatan-aspal": "jasa-konstruksi-tambang",
+  "batching-plant": "jasa-konstruksi-tambang",
+  "combination-roller": "jasa-konstruksi-tambang",
+  "tandem-roller": "jasa-konstruksi-tambang",
+  "pneumatic-tire-roller": "jasa-konstruksi-tambang",
+  bulldozer: "rental-alat-berat",
+  "crawler-crane": "rental-alat-berat",
+  "road-sweeper": "jasa-konstruksi-tambang",
+  "dump-truck": "rental-alat-berat",
+  "mixer-truck": "jasa-konstruksi-tambang",
+  "self-loader-truck": "rental-alat-berat",
+  "tractor-head-trailer": "rental-alat-berat",
+  aspal: "jasa-konstruksi-tambang",
+  "ready-mix": "jasa-konstruksi-tambang",
 };
 
 const highlightToSpecs = (highlight: string) =>
@@ -473,7 +479,7 @@ export const products: Product[] = categoryDefinitions.flatMap((definition) => {
       weightClass: productWeightClassOverrides[id],
       price: 0,
       status: "ready" as const,
-      salesCategory: categorySalesCategoryMap[definition.id] ?? "rent",
+      salesCategory: categorySalesCategoryMap[definition.id] ?? "rental-alat-berat",
     };
   });
 });

@@ -151,6 +151,14 @@ const AnimatedRoutes = () => {
             }
           />
           <Route
+            path="/products/:type"
+            element={
+              <Page>
+                <Products />
+              </Page>
+            }
+          />
+          <Route
             path="/works/:slug"
             element={
               <Page>

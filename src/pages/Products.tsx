@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useMemo, useState } from "react";
-import { useSearchParams } from "react-router-dom";
+import { useSearchParams, useParams, useNavigate } from "react-router-dom";
 import { AnimatePresence, motion } from "framer-motion";
 import {
   Search,
@@ -79,13 +79,13 @@ const SALES_CATEGORY_BUTTON_STYLES: Record<
   SalesCategory,
   { active: string; inactive: string }
 > = {
-  rent: {
+  "rental-alat-berat": {
     active:
       "border-transparent bg-primary text-primary-foreground hover:bg-primary/90",
     inactive:
       "border-primary/40 text-primary hover:bg-primary/10 hover:text-primary",
   },
-  sale: {
+  "jasa-konstruksi-tambang": {
     active:
       "border-transparent bg-accent text-accent-foreground hover:bg-accent/90",
     inactive:
@@ -105,6 +105,8 @@ const Products = () => {
   const { t, translations } = useI18n();
   const { setHero } = useHero();
   const [searchParams, setSearchParams] = useSearchParams();
+  const params = useParams();
+  const navigate = useNavigate();
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedCategory, setSelectedCategory] = useState<
     "all" | ProductCategory["id"]
@@ -121,21 +123,28 @@ const Products = () => {
   const [isMobileFilterOpen, setIsMobileFilterOpen] = useState(false);
 
   const currentContext = useMemo(() => {
-    if (salesCategoryFilter === "rent") return "rent";
-    if (salesCategoryFilter === "sale") return "sale";
+    if (salesCategoryFilter === "rental-alat-berat") return "rent";
+    if (salesCategoryFilter === "jasa-konstruksi-tambang") return "sale";
     return "all";
   }, [salesCategoryFilter]);
 
-  // Initialize from URL query parameters
+  // Initialize from URL query parameters or route params
   useEffect(() => {
+    if (params.type) {
+       if (params.type === "rental-alat-berat" || params.type === "jasa-konstruksi-tambang") {
+         setSalesCategoryFilter(params.type as SalesCategory);
+         return;
+       }
+    }
+
     const categoryParam = searchParams.get("category");
     if (
       categoryParam &&
-      (categoryParam === "sale" || categoryParam === "rent")
+      (categoryParam === "rental-alat-berat" || categoryParam === "jasa-konstruksi-tambang")
     ) {
       setSalesCategoryFilter(categoryParam as SalesCategory);
     }
-  }, [searchParams]);
+  }, [searchParams, params.type]);
 
   useEffect(() => {
     setHero({
@@ -417,21 +426,18 @@ const Products = () => {
       const newFilter = salesCategoryFilter === category ? "all" : category;
       setSalesCategoryFilter(newFilter);
 
-      // Update URL query parameters
-      const newSearchParams = new URLSearchParams(searchParams);
+      // Update URL
       if (newFilter === "all") {
-        newSearchParams.delete("category");
+        navigate("/products");
       } else {
-        newSearchParams.set("category", newFilter);
+        navigate(`/products/${newFilter}`);
       }
-      setSearchParams(newSearchParams, { replace: true });
 
       scrollToProductSection();
     },
     [
       salesCategoryFilter,
-      searchParams,
-      setSearchParams,
+      navigate,
       scrollToProductSection,
     ],
   );
@@ -442,10 +448,7 @@ const Products = () => {
     setSort("recommended");
     setSalesCategoryFilter("all");
 
-    // Clear URL query parameters
-    const newSearchParams = new URLSearchParams(searchParams);
-    newSearchParams.delete("category");
-    setSearchParams(newSearchParams, { replace: true });
+    navigate("/products");
 
     scrollToProductSection();
   };
@@ -1270,7 +1273,7 @@ const Products = () => {
                   )}
                 </div>
                 <DialogTitle className="text-2xl font-semibold text-foreground">
-                  {`${detailProduct.salesCategory === "rent" ? t("products.detail.rentPrefix") : t("products.detail.salePrefix")} – ${detailProduct.name}`}
+                  {`${detailProduct.salesCategory === "rental-alat-berat" ? t("products.detail.rentPrefix") : t("products.detail.salePrefix")} – ${detailProduct.name}`}
                 </DialogTitle>
                 <DialogDescription
                   className="text-body text-muted-foreground"
