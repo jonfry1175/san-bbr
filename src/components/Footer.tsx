@@ -1,15 +1,7 @@
-import { useEffect, useState, type FormEvent } from "react";
+import { useState, type FormEvent } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { toast } from "@/components/ui/sonner";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-  type CarouselApi,
-} from "@/components/ui/carousel";
 import { HIRING_ALIAS_EMAIL, PRIMARY_EMAIL } from "@/lib/email-config";
 import {
   MapPin,
@@ -30,6 +22,7 @@ import { useI18n } from "@/lib/i18n";
 import {
   branchLocations,
   getGoogleMapsDirectionsUrl,
+  getGoogleMapsEmbedUrl,
   getGoogleMapsStreetViewEmbedUrl,
   LOCATION_CATEGORY_META,
 } from "@/lib/locations";
@@ -39,9 +32,6 @@ const Footer = () => {
   const [email, setEmail] = useState("");
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [error, setError] = useState<string | null>(null);
-  const [locationCarouselApi, setLocationCarouselApi] =
-    useState<CarouselApi | null>(null);
-  const [activeLocationIndex, setActiveLocationIndex] = useState(0);
 
   const { t } = useI18n();
   const quickLinks = [
@@ -68,41 +58,13 @@ const Footer = () => {
   const contactEmails = [PRIMARY_EMAIL, HIRING_ALIAS_EMAIL];
   const mailtoAll = `mailto:${contactEmails.join(",")}`;
 
-  const hasLocations = branchLocations.length > 0;
-
-  // Filter out locations without street view coverage for the footer carousel
-  // Based on client feedback: Sulawesi, Bogor Warehouse, Head Office Bogor
+  // Only show Head Office Bogor in footer
   const footerLocations = branchLocations.filter(
-    (loc) =>
-      ![
-        "head-office-bogor",
-        "warehouse-bogor",
-        "site-support-sulawesi",
-      ].includes(loc.id)
+    (loc) => loc.id === "head-office-bogor"
   );
 
-  const activeLocation = hasLocations
-    ? footerLocations[Math.min(activeLocationIndex, footerLocations.length - 1)]
-    : null;
-
-  useEffect(() => {
-    if (!locationCarouselApi) {
-      return;
-    }
-
-    const handleSelect = () => {
-      setActiveLocationIndex(locationCarouselApi.selectedScrollSnap());
-    };
-
-    handleSelect();
-    locationCarouselApi.on("select", handleSelect);
-    locationCarouselApi.on("reInit", handleSelect);
-
-    return () => {
-      locationCarouselApi.off("select", handleSelect);
-      locationCarouselApi.off("reInit", handleSelect);
-    };
-  }, [locationCarouselApi]);
+  const hasLocations = footerLocations.length > 0;
+  const activeLocation = hasLocations ? footerLocations[0] : null;
 
   // Services list synced from src/lib/services.ts
   // Clicking a service routes to /services/:slug
@@ -255,11 +217,11 @@ const Footer = () => {
                 </div>
                 <div>
                   <p className="text-neutral-400 leading-relaxed text-sm">
-                    Kota Palangka Raya,
+                    Podomoro Golf View Ruko Podomoro City,
                     <br />
-                    Kalimantan Tengah - 73111
+                    Jl. Blk. B2 No.20, Bojong Nangka, Cimanggis,
                     <br />
-                    Indonesia
+                    Bogor Regency, West Java 16953
                   </p>
                 </div>
               </div>
@@ -308,81 +270,72 @@ const Footer = () => {
           </div>
 
           {hasLocations && footerLocations.length > 0 ? (
-            <Carousel
-              className="relative"
-              opts={{ align: "start", containScroll: "trimSnaps" }}
-              setApi={setLocationCarouselApi}
-            >
-              <CarouselContent>
-                {footerLocations.map((location, index) => {
-                  const categoryColor =
-                    LOCATION_CATEGORY_META[location.category].color;
-                  const streetViewSrc =
-                    location.streetViewEmbedSrc ??
-                    getGoogleMapsStreetViewEmbedUrl(location.coordinates);
-                  return (
-                    <CarouselItem key={location.id}>
-                      <div className="flex flex-col items-center gap-4">
-                        <div className="group relative h-56 w-full overflow-hidden rounded-2xl border border-white/10 bg-muted shadow-soft sm:h-64 md:h-80 lg:h-[26rem] xl:h-[30rem] 2xl:h-[34rem]">
-                          <iframe
-                            src={streetViewSrc}
-                            width="100%"
-                            height="100%"
-                            style={{ border: 0 }}
-                            allowFullScreen
-                            loading="lazy"
-                            referrerPolicy="no-referrer-when-downgrade"
-                            title={`${location.title} map`}
-                            className="transition-all duration-500 ease-smooth group-hover:scale-[1.02]"
-                          />
-                        </div>
-                        <div className="flex w-full max-w-3xl flex-col gap-4 rounded-2xl border border-white/10 bg-neutral-900/70 p-4 text-white shadow-soft sm:max-w-4xl sm:p-5">
-                          <div className="space-y-2.5">
-                            <div className="flex items-start gap-2.5">
-                              <span
-                                className="mt-1 h-2 w-2 rounded-full"
-                                style={{ backgroundColor: categoryColor }}
-                              />
-                              <div>
-                                <p className="text-sm font-semibold sm:text-base">
-                                  {location.title}
-                                </p>
-                                <p className="text-xs text-white/70 sm:text-sm lg:text-xs lg:text-white/60 lg:line-clamp-1">
-                                  {location.subtitle}
-                                </p>
-                              </div>
+            <div className="flex flex-col items-center gap-4">
+              {footerLocations.map((location) => {
+                const categoryColor =
+                  LOCATION_CATEGORY_META[location.category].color;
+                // Use Google Maps embed (not Street View) for Head Office Bogor
+                // since Street View is not available for this location
+                const mapSrc =
+                  location.streetViewEmbedSrc ??
+                  getGoogleMapsEmbedUrl(location.coordinates, location.address);
+                return (
+                  <div key={location.id} className="w-full">
+                    <div className="flex flex-col items-center gap-4">
+                      <div className="group relative h-56 w-full overflow-hidden rounded-2xl border border-white/10 bg-muted shadow-soft sm:h-64 md:h-80 lg:h-[26rem] xl:h-[30rem] 2xl:h-[34rem]">
+                        <iframe
+                          src={mapSrc}
+                          width="100%"
+                          height="100%"
+                          style={{ border: 0 }}
+                          allowFullScreen
+                          loading="lazy"
+                          referrerPolicy="no-referrer-when-downgrade"
+                          title={`${location.title} map`}
+                          className="transition-all duration-500 ease-smooth group-hover:scale-[1.02]"
+                        />
+                      </div>
+                      <div className="flex w-full max-w-3xl flex-col gap-4 rounded-2xl border border-white/10 bg-neutral-900/70 p-4 text-white shadow-soft sm:max-w-4xl sm:p-5">
+                        <div className="space-y-2.5">
+                          <div className="flex items-start gap-2.5">
+                            <span
+                              className="mt-1 h-2 w-2 rounded-full"
+                              style={{ backgroundColor: categoryColor }}
+                            />
+                            <div>
+                              <p className="text-sm font-semibold sm:text-base">
+                                {location.title}
+                              </p>
+                              <p className="text-xs text-white/70 sm:text-sm lg:text-xs lg:text-white/60 lg:line-clamp-1">
+                                {location.subtitle}
+                              </p>
                             </div>
-                            <p className="text-xs leading-relaxed text-white/80 sm:text-sm lg:hidden">
-                              {location.address}
-                            </p>
                           </div>
-                          <div className="flex flex-col gap-2 text-xs text-white/80 sm:flex-row sm:items-center sm:justify-between sm:text-sm">
-                            <a
-                              href={getGoogleMapsDirectionsUrl(
-                                location.coordinates,
-                                location.title
-                              )}
-                              target="_blank"
-                              rel="noopener noreferrer"
-                              className="inline-flex items-center gap-1.5 text-sm font-semibold text-white underline-offset-4 transition-colors hover:text-accent hover:underline"
-                              aria-label={`${t("footer.location.openInGoogleMaps")} - ${location.title}`}
-                            >
-                              <MapPin className="h-3.5 w-3.5" />
-                              {t("footer.location.openInGoogleMaps")}
-                            </a>
-                            <span className="text-[11px] uppercase tracking-wide text-white/60 sm:text-xs">
-                              {index + 1} / {footerLocations.length}
-                            </span>
-                          </div>
+                          <p className="text-xs leading-relaxed text-white/80 sm:text-sm lg:hidden">
+                            {location.address}
+                          </p>
+                        </div>
+                        <div className="flex flex-col gap-2 text-xs text-white/80 sm:flex-row sm:items-center sm:justify-between sm:text-sm">
+                          <a
+                            href={getGoogleMapsDirectionsUrl(
+                              location.coordinates,
+                              location.title
+                            )}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center gap-1.5 text-sm font-semibold text-white underline-offset-4 transition-colors hover:text-accent hover:underline"
+                            aria-label={`${t("footer.location.openInGoogleMaps")} - ${location.title}`}
+                          >
+                            <MapPin className="h-3.5 w-3.5" />
+                            {t("footer.location.openInGoogleMaps")}
+                          </a>
                         </div>
                       </div>
-                    </CarouselItem>
-                  );
-                })}
-              </CarouselContent>
-              <CarouselPrevious className="flex !left-3 top-1/2 z-20 -translate-y-1/2 h-12 w-12 items-center justify-center border-white/30 bg-neutral-950/85 text-white shadow-xl backdrop-blur-lg transition hover:bg-neutral-900/90 focus-visible:ring-white/50 md:!left-6 lg:!left-8" />
-              <CarouselNext className="flex !right-3 top-1/2 z-20 -translate-y-1/2 h-12 w-12 items-center justify-center border-white/30 bg-neutral-950/85 text-white shadow-xl backdrop-blur-lg transition hover:bg-neutral-900/90 focus-visible:ring-white/50 md:!right-6 lg:!right-8" />
-            </Carousel>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
           ) : (
             <div className="group relative h-64 w-full overflow-hidden rounded-2xl border border-white/10 bg-muted shadow-soft sm:h-72 md:h-80 lg:h-96 xl:h-[28rem]">
               <iframe

@@ -30,9 +30,11 @@ export const branchLocations: LocationData[] = [
     title: "Head Office",
     subtitle: "Bogor",
     address:
-      "Rukan Podomoro Golf View Blok B2 No.30, Cimanggis, Gunung Putri, Bogor, Jawa Barat 16963",
-    coordinates: [106.9494, -6.4501],
+      "Podomoro Golf View Ruko Podomoro City, Jl. Blk. B2 No.20, Bojong Nangka, Cimanggis, Bogor Regency, West Java 16953",
+    coordinates: [106.893131, -6.42958],
     category: "head-office",
+    streetViewEmbedSrc:
+      "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7929.446632078272!2d106.893131!3d-6.42958!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69eb1ba7420b85%3A0x6408106de87ce1b4!2sPT%20Traktor%20Utama%20Nusantara!5e0!3m2!1sen!2sid!4v1765952991830!5m2!1sen!2sid",
   },
   {
     id: "branch-office-samarinda",
@@ -98,4 +100,16 @@ export const getGoogleMapsStreetViewEmbedUrl = (
   const fov = opts?.fov ?? 90;
 
   return `https://maps.google.com/maps?layer=c&cbll=${latitude},${longitude}&cbp=12,${heading},0,${pitch},${fov}&output=svembed`;
+};
+
+export const getGoogleMapsEmbedUrl = (
+  coordinates: LocationData["coordinates"],
+  address?: string,
+) => {
+  const [longitude, latitude] = coordinates;
+  // Use address if available, otherwise use coordinates
+  const query = address
+    ? encodeURIComponent(address)
+    : `${latitude},${longitude}`;
+  return `https://www.google.com/maps?q=${query}&output=embed`;
 };
