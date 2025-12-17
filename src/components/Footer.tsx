@@ -24,7 +24,6 @@ import {
   Loader2,
 } from "lucide-react";
 import companyLogo from "@/assets/logo-new.png";
-import { services as serviceList } from "@/lib/services";
 import { Link } from "react-router-dom";
 
 import { useI18n } from "@/lib/i18n";
@@ -56,7 +55,10 @@ const Footer = () => {
     { name: t("footer.quickLinks.contact"), href: "/contact" },
   ];
 
-  const featuredServices = serviceList.slice(0, 7);
+  const featuredServices = [
+    { id: "rental-alat-berat", name: "Rental Alat Berat (PT SAN)" },
+    { id: "jasa-konstruksi-tambang", name: "Jasa Konstruksi Tambang (PT BBR)" },
+  ];
   const contactEmails = [PRIMARY_EMAIL, HIRING_ALIAS_EMAIL];
   const mailtoAll = `mailto:${contactEmails.join(",")}`;
 
@@ -214,14 +216,11 @@ const Footer = () => {
               {featuredServices.map((svc) => (
                 <li key={svc.id}>
                   <Link
-                    to={`/services/${svc.slug}`}
+                    to="/services"
                     className="group block text-neutral-400 hover:text-white transition-colors py-1"
                   >
                     <span className="group-hover:text-accent transition-colors duration-300">
-                      {t(`services.${svc.slug}.title`).replace(
-                        /\s*\((CTRB|CTRSB)\)$/i,
-                        ""
-                      )}
+                      {svc.name}
                     </span>
                   </Link>
                 </li>
