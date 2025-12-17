@@ -1837,16 +1837,16 @@ export const idTranslations: TranslationResources = {
   },
   gallery: {
     label: "Galeri",
-    title: "Dokumentasi Visual Proyek",
+    title: "Galeri Proyek & Armada",
     description:
-      "Dokumentasi visual dari proyek-proyek berkualitas tinggi yang telah kami selesaikan.",
+      "Jelajahi dokumentasi visual dari armada alat berat kami yang tangguh dan proyek konstruksi tambang yang telah kami selesaikan dengan standar tertinggi.",
     ui: {
       filterBy: "Filter berdasarkan:",
       viewLabel: "Tampilan:",
       gridAria: "Tampilan grid",
       byCategoryAria: "Tampilan berdasarkan kategori",
       keyboardHint:
-        "Tip: Gunakan Ctrl+1/2/3/4 untuk filter cepat, Ctrl+G untuk ubah tampilan",
+        "Tip: Gunakan Ctrl+1/2/3 untuk filter cepat, Ctrl+G untuk ubah tampilan",
     },
     emptyState: {
       title: "Tidak ada foto",
@@ -1864,26 +1864,20 @@ export const idTranslations: TranslationResources = {
       clickToView: "Klik untuk melihat detail",
     },
     category: {
-      adaro: {
-        title: "Site PT. Adaro Indonesia",
+      heavyEquipment: {
+        title: "Rental Alat Berat (PT SAN)",
         description:
-          "Dokumentasi proyek infrastruktur untuk PT. Adaro Indonesia",
-        badge: "PT. Adaro",
+          "Armada alat berat yang terawat dan siap operasi untuk mendukung efisiensi proyek Anda.",
+        badge: "Alat Berat",
       },
-      kalimantan: {
-        title: "Government Project - Central Kalimantan",
+      miningConstruction: {
+        title: "Jasa Konstruksi Tambang (PT BBR)",
         description:
-          "Dokumentasi proyek infrastruktur pemerintah di Kalimantan Tengah",
-        badge: "Kalimantan",
+          "Dokumentasi pekerjaan konstruksi tambang dan infrastruktur pendukung dengan standar keselamatan tinggi.",
+        badge: "Konstruksi Tambang",
       },
-      borneo: {
-        title: "Site PT. Borneo Indobara",
-        description:
-          "Dokumentasi proyek infrastruktur untuk PT. Borneo Indobara",
-        badge: "PT. Borneo",
-      },
-      allTitle: "Semua Proyek",
-      allDescription: "Semua dokumentasi proyek yang telah kami selesaikan",
+      allTitle: "Semua Dokumentasi",
+      allDescription: "Menampilkan seluruh koleksi foto proyek dan armada kami.",
     },
     showingLabel: "Menampilkan",
     photosNoun: "foto",
@@ -1891,9 +1885,9 @@ export const idTranslations: TranslationResources = {
     card: { hdBadge: "HD" },
     stats: {
       projectDocs: "Dokumentasi Proyek",
-      projectCategories: "Kategori Proyek",
+      projectCategories: "Kategori Layanan",
       qualityAssured: "Kualitas Terjamin",
-      completedProjects: "Proyek Selesai",
+      completedProjects: "Proyek Sukses",
     },
     modal: { companyName: "PT SINERGY AGTER NUSANTARA & PT BUMI BLAMBANGAN RESOURCES" },
     ariaGalleryNavigation:

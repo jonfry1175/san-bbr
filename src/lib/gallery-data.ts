@@ -5,226 +5,139 @@ export type ImgItem = {
   project: string;
 };
 
-// Static imports for local gallery assets. Vite will return the resolved URL string for each import.
-import kal1 from "../assets/our-works/gallery/kal-1.jpg";
-import kal2 from "../assets/our-works/gallery/kal-2.jpg";
-import kal3 from "../assets/our-works/gallery/kal-3.jpg";
-import kal4 from "../assets/our-works/gallery/kal-4.jpg";
-import kal5 from "../assets/our-works/gallery/kal-5.jpg";
-import kal6 from "../assets/our-works/gallery/kal-6.jpg";
-import kal7 from "../assets/our-works/gallery/kal-7.jpg";
-import kal8 from "../assets/our-works/gallery/kal-8.jpg";
-import kal9 from "../assets/our-works/gallery/kal-9.jpg";
+// Unsplash images for Heavy Equipment Rental (Rental Alat Berat)
+const he1 = "https://images.unsplash.com/photo-1579548122080-c35fd6820ecb?q=80&w=800&auto=format&fit=crop";
+const he2 = "https://images.unsplash.com/photo-1541625602330-2277a4c46182?q=80&w=800&auto=format&fit=crop";
+const he3 = "https://images.unsplash.com/photo-1581094288338-2314dddb7ece?q=80&w=800&auto=format&fit=crop";
+const he4 = "https://images.unsplash.com/photo-1628131346067-175f5fe7a82c?q=80&w=800&auto=format&fit=crop";
+const he5 = "https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?q=80&w=800&auto=format&fit=crop";
+const he6 = "https://images.unsplash.com/photo-1589939705384-5185137a7f0f?q=80&w=800&auto=format&fit=crop";
+const he7 = "https://images.unsplash.com/photo-1533230559099-0df850b5e947?q=80&w=800&auto=format&fit=crop";
+const he8 = "https://images.unsplash.com/photo-1578575437130-527eed3abbec?q=80&w=800&auto=format&fit=crop";
+const he9 = "https://images.unsplash.com/photo-1519003300449-424423c28711?q=80&w=800&auto=format&fit=crop";
 
-import bor1 from "../assets/our-works/gallery/bor-1.jpg";
-import bor2 from "../assets/our-works/gallery/bor-2.jpg";
-import bor3 from "../assets/our-works/gallery/bor-3.jpg";
-import bor4 from "../assets/our-works/gallery/bor-4.jpg";
-import bor5 from "../assets/our-works/gallery/bor-5.jpg";
-import bor6 from "../assets/our-works/gallery/bor-6.jpg";
-import bor7 from "../assets/our-works/gallery/bor-7.jpg";
-import bor8 from "../assets/our-works/gallery/bor-8.jpg";
-import bor9 from "../assets/our-works/gallery/bor-9.jpg";
+// Unsplash images for Mining Construction Services (Jasa Konstruksi Tambang)
+const mc1 = "https://images.unsplash.com/photo-1599933310642-8f075ee0492b?q=80&w=800&auto=format&fit=crop";
+const mc2 = "https://images.unsplash.com/photo-1518091043644-c1d4457512c6?q=80&w=800&auto=format&fit=crop";
+const mc3 = "https://images.unsplash.com/photo-1584467541268-b040f83be3dd?q=80&w=800&auto=format&fit=crop";
+const mc4 = "https://images.unsplash.com/photo-1495036017122-f9d25ce42d99?q=80&w=800&auto=format&fit=crop";
+const mc5 = "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?q=80&w=800&auto=format&fit=crop";
+const mc6 = "https://images.unsplash.com/photo-1595113316349-9fa4eb24f884?q=80&w=800&auto=format&fit=crop";
+const mc7 = "https://images.unsplash.com/photo-1580901368919-7738ef321abd?q=80&w=800&auto=format&fit=crop";
+const mc8 = "https://images.unsplash.com/photo-1508924445696-039c0f993d56?q=80&w=800&auto=format&fit=crop";
+const mc9 = "https://images.unsplash.com/photo-1455849318743-b2233052fcff?q=80&w=800&auto=format&fit=crop";
 
-import ad1 from "../assets/our-works/gallery/ad-1.jpg";
-import ad2 from "../assets/our-works/gallery/ad-2.jpg";
-import ad3 from "../assets/our-works/gallery/ad-3.jpg";
-import ad4 from "../assets/our-works/gallery/ad-4.jpg";
-import ad5 from "../assets/our-works/gallery/ad-5.jpg";
-import ad6 from "../assets/our-works/gallery/ad-6.jpg";
-import ad7 from "../assets/our-works/gallery/ad-7.jpg";
-import ad9 from "../assets/our-works/gallery/ad-9.jpg";
 
-// const kal1 = "https://placehold.co/800x600/f97316/ffffff?text=Kalimantan+1";
-// const kal2 = "https://placehold.co/800x600/f97316/ffffff?text=Kalimantan+2";
-// const kal3 = "https://placehold.co/800x600/f97316/ffffff?text=Kalimantan+3";
-// const kal4 = "https://placehold.co/800x600/f97316/ffffff?text=Kalimantan+4";
-// const kal5 = "https://placehold.co/800x600/f97316/ffffff?text=Kalimantan+5";
-// const kal6 = "https://placehold.co/800x600/f97316/ffffff?text=Kalimantan+6";
-// const kal7 = "https://placehold.co/800x600/f97316/ffffff?text=Kalimantan+7";
-// const kal8 = "https://placehold.co/800x600/f97316/ffffff?text=Kalimantan+8";
-// const kal9 = "https://placehold.co/800x600/f97316/ffffff?text=Kalimantan+9";
-
-// const bor1 = "https://placehold.co/800x600/f97316/ffffff?text=Borneo+1";
-// const bor2 = "https://placehold.co/800x600/f97316/ffffff?text=Borneo+2";
-// const bor3 = "https://placehold.co/800x600/f97316/ffffff?text=Borneo+3";
-// const bor4 = "https://placehold.co/800x600/f97316/ffffff?text=Borneo+4";
-// const bor5 = "https://placehold.co/800x600/f97316/ffffff?text=Borneo+5";
-// const bor6 = "https://placehold.co/800x600/f97316/ffffff?text=Borneo+6";
-// const bor7 = "https://placehold.co/800x600/f97316/ffffff?text=Borneo+7";
-// const bor8 = "https://placehold.co/800x600/f97316/ffffff?text=Borneo+8";
-// const bor9 = "https://placehold.co/800x600/f97316/ffffff?text=Borneo+9";
-
-// const ad1 = "https://placehold.co/800x600/f97316/ffffff?text=Adaro+1";
-// const ad2 = "https://placehold.co/800x600/f97316/ffffff?text=Adaro+2";
-// const ad3 = "https://placehold.co/800x600/f97316/ffffff?text=Adaro+3";
-// const ad4 = "https://placehold.co/800x600/f97316/ffffff?text=Adaro+4";
-// const ad5 = "https://placehold.co/800x600/f97316/ffffff?text=Adaro+5";
-// const ad6 = "https://placehold.co/800x600/f97316/ffffff?text=Adaro+6";
-// const ad7 = "https://placehold.co/800x600/f97316/ffffff?text=Adaro+7";
-// const ad9 = "https://placehold.co/800x600/f97316/ffffff?text=Adaro+9";
-
-export const kalimantan: ImgItem[] = [
+export const heavyEquipment: ImgItem[] = [
   {
-    id: "kal-1",
-    src: kal1,
-    alt: "Government Project - Central Kalimantan 1",
-    project: "kalimantan",
+    id: "he-1",
+    src: he1,
+    alt: "Excavator in action - Heavy Equipment Rental",
+    project: "heavyEquipment",
   },
   {
-    id: "kal-2",
-    src: kal2,
-    alt: "Government Project - Central Kalimantan 2",
-    project: "kalimantan",
+    id: "he-2",
+    src: he2,
+    alt: "Construction site equipment - PT SINERGY AGTER NUSANTARA",
+    project: "heavyEquipment",
   },
   {
-    id: "kal-3",
-    src: kal3,
-    alt: "Government Project - Central Kalimantan 3",
-    project: "kalimantan",
+    id: "he-3",
+    src: he3,
+    alt: "Heavy machinery fleet",
+    project: "heavyEquipment",
   },
   {
-    id: "kal-4",
-    src: kal4,
-    alt: "Government Project - Central Kalimantan 4",
-    project: "kalimantan",
+    id: "he-4",
+    src: he4,
+    alt: "Bulldozer leveling ground",
+    project: "heavyEquipment",
   },
   {
-    id: "kal-5",
-    src: kal5,
-    alt: "Government Project - Central Kalimantan 5",
-    project: "kalimantan",
+    id: "he-5",
+    src: he5,
+    alt: "Construction site operations",
+    project: "heavyEquipment",
   },
   {
-    id: "kal-6",
-    src: kal6,
-    alt: "Government Project - Central Kalimantan 6",
-    project: "kalimantan",
+    id: "he-6",
+    src: he6,
+    alt: "Heavy duty truck",
+    project: "heavyEquipment",
   },
   {
-    id: "kal-7",
-    src: kal7,
-    alt: "Government Project - Central Kalimantan 7",
-    project: "kalimantan",
+    id: "he-7",
+    src: he7,
+    alt: "Crane lifting operations",
+    project: "heavyEquipment",
   },
   {
-    id: "kal-8",
-    src: kal8,
-    alt: "Government Project - Central Kalimantan 8",
-    project: "kalimantan",
+    id: "he-8",
+    src: he8,
+    alt: "Excavator digging",
+    project: "heavyEquipment",
   },
   {
-    id: "kal-9",
-    src: kal9,
-    alt: "Government Project - Central Kalimantan 9",
-    project: "kalimantan",
+    id: "he-9",
+    src: he9,
+    alt: "Equipment maintenance and readiness",
+    project: "heavyEquipment",
   },
 ];
 
-export const borneo: ImgItem[] = [
+export const miningConstruction: ImgItem[] = [
   {
-    id: "bor-1",
-    src: bor1,
-    alt: "Site PT. Borneo Indobara 1",
-    project: "borneo",
+    id: "mc-1",
+    src: mc1,
+    alt: "Mining site construction - PT BUMI BLAMBANGAN RESOURCES",
+    project: "miningConstruction",
   },
   {
-    id: "bor-2",
-    src: bor2,
-    alt: "Site PT. Borneo Indobara 2",
-    project: "borneo",
+    id: "mc-2",
+    src: mc2,
+    alt: "Large scale earthworks",
+    project: "miningConstruction",
   },
   {
-    id: "bor-3",
-    src: bor3,
-    alt: "Site PT. Borneo Indobara 3",
-    project: "borneo",
+    id: "mc-3",
+    src: mc3,
+    alt: "Mining infrastructure development",
+    project: "miningConstruction",
   },
   {
-    id: "bor-4",
-    src: bor4,
-    alt: "Site PT. Borneo Indobara 4",
-    project: "borneo",
+    id: "mc-4",
+    src: mc4,
+    alt: "Hauling road construction",
+    project: "miningConstruction",
   },
   {
-    id: "bor-5",
-    src: bor5,
-    alt: "Site PT. Borneo Indobara 5",
-    project: "borneo",
+    id: "mc-5",
+    src: mc5,
+    alt: "Open pit mining operations",
+    project: "miningConstruction",
   },
   {
-    id: "bor-6",
-    src: bor6,
-    alt: "Site PT. Borneo Indobara 6",
-    project: "borneo",
+    id: "mc-6",
+    src: mc6,
+    alt: "Heavy construction machinery at mine site",
+    project: "miningConstruction",
   },
   {
-    id: "bor-7",
-    src: bor7,
-    alt: "Site PT. Borneo Indobara 7",
-    project: "borneo",
+    id: "mc-7",
+    src: mc7,
+    alt: "Site preparation and leveling",
+    project: "miningConstruction",
   },
   {
-    id: "bor-8",
-    src: bor8,
-    alt: "Site PT. Borneo Indobara 8",
-    project: "borneo",
+    id: "mc-8",
+    src: mc8,
+    alt: "Mining road network",
+    project: "miningConstruction",
   },
   {
-    id: "bor-9",
-    src: bor9,
-    alt: "Site PT. Borneo Indobara 9",
-    project: "borneo",
-  },
-];
-
-export const adaro: ImgItem[] = [
-  {
-    id: "ad-1",
-    src: ad1,
-    alt: "Site PT. Adaro Indonesia 1",
-    project: "adaro",
-  },
-  {
-    id: "ad-2",
-    src: ad2,
-    alt: "Site PT. Adaro Indonesia 2",
-    project: "adaro",
-  },
-  {
-    id: "ad-3",
-    src: ad3,
-    alt: "Site PT. Adaro Indonesia 3",
-    project: "adaro",
-  },
-  {
-    id: "ad-4",
-    src: ad4,
-    alt: "Site PT. Adaro Indonesia 4",
-    project: "adaro",
-  },
-  {
-    id: "ad-5",
-    src: ad5,
-    alt: "Site PT. Adaro Indonesia 5",
-    project: "adaro",
-  },
-  {
-    id: "ad-6",
-    src: ad6,
-    alt: "Site PT. Adaro Indonesia 6",
-    project: "adaro",
-  },
-  {
-    id: "ad-7",
-    src: ad7,
-    alt: "Site PT. Adaro Indonesia 7",
-    project: "adaro",
-  },
-  {
-    id: "ad-9",
-    src: ad9,
-    alt: "Site PT. Adaro Indonesia 8",
-    project: "adaro",
+    id: "mc-9",
+    src: mc9,
+    alt: "Project site overview",
+    project: "miningConstruction",
   },
 ];

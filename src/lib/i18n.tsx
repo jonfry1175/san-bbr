@@ -427,9 +427,8 @@ type GalleryTranslations = {
     hdBadge: string;
   };
   category: {
-    adaro: { title: string; description: string; badge: string };
-    kalimantan: { title: string; description: string; badge: string };
-    borneo: { title: string; description: string; badge: string };
+    heavyEquipment: { title: string; description: string; badge: string };
+    miningConstruction: { title: string; description: string; badge: string };
     allTitle: string;
     allDescription: string;
   };

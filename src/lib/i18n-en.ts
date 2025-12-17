@@ -2027,15 +2027,15 @@ export const enTranslations: TranslationResources = {
   },
   gallery: {
     label: "Gallery",
-    title: "Project Visual Documentation",
+    title: "Projects & Fleet Gallery",
     description:
-      "Visual documentation of high-quality projects we have completed.",
+      "Explore visual documentation of our robust heavy equipment fleet and mining construction projects completed to the highest standards.",
     ui: {
       filterBy: "Filter by:",
       viewLabel: "View:",
       gridAria: "Grid view",
       byCategoryAria: "Category view",
-      keyboardHint: "Tip: Use Ctrl+1/2/3/4 to filter, Ctrl+G to toggle view",
+      keyboardHint: "Tip: Use Ctrl+1/2/3 to filter, Ctrl+G to toggle view",
     },
     emptyState: {
       title: "No photos",
@@ -2053,26 +2053,20 @@ export const enTranslations: TranslationResources = {
       clickToView: "Click to view details",
     },
     category: {
-      adaro: {
-        title: "Site PT. Adaro Indonesia",
+      heavyEquipment: {
+        title: "Heavy Equipment Rental (PT SAN)",
         description:
-          "Infrastructure project documentation for PT. Adaro Indonesia",
-        badge: "PT. Adaro",
+          "Well-maintained heavy equipment fleet ready to support your project efficiency.",
+        badge: "Heavy Equipment",
       },
-      kalimantan: {
-        title: "Government Project - Central Kalimantan",
+      miningConstruction: {
+        title: "Mining Construction Services (PT BBR)",
         description:
-          "Government infrastructure project documentation in Central Kalimantan",
-        badge: "Kalimantan",
+          "Documentation of mining construction works and supporting infrastructure with high safety standards.",
+        badge: "Mining Construction",
       },
-      borneo: {
-        title: "Site PT. Borneo Indobara",
-        description:
-          "Infrastructure project documentation for PT. Borneo Indobara",
-        badge: "PT. Borneo",
-      },
-      allTitle: "All Projects",
-      allDescription: "All project visual documentation we've completed",
+      allTitle: "All Documentation",
+      allDescription: "Displaying our entire collection of project and fleet photos.",
     },
     showingLabel: "Showing",
     photosNoun: "photos",
@@ -2080,9 +2074,9 @@ export const enTranslations: TranslationResources = {
     card: { hdBadge: "HD" },
     stats: {
       projectDocs: "Project Documentation",
-      projectCategories: "Project Categories",
+      projectCategories: "Service Categories",
       qualityAssured: "Quality Assured",
-      completedProjects: "Completed Projects",
+      completedProjects: "Successful Projects",
     },
     modal: { companyName: "PT SINERGY AGTER NUSANTARA & PT BUMI BLAMBANGAN RESOURCES" },
     ariaGalleryNavigation: "{title} gallery - use arrow keys to navigate",

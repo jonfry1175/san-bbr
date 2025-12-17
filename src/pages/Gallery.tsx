@@ -26,21 +26,13 @@ import {
 import SEO from "@/components/SEO";
 import { createBreadcrumbJsonLd, createWebPageJsonLd } from "@/lib/seo";
 import { getStaticPageMeta, resolveMeta } from "@/lib/seo-pages";
-import { adaro, borneo, kalimantan, type ImgItem } from "@/lib/gallery-data";
+import { heavyEquipment, miningConstruction, type ImgItem } from "@/lib/gallery-data";
 import { useKeyboardShortcuts } from "@/hooks/use-keyboard-shortcuts";
-// import featuredAd from "@/assets/our-works/gallery/ad-1.jpg";
-// import featuredBorneo from "@/assets/our-works/gallery/bor-1.jpg";
-// import featuredKalimantan from "@/assets/our-works/gallery/kal-1.jpg";
-// import featuredCement from "@/assets/our-works/gallery/bor-5.jpg";
 
-const featuredAd =
-  "https://placehold.co/800x600/f97316/ffffff?text=Adaro+Project";
-const featuredBorneo =
-  "https://placehold.co/800x600/f97316/ffffff?text=Borneo+Project";
-const featuredKalimantan =
-  "https://placehold.co/800x600/f97316/ffffff?text=Kalimantan+Project";
-const featuredCement =
-  "https://placehold.co/800x600/f97316/ffffff?text=Cement+Project";
+const featuredAd = heavyEquipment[0].src;
+const featuredBorneo = miningConstruction[0].src;
+const featuredKalimantan = heavyEquipment[1].src;
+const featuredCement = miningConstruction[1].src;
 
 const meta = resolveMeta(getStaticPageMeta("gallery"));
 
@@ -218,7 +210,6 @@ const GallerySection = React.memo(
             )}
             onKeyDown={(e) => {
               const container = e.currentTarget;
-              const scrollAmount = 320; // Width of one card plus gap
 
               if (e.key === "ArrowLeft") {
                 e.preventDefault();
@@ -327,12 +318,10 @@ const FilteredGalleryGrid = React.memo(
 
     const getCategoryTitle = (filter: string) => {
       switch (filter) {
-        case "adaro":
-          return translations.gallery.category.adaro.title;
-        case "kalimantan":
-          return translations.gallery.category.kalimantan.title;
-        case "borneo":
-          return translations.gallery.category.borneo.title;
+        case "heavyEquipment":
+          return translations.gallery.category.heavyEquipment.title;
+        case "miningConstruction":
+          return translations.gallery.category.miningConstruction.title;
         default:
           return translations.gallery.category.allTitle;
       }
@@ -340,12 +329,10 @@ const FilteredGalleryGrid = React.memo(
 
     const getCategoryDescription = (filter: string) => {
       switch (filter) {
-        case "adaro":
-          return translations.gallery.category.adaro.description;
-        case "kalimantan":
-          return translations.gallery.category.kalimantan.description;
-        case "borneo":
-          return translations.gallery.category.borneo.description;
+        case "heavyEquipment":
+          return translations.gallery.category.heavyEquipment.description;
+        case "miningConstruction":
+          return translations.gallery.category.miningConstruction.description;
         default:
           return translations.gallery.category.allDescription;
       }
@@ -404,17 +391,15 @@ const FilteredGalleryGrid = React.memo(
                       <div className="absolute top-3 left-3 z-10">
                         <Badge
                           variant={
-                            it.project === "kalimantan"
+                            it.project === "heavyEquipment"
                               ? "default"
                               : "secondary"
                           }
                           className="text-xs"
                         >
-                          {it.project === "kalimantan"
-                            ? translations.gallery.category.kalimantan.badge
-                            : it.project === "adaro"
-                              ? translations.gallery.category.adaro.badge
-                              : translations.gallery.category.borneo.badge}
+                          {it.project === "heavyEquipment"
+                            ? translations.gallery.category.heavyEquipment.badge
+                            : translations.gallery.category.miningConstruction.badge}
                         </Badge>
                       </div>
 
@@ -428,11 +413,9 @@ const FilteredGalleryGrid = React.memo(
                         <p className="text-white text-sm font-medium">
                           {translations.gallery.overlay.photoPrefix} {index + 1}{" "}
                           - {translations.gallery.overlay.projectLabelPrefix}{" "}
-                          {it.project === "kalimantan"
-                            ? translations.gallery.category.kalimantan.badge
-                            : it.project === "adaro"
-                              ? translations.gallery.category.adaro.badge
-                              : translations.gallery.category.borneo.badge}
+                          {it.project === "heavyEquipment"
+                            ? translations.gallery.category.heavyEquipment.badge
+                            : translations.gallery.category.miningConstruction.badge}
                         </p>
                         <p className="text-white/80 text-xs mt-1">
                           {translations.gallery.overlay.clickToView}
@@ -458,17 +441,15 @@ const FilteredGalleryGrid = React.memo(
                       <div className="flex items-center gap-3 mb-2">
                         <Badge
                           variant={
-                            it.project === "kalimantan"
+                            it.project === "heavyEquipment"
                               ? "default"
                               : "secondary"
                           }
                           className="text-xs"
                         >
-                          {it.project === "kalimantan"
-                            ? translations.gallery.category.kalimantan.badge
-                            : it.project === "adaro"
-                              ? translations.gallery.category.adaro.badge
-                              : translations.gallery.category.borneo.badge}
+                          {it.project === "heavyEquipment"
+                            ? translations.gallery.category.heavyEquipment.badge
+                            : translations.gallery.category.miningConstruction.badge}
                         </Badge>
                       </div>
                       <h4 className="text-white text-lg font-semibold">
@@ -521,19 +502,18 @@ const Gallery = () => {
     [t]
   );
   const [activeFilter, setActiveFilter] = useState<
-    "all" | "adaro" | "kalimantan" | "borneo"
+    "all" | "heavyEquipment" | "miningConstruction"
   >("all");
   const [viewMode, setViewMode] = useState<"sections" | "grid">("sections");
 
-  const allItems = useMemo(() => [...adaro, ...kalimantan, ...borneo], []);
+  const allItems = useMemo(() => [...heavyEquipment, ...miningConstruction], []);
   const filteredItems = useMemo(() => {
     if (activeFilter === "all") return allItems;
     return allItems.filter((item) => item.project === activeFilter);
   }, [allItems, activeFilter]);
 
-  const adaroCount = adaro.length;
-  const kalimantanCount = kalimantan.length;
-  const borneoCount = borneo.length;
+  const heavyEquipmentCount = heavyEquipment.length;
+  const miningConstructionCount = miningConstruction.length;
 
   // Keyboard shortcuts
   useEffect(() => {
@@ -546,15 +526,11 @@ const Gallery = () => {
             break;
           case "2":
             event.preventDefault();
-            setActiveFilter("adaro");
+            setActiveFilter("heavyEquipment");
             break;
           case "3":
             event.preventDefault();
-            setActiveFilter("kalimantan");
-            break;
-          case "4":
-            event.preventDefault();
-            setActiveFilter("borneo");
+            setActiveFilter("miningConstruction");
             break;
           case "g":
             event.preventDefault();
@@ -654,7 +630,7 @@ const Gallery = () => {
               </div>
             </div>
             <div className="text-center p-6 bg-card rounded-2xl border border-border shadow-sm hover:shadow-md transition-all">
-              <div className="text-3xl font-bold text-primary mb-2">3</div>
+              <div className="text-3xl font-bold text-primary mb-2">2</div>
               <div className="text-sm text-muted-foreground">
                 {translations.gallery.stats?.projectCategories}
               </div>
@@ -700,49 +676,35 @@ const Gallery = () => {
                   {translations.gallery.category.allTitle} ({allItems.length})
                 </Badge>
                 <Badge
-                  variant={activeFilter === "adaro" ? "default" : "outline"}
+                  variant={activeFilter === "heavyEquipment" ? "default" : "outline"}
                   className="cursor-pointer transition-all hover:scale-105 focus:scale-105 focus:outline-none focus:ring-2 focus:ring-primary/50"
-                  onClick={() => setActiveFilter("adaro")}
+                  onClick={() => setActiveFilter("heavyEquipment")}
                   onKeyDown={(e) =>
-                    e.key === "Enter" && setActiveFilter("adaro")
+                    e.key === "Enter" && setActiveFilter("heavyEquipment")
                   }
                   tabIndex={0}
                   role="button"
-                  aria-pressed={activeFilter === "adaro"}
-                  aria-label={`${translations.gallery.ui?.filterBy} ${translations.gallery.category.adaro.title}, ${adaroCount} ${translations.gallery.photosNoun}`}
+                  aria-pressed={activeFilter === "heavyEquipment"}
+                  aria-label={`${translations.gallery.ui?.filterBy} ${translations.gallery.category.heavyEquipment.title}, ${heavyEquipmentCount} ${translations.gallery.photosNoun}`}
                 >
-                  {translations.gallery.category.adaro.badge} ({adaroCount})
+                  {translations.gallery.category.heavyEquipment.badge} ({heavyEquipmentCount})
                 </Badge>
                 <Badge
                   variant={
-                    activeFilter === "kalimantan" ? "default" : "outline"
+                    activeFilter === "miningConstruction" ? "default" : "outline"
                   }
                   className="cursor-pointer transition-all hover:scale-105 focus:scale-105 focus:outline-none focus:ring-2 focus:ring-primary/50"
-                  onClick={() => setActiveFilter("kalimantan")}
+                  onClick={() => setActiveFilter("miningConstruction")}
                   onKeyDown={(e) =>
-                    e.key === "Enter" && setActiveFilter("kalimantan")
+                    e.key === "Enter" && setActiveFilter("miningConstruction")
                   }
                   tabIndex={0}
                   role="button"
-                  aria-pressed={activeFilter === "kalimantan"}
-                  aria-label={`${translations.gallery.ui?.filterBy} ${translations.gallery.category.kalimantan.title}, ${kalimantanCount} ${translations.gallery.photosNoun}`}
+                  aria-pressed={activeFilter === "miningConstruction"}
+                  aria-label={`${translations.gallery.ui?.filterBy} ${translations.gallery.category.miningConstruction.title}, ${miningConstructionCount} ${translations.gallery.photosNoun}`}
                 >
-                  {translations.gallery.category.kalimantan.badge} (
-                  {kalimantanCount})
-                </Badge>
-                <Badge
-                  variant={activeFilter === "borneo" ? "default" : "outline"}
-                  className="cursor-pointer transition-all hover:scale-105 focus:scale-105 focus:outline-none focus:ring-2 focus:ring-primary/50"
-                  onClick={() => setActiveFilter("borneo")}
-                  onKeyDown={(e) =>
-                    e.key === "Enter" && setActiveFilter("borneo")
-                  }
-                  tabIndex={0}
-                  role="button"
-                  aria-pressed={activeFilter === "borneo"}
-                  aria-label={`${translations.gallery.ui?.filterBy} ${translations.gallery.category.borneo.title}, ${borneoCount} ${translations.gallery.photosNoun}`}
-                >
-                  {translations.gallery.category.borneo.badge} ({borneoCount})
+                  {translations.gallery.category.miningConstruction.badge} (
+                  {miningConstructionCount})
                 </Badge>
               </div>
             </div>
@@ -789,18 +751,13 @@ const Gallery = () => {
             <div className="space-y-20">
               <GallerySection
                 label={translations.gallery.modal.companyName}
-                title={translations.gallery.category.adaro.title}
-                items={adaro}
+                title={translations.gallery.category.heavyEquipment.title}
+                items={heavyEquipment}
               />
               <GallerySection
                 label={translations.gallery.modal.companyName}
-                title={translations.gallery.category.borneo.title}
-                items={borneo}
-              />
-              <GallerySection
-                label={translations.gallery.modal.companyName}
-                title={translations.gallery.category.kalimantan.title}
-                items={kalimantan}
+                title={translations.gallery.category.miningConstruction.title}
+                items={miningConstruction}
               />
             </div>
           ) : (
@@ -863,7 +820,7 @@ const Gallery = () => {
                       <div className="aspect-[4/3] rounded-xl overflow-hidden shadow-lg group relative">
                         <img
                           src={featuredAd}
-                          alt="Featured Adaro Project"
+                          alt="Featured Heavy Equipment"
                           className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
                         />
                         <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors" />
@@ -871,7 +828,7 @@ const Gallery = () => {
                       <div className="aspect-[4/3] rounded-xl overflow-hidden shadow-lg group relative">
                         <img
                           src={featuredBorneo}
-                          alt="Featured Borneo Project"
+                          alt="Featured Mining Project"
                           className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
                         />
                         <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors" />
@@ -888,7 +845,7 @@ const Gallery = () => {
                       <div className="aspect-[4/3] rounded-xl overflow-hidden shadow-lg group relative">
                         <img
                           src={featuredKalimantan}
-                          alt="Featured Kalimantan Project"
+                          alt="Featured Heavy Equipment 2"
                           className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
                         />
                         <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors" />
@@ -896,7 +853,7 @@ const Gallery = () => {
                       <div className="aspect-[4/3] rounded-xl overflow-hidden shadow-lg group relative">
                         <img
                           src={featuredCement}
-                          alt="Featured Infrastructure Project"
+                          alt="Featured Construction Project"
                           className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
                         />
                         <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors" />
